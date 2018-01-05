@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+
+}
+
+
+/*CSS Grid Definition*/
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+  text-align: center;
+}
+
+.content > img {
+  max-width: 80%;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}

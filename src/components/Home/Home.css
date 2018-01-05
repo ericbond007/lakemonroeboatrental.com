@@ -1,0 +1,27 @@
+@media only screen and (max-width: 76px) {
+  .logo {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+
+  .lmbrMap {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+.lmbrMap {
+  margin-bottom: 2rem;
+  max-width: 80%;
+}
+
+.prettyButtons {
+  max-width: 400;
+  margin: 0 auto 10px;
+  display: inline-grid;
+}
+
+.landingTitle {
+  text-align: center;
+}
