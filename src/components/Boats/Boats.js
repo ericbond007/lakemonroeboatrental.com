@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import BoatLink from '../BoatLink/BoatLink';
 import SEO from '../SEO';
 
 import './Boats.css';
 
 class Boats extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       boats: []
     }
   }
   
-  componentDidMount(prevProps) {
+  componentDidMount() {
+    let dataURL = "https://balcarth.com/wordpress/wp-json/wp/v2/boats?_embed";
+    fetch(dataURL)
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          boats: res
+        })
+      })
   }
 
   render() {
@@ -26,16 +35,13 @@ class Boats extends Component {
       
       <div className="content">
               <h1 className="landingTitle">Boats For Rent</h1>
-              <Link to="/boats/doubledecker">
-                <h2>
-                  Double Decker w/ slide
-                </h2>
-              </Link>
-              <img src="doubleDecker.jpg"  alt="Double Decker"/>
-              <h2>
-                Pontoon Boats
-              </h2>
-              <img src="pontoon.gif"  alt="Single Deck Pontoon"/>
+              <BoatLink boatname="Double Decker" boatimg="doubleDecker.jpg" boatimgalt="Double Decker" boatlink="doubledecker"  {...this.state} />
+                <Link to="/boats/pontoon">
+                  <h2>
+                    Pontoon Boats
+                  </h2>
+                  <img src="pontoon.gif"  alt="Single Deck Pontoon"/>
+                </Link>
               <h2>
                 Ski Boats
               </h2>

@@ -1,43 +1,20 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import SEO from '../SEO';
 
 
-class Boat extends Component {
-  constructor() {
-    super();
-    this.state = {
-      boats: []
-    }
-  }
-  
-  componentDidMount(prevProps) {
-  }
+const Boat = (props) => (
+  <div className="content">
+    <h1 className="boatHeader">
+      {props.location.state.boatname}
+    </h1>
+    <img src={props.location.state.boatimg} alt={props.location.state.boatimgalt} />
+    
+  </div>
+)
 
-
-  render() {
-    return (
-      <div>
-        <SEO
-          title="Use REST API to display boat name | Lake Monroe Boat Rental"
-          description="Located in Paynetown SRA"
-          path="/"
-        />
-            <div className="content">  
-              <h1 className="landingHeader">Use REST to Show Boat Name</h1>
-              <h2>
-                Double Decker w/ slide
-              </h2>
-              <img src="doubleDecker.jpg" alt="Double Decker"/>
-              <h3>Rates</h3>
-              <p>1 Hour: $65</p>
-              <p>Extra Hour: $40</p>
-            </div>
-                
-              
-      </div>
-
-    );
-  }
+Boat.contextTypes = {
+  boatname: PropTypes.string
 }
 
 export default Boat;

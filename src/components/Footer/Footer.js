@@ -10,7 +10,7 @@ class Footer extends Component {
 
             <li><a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/fishinshedd"><i className="fab facebook-square" aria-label="https://www.facebook.com/fishinshedd"></i></a></li>
             <li><a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/thefishinshedd/"><i className="fab instagram" aria-label="https://www.instagram.com/thefishinshedd"></i> </a></li>
-            <li><p>&copy; 2017 The Fishin Shedd</p></li>
+            <li><p>&copy; 2018 Lake Monroe Boat Rental</p></li>
           </ul>
       </div>
       </div>
