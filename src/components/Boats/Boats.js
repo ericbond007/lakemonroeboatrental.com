@@ -36,12 +36,7 @@ class Boats extends Component {
       <div className="content">
               <h1 className="landingTitle">Boats For Rent</h1>
               <BoatLink boatname="Double Decker" boatimg="doubleDecker.jpg" boatimgalt="Double Decker" boatlink="doubledecker"  {...this.state} />
-                <Link to="/boats/pontoon">
-                  <h2>
-                    Pontoon Boats
-                  </h2>
-                  <img src="pontoon.gif"  alt="Single Deck Pontoon"/>
-                </Link>
+              <BoatLink boatname="Pontoon" boatimg="pontoon.gif" boatimgalt="20' Pontoon" boatlink="20-pontoon"  {...this.state} />
               <h2>
                 Ski Boats
               </h2>
