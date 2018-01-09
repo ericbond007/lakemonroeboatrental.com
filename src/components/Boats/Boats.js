@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import BoatLink from '../BoatLink/BoatLink';
 import SEO from '../SEO';
 

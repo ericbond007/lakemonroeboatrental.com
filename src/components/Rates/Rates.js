@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import SEO from '../SEO';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css'
@@ -9,9 +8,6 @@ import 'react-table/react-table.css'
 import './Rates.css';
 
 class Rates extends Component {
-  constructor(props) {
-    super(props);
-  }
   
   componentDidMount(prevProps) {
   }

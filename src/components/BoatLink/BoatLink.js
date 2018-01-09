@@ -3,12 +3,8 @@ import { Link } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
-import SEO from '../SEO';
 
 class BoatLink extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   getChildContext() {
     return { boatname: "double decker" };

@@ -5,31 +5,9 @@ import Boats from './Boats';
 import './Home.css';
 
 class Home extends Component {
-  constructor() {
-    super();
-    this.state = {
-      boats: []
-    }
-  }
   
-  componentDidMount(prevProps) {
-    let dataURL = "http://10.1.10.8/BRwordpress/wp-json/wp/v2/boats?_embed";
-      fetch(dataURL)
-        .then(res => res.json())
-        .then(res => {
-          this.setState ({
-            boats: res
-          })
-        })
-  }
 
   render() {
-    let boats = this.state.boats.map((boats, index) => {
-      return <div key={index}>
-        <p>{boats.acf.boat_length_and_type}</p>
-        <p>{boats.acf.description}</p>
-      </div>
-    });
 
     return (
       <div>
