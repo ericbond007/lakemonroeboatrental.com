@@ -7,11 +7,24 @@ class Policies extends Component {
   constructor() {
     super();
     this.state = {
-      boats: []
+      policies: []
     }
   }
   
-  componentDidMount(prevProps) {
+  componentDidMount() {
+    function isPolicies(policy) {
+      return policy.slug === 'policies';
+    }
+    let dataURL = "https://balcarth.com/wordpress/wp-json/wp/v2/pages?_embed";
+    fetch(dataURL)
+      .then(res => res.json())
+      .then(res => {
+        let policies = res.filter(isPolicies);
+        let policy = policies[0].content.rendered;
+        this.setState({
+          policy: policy
+        })
+      })
   }
 
   render() {
@@ -25,6 +38,7 @@ class Policies extends Component {
       
       <div className="content">
               <h1 className="landingTitle">Policies</h1>
+              <p>{this.state.policy}</p>
 
             </div>
       </div>
