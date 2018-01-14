@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import Home from '../../components/Home/Home';
+/*import Home from './Home';*/
 
 class HomePage extends Component {
   componentDidMount() {
