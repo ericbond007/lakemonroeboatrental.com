@@ -29,6 +29,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "buildS": "react-scripts build && react-snap",
+    "dd": "yarn build && yarn deploy",
     "deploy": "aws s3 sync build/ s3://lakemonroeboatrental.com && aws s3 sync build/ s3://www.lakemonroeboatrental.com",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

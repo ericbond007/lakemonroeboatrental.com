@@ -1,4 +1,12 @@
 .header {
-  background: #080808;
+  background: #5353C2;
   text-align: center;
+}
+
+.header  a {
+  color: white;
+}
+
+.ulNav {
+  margin-top: 1rem;
 }

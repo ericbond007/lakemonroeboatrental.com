@@ -8,6 +8,7 @@
 
 .header {
   grid-area: header;
+  height: 4rem;
 }
 
 .content {
@@ -24,6 +25,7 @@
 }
 
 .main-wrapper {
+  background: #C2C2F2;
   display: grid;
   grid-template-areas:
     "header"
