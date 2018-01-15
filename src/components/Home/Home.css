@@ -1,4 +1,4 @@
-@media only screen and (max-width: 76px) {
+@media only screen and (min-width: 1000px) {
   .logo {
     text-align: center;
     width: 70%;
@@ -7,6 +7,7 @@
   }
 
   .lmbrMap {
+    width: 50%;
     max-width: 80%;
     margin: auto;
   }

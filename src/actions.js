@@ -35,7 +35,7 @@ export function getContact(contact) {
   }
 }
 
-export getHours(hours) {
+export function getHours(hours) {
   return {
     type: GET_HOURS, hours
   }

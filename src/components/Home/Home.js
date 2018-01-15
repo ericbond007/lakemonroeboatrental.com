@@ -26,7 +26,9 @@ class Home extends Component {
                 812-837-9474
               </h2>
               Located just south east of Bloomingtion in Paynetown State Recreational Area
+              <div>
               <img src="lmbrMap-min.png" className="boxedShadow lmbrMap" alt="Map of LMBR"/>
+            </div>
             <Boats />
           </div>
       </div>

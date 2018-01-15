@@ -1,3 +1,4 @@
+import { combineReducers } from 'redux'
 import {
   GET_BOATS,
   GET_BOAT_BY_NAME,
@@ -18,7 +19,7 @@ function lmbr(state = initialState, action) {
       return { 
         ...state, boats: action.boats
       }
-    case GET_BOATS_BY_NAME:
+    case GET_BOAT_BY_NAME:
       return {
         ...state, boat: action.boatname
       }
@@ -27,3 +28,9 @@ function lmbr(state = initialState, action) {
       
   }
 }
+
+const rootReducer = combineReducers({
+  lmbr
+})
+
+export default rootReducer

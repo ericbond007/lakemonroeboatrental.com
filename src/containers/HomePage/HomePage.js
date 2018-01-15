@@ -23,18 +23,10 @@ class HomePage extends Component {
     return (
       <div>
         <Home />
-        <button onClick={() => this.props.changePage()}>Go to</button>
       </div>
     );
   }
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({
-  changePage: () => push('/boats')
-}, dispatch)
 
-
-export default connect(
-  null,
-  mapDispatchToProps
-)(HomePage);
+export default HomePage;
