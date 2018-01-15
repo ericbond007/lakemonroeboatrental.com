@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from 'reactbulma';
 
 import PropTypes from 'prop-types';
 
 
-class BoatLink extends Component {
+class HomeBoatLink extends Component {
 
 
   render() {
@@ -14,10 +15,9 @@ class BoatLink extends Component {
       pathname: `/boats/${this.props.boatlink}`,
       state: {...this.props}
     }}>
-              <h2>
-                {this.props.boatlink}
-              </h2>
-              <img src={this.props.boatimg} alt={this.props.boatimgalt}/>
+    <Button info medium>
+      {this.props.buttonText}
+    </Button>
             </Link>
             </div>
     
@@ -25,9 +25,9 @@ class BoatLink extends Component {
   }
 }
 
-BoatLink.childContextTypes = {
+HomeBoatLink.childContextTypes = {
   boatname: PropTypes.string
 }
 
 
-export default BoatLink;
+export default HomeBoatLink;

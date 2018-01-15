@@ -1,5 +1,4 @@
 .header {
-  background: #5353C2;
   text-align: center;
 }
 
@@ -9,4 +8,10 @@
 
 .ulNav {
   margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  #navBarbig li{
+    flex-grow: .1
+  }
 }

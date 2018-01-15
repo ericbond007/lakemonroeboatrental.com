@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SEO from '../SEO';
 import Boats from './Boats';
+import { Section, Container, Title, SubTitle } from 'reactbulma';
 
 import './Home.css';
 
@@ -16,21 +17,19 @@ class Home extends Component {
           description="Located in Paynetown SRA"
           path="/"
         />
-      
-      <div className="content">
-              <h1 className="landingTitle">Lake Monroe Boat Rental</h1>
-              <h2>
-                Call to Reserve Today!
-              </h2>
-              <h2>
+        <Section className="home">
+          <Container>
+            <Title>Lake Monroe Boat Rental</Title>
+            <SubTitle> Call to Reserve Today!
                 812-837-9474
-              </h2>
-              Located just south east of Bloomingtion in Paynetown State Recreational Area
+              </SubTitle>
+              <h3>Located just south east of Bloomingtion in Paynetown State Recreational Area</h3>
               <div>
               <img src="lmbrMap-min.png" className="boxedShadow lmbrMap" alt="Map of LMBR"/>
             </div>
             <Boats />
-          </div>
+          </Container>
+        </Section>
       </div>
     );
   }

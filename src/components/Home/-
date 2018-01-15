@@ -31,16 +31,6 @@
   text-align: center;
 }
 
-.boatButtons {
-  text-align: center;
-}
-
-.boatButtons button {
-  text-align: center;
-  max-width: 80%;
-  width: 100%;
-}
 .boatButtons a {
-  padding: 0.5rem;
   display: block;
 }

@@ -7,12 +7,10 @@
 /*CSS Grid Definition*/
 
 .header {
-  grid-area: header;
   height: 4rem;
 }
 
 .content {
-  grid-area: content;
   text-align: center;
 }
 
@@ -21,14 +19,8 @@
 }
 
 .footer {
-  grid-area: footer;
 }
 
 .main-wrapper {
   background: #C2C2F2;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
 }

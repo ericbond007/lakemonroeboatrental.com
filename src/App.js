@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="main-wrapper">
+        <div>
           <AppBar />
           <Route exact path="/" component={withTracker(HomePage)} />
             <Route path="/boats" component={withTracker(BoatsPage)} />
