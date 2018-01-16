@@ -1,10 +1,23 @@
 @import 'bulma/sass/utilities/initial-variables';
 @import 'bulma/sass/utilities/functions';
 
-$blue: #6666ff;
+$base-blue: #6666ff;
+$dark-blue: #1B1BFC;
+$light-blue: #8B8BFF;
+$lighter-blue: #B8B8FF;
 
 
-$primary: $blue;
+$primary: $base-blue;
+
+$family-serif: "Merriweather", "Georgia", serif;
+
+$gray-blue: #B8B8FF;
+
+
+$tabs-border-bottom-color: $lighter-blue;
+
+$tabs-link-active-color: #000;
+$tabs-link-hover-border-bottom-color: $dark-blue;
 
 @import 'bulma/bulma.sass';
 
