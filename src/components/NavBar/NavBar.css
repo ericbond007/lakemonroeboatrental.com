@@ -1,3 +1,7 @@
+/*Set Colors*/
+/*Set Typeface */
+/*Nav Tabs variables*/
+/*Footer vars */
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -6501,8 +6505,11 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: whitesmoke;
+  background-color: #B8B8FF;
   padding: 3rem 1.5rem 6rem; }
+
+.tabs ul {
+  background-color: #B8B8FF; }
 
 .header {
   text-align: center; }

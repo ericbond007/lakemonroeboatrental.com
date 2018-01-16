@@ -1,23 +1,25 @@
 @import 'bulma/sass/utilities/initial-variables';
 @import 'bulma/sass/utilities/functions';
 
+/*Set Colors*/
 $base-blue: #6666ff;
 $dark-blue: #1B1BFC;
 $light-blue: #8B8BFF;
 $lighter-blue: #B8B8FF;
-
-
 $primary: $base-blue;
-
-$family-serif: "Merriweather", "Georgia", serif;
-
 $gray-blue: #B8B8FF;
 
+/*Set Typeface */
+$family-serif: "Merriweather", "Georgia", serif;
 
+/*Nav Tabs variables*/
 $tabs-border-bottom-color: $lighter-blue;
-
 $tabs-link-active-color: #000;
 $tabs-link-hover-border-bottom-color: $dark-blue;
+
+/*Footer vars */
+$footer-background-color: $lighter-blue;
+
 
 @import 'bulma/bulma.sass';
 
