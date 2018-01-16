@@ -9,7 +9,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Tabs centered fullwidth  medium>
+      <Tabs centered fullwidth  medium id="noscroll">
         <ul id="navBarbig">
           <li><Link to="/" >LMBR</Link></li>
             <li ><Link to="/boats">Boats</Link></li>

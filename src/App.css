@@ -1,26 +1,15 @@
 .App {
-  text-align: center;
-
-}
-
+  text-align: center; }
 
 /*CSS Grid Definition*/
-
 .header {
-  height: 4rem;
-}
+  height: 4rem; }
 
 .content {
-  text-align: center;
-}
+  text-align: center; }
 
 .content > img {
-  max-width: 80%;
-}
-
-.footer {
-}
+  max-width: 80%; }
 
 .main-wrapper {
-  background: #C2C2F2;
-}
+  background: #C2C2F2; }
