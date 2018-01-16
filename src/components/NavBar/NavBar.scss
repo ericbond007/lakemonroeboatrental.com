@@ -1,0 +1,28 @@
+.header {
+  text-align: center;
+}
+
+.header  a {
+  color: white;
+}
+
+.ulNav {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  #navBarbig li{
+    flex-grow: .1
+  }
+}
+
+#noscroll {
+  overflow-x: hidden;
+}
+
+#noscroll a {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

@@ -12,6 +12,7 @@ import AppBar from './containers/AppBar/AppBar';
 import Footer from './components/Footer/Footer';
 import withTracker from './components/withTracker';
 
+import './bulmaVars.css';
 import 'normalize.css';
 
 import './App.css';

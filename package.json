@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://d3bmmhylkdo5y1.cloudfront.net/",
   "dependencies": {
+    "bulma": "^0.6.2",
     "history": "^4.7.2",
     "node-sass-chokidar": "^0.0.3",
     "normalize.css": "^7.0.0",
@@ -27,7 +28,9 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "redux-wordpress": "^1.1.0"
+    "redux-wordpress": "^1.1.0",
+    "sass": "^1.0.0-beta.4",
+    "sass-loader": "^6.0.6"
   },
   "reactSnap": {
     "skipThirdPartyRequests": true,
@@ -40,8 +43,8 @@
     "startjs": "react-scripts start",
     "start": "npm-run-all -p watchcss startjs",
     "snap": "react-snap",
-    "buildcss": "node-sass-chokidar src/ -o src/",
-    "watchcss": "npm run buildcss && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "buildcss": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watchcss": "npm run buildcss && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "buildjs": "react-scripts build",
     "build": "npm-run-all -p buildcss buildjs",
     "buildS": "react-scripts build && react-snap",

@@ -1,28 +1,40 @@
 .footer {
   background-color: #043025;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+}
+
 
 .footer a {
-  color: #fff; }
+  color: #fff;
+}
 
 .footUl {
   display: inline-block;
   float: none;
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 .footUl li {
   float: left;
   display: block;
-  position: relative; }
+  position: relative;
+}
 
 .rowBehave {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+}
+
+
 
 .footUl i {
   padding: unset;
   padding-left: 1rem;
   padding-right: 1rem;
-  font-size: 2.6rem; }
+  font-size: 2.6rem;
+}
+
+@media only screen and (min-width: 767px) {
+}
