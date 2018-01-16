@@ -17,6 +17,14 @@ class HomePage extends Component {
           boats: res
         })
       })
+    let policies = "https://balcarth.com/wordpress/wp-json/wp/v2/br_policies?_embed";
+    fetch (policies)
+      .then(res => res.json())
+      .then(res => {
+        this.setState({
+          policies: res
+        })
+      })
 
   }
   render() {

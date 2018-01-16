@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SEO from '../SEO';
-
+import { Section, Container, Title, SubTitle } from 'reactbulma';
 import './Policies.css';
 
 class Policies extends Component {
@@ -12,22 +12,22 @@ class Policies extends Component {
   }
   
   componentDidMount() {
-    function isPolicies(policy) {
-      return policy.slug === 'policies';
-    }
-    let dataURL = "https://balcarth.com/wordpress/wp-json/wp/v2/pages?_embed";
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        let policies = res.filter(isPolicies);
-        let policy = policies[0].content.rendered;
-        this.setState({
-          policy: policy
+    let policies = "https://balcarth.com/wordpress/wp-json/wp/v2/br_policies?_embed";
+    fetch (policies)
+      .then(result => result.json())
+      .then(result => {
+        this.setState ({
+          policies: result
         })
       })
   }
 
   render() {
+    let allpols = this.state.policies.map((policy, key) => (
+      <p key={key}>{policy}</p>
+    ));
+    
+
     return (
       <div>
         <SEO
@@ -36,11 +36,14 @@ class Policies extends Component {
           path="/"
         />
       
-      <div className="content">
-              <h1 className="landingTitle">Policies</h1>
-              <p>{this.state.policy}</p>
+      <Section className="policies">
+        <Container>
+          <Title> Policies</Title>
+          <div>
+          </div>
+        </Container>
+      </Section>
 
-            </div>
       </div>
 
     );
