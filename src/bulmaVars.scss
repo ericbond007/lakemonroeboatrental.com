@@ -2,23 +2,24 @@
 @import 'bulma/sass/utilities/functions';
 
 /*Set Colors*/
-$base-blue: #6666ff;
-$dark-blue: #1B1BFC;
-$light-blue: #8B8BFF;
-$lighter-blue: #B8B8FF;
+$base-blue: #2626FF;
+$dark-blue: #000098;
+$light-blue: #1097FF;
 $primary: $base-blue;
-$gray-blue: #B8B8FF;
+$text-blue: #A9DAFF;
 
 /*Set Typeface */
 $family-serif: "Merriweather", "Georgia", serif;
 
 /*Nav Tabs variables*/
-$tabs-border-bottom-color: $lighter-blue;
-$tabs-link-active-color: #000;
+$tabs-border-bottom-color: $base-blue;
+$tabs-link-active-color: #fff;
+$tabs-link-hover-color: #fff;
+$tabs-link-color: #fff;
 $tabs-link-hover-border-bottom-color: $dark-blue;
 
 /*Footer vars */
-$footer-background-color: $lighter-blue;
+$footer-background-color: $base-blue;
 
 
 @import 'bulma/bulma.sass';

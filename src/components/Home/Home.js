@@ -19,10 +19,11 @@ class Home extends Component {
         />
         <Section className="home">
           <Container>
-            <Title>Lake Monroe Boat Rental</Title>
-            <SubTitle> Call to Reserve Today!
+            <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
+            <h2 className="subtitle is-3"> Call to Reserve Today!</h2>
+            <h3>
                 812-837-9474
-              </SubTitle>
+              </h3>
               <h3>Located just south east of Bloomingtion in Paynetown State Recreational Area</h3>
               <div>
               <img src="lmbrMap-min.png" className="boxedShadow lmbrMap" alt="Map of LMBR"/>

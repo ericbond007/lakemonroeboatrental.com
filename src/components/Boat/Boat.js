@@ -15,6 +15,7 @@ class Boat extends Component {
 
 
   componentDidMount(props) {
+    window.scrollTo(0, 0);
       let allboats = this.props.location.state.boats;
       let boatname = this.props.location.state.boatname;
 

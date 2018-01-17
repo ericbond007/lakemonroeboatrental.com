@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import BoatLink from '../BoatLink/BoatLink';
 import SEO from '../SEO';
+import { Section, Container, Title, SubTitle } from 'reactbulma';
 
 import './Boats.css';
 
@@ -32,7 +33,8 @@ class Boats extends Component {
           path="/"
         />
       
-      <div className="content boatsPage">
+      <Section className="boatsPage">
+        <Container>
               <h1 className="landingTitle">Boats For Rent</h1>
               <BoatLink boatname="Double Decker" boatimg="doubleDecker.jpg" boatimgalt="Double Decker" boatlink="doubledecker"  {...this.state} />
               <BoatLink boatname="20-pontoon" boatimg="doubleDecker.jpg" boatimgalt="20' Pontoon" boatlink="20-pontoon"  {...this.state} />
@@ -54,8 +56,9 @@ class Boats extends Component {
               </h2>
               <img src="doubleDecker.jpg"  alt="Double Decker"/>
 
-            </div>
-      </div>
+            </Container>
+          </Section>
+        </div>
 
     );
   }

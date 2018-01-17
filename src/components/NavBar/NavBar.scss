@@ -1,7 +1,11 @@
 @import '../../bulmaVars.scss';
 
 .tabs ul {
-  background-color: $lighter-blue;
+  background-color: $base-blue;
+}
+
+.tabs a:hover {
+  color: #fff;
 }
 
 .header {
@@ -34,10 +38,19 @@
 }
 
 a:hover {
-  background-color: $light-blue;
+  background-color: $dark-blue;
 }
 
 a:focus {
-  background-color: $light-blue;
+  background-color: $dark-blue;
 
+}
+
+.tabs {
+  box-shadow: 0px 2px 15px 2px;
+  opacity: .7;
+}
+
+.appBar {
+  padding-bottom: 5rem;
 }
