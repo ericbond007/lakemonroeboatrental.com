@@ -6,16 +6,25 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 const rootElement = document.getElementById('root');
+
+const renderApp = Component => {
 if (rootElement.hasChildNodes()) {
   hydrate(
-        <App />,
+    <BrowserRouter>
+        <Component />
+    </BrowserRouter>,
     rootElement
   );
 } else {
   render(
-        <App />,
+    <BrowserRouter>
+        <Component />
+    </BrowserRouter>,
     rootElement
   );
 }
+}
+
+renderApp(App);
 
 registerServiceWorker();

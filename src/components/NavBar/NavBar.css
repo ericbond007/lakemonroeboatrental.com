@@ -6508,6 +6508,24 @@ label.panel-block {
   background-color: #2626FF;
   padding: 3rem 1.5rem 6rem; }
 
+.fade-appear,
+.fade-enter {
+  transform: translate(100%); }
+
+.fade-appear-active,
+.fade-enter-active {
+  /*transition: opacity 2s linear;*/
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out; }
+
+.fade-exit {
+  /*transition: opacity 1.2s linear;*/
+  transform: translate(0%); }
+
+.fade-exit-active {
+  transition: transform 1000ms ease-in-out;
+  transform: translate(0%); }
+
 .tabs ul {
   background-color: #2626FF; }
 
@@ -6548,3 +6566,6 @@ a:focus {
 
 .appBar {
   padding-bottom: 5rem; }
+
+.is-sticky {
+  padding-bottom: 3rem; }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnimatedWrapper from '../../AnimatedWrapper';
 import { push } from 'react-router-redux';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -6,7 +7,7 @@ import { connect } from 'react-redux';
 import Home from '../../components/Home/Home';
 /*import Home from './Home';*/
 
-class HomePage extends Component {
+class HomeWrapper extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     let dataURL = "https://balcarth.com/wordpress/wp-json/wp/v2/boats?_embed";
@@ -29,10 +30,12 @@ class HomePage extends Component {
   }
   render() {
     return (
-        <Home />
+      <Home />
     );
   }
 }
+
+const HomePage = AnimatedWrapper(HomeWrapper);
 
 
 export default HomePage;

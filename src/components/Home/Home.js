@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import SEO from '../SEO';
 import Boats from './Boats';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
+import AnimatedWrapper from '../../AnimatedWrapper';
 
 import './Home.css';
 
-class Home extends Component {
+class HomeWrapper extends Component {
   
 
   render() {
@@ -28,12 +29,13 @@ class Home extends Component {
               <div>
               <img src="lmbrMap-min.png" className="boxedShadow lmbrMap" alt="Map of LMBR"/>
             </div>
-            <Boats />
           </Container>
         </Section>
       </div>
     );
   }
 }
+
+const Home = HomeWrapper
 
 export default Home;

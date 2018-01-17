@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
 
 import './NavBar.css';
 
-const NavBar = () => (
+class NavBar extends Component {
+  state = {
+    sticky: false,
+  };
+
+  onSticky = (sticky: boolean) => {
+  };
+
+  render() {
+    return (
   <StickyHeader
+      {...this.props}
+  onSticky={this.onSticky}
     header={
                 <div className="tabs is-centered is-fullwidth is-medium" id="noscroll">
                   <ul id="navBarbig">
@@ -21,7 +32,9 @@ const NavBar = () => (
     }
   >
   </StickyHeader>
-
-);
+    
+    );
+  }
+}
 
 export default NavBar;

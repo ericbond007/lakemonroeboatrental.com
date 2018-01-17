@@ -1,5 +1,5 @@
-@import 'bulma/sass/utilities/initial-variables';
-@import 'bulma/sass/utilities/functions';
+@import 'bulma/sass/utilities/initial-variables.sass';
+@import 'bulma/sass/utilities/functions.sass';
 
 /*Set Colors*/
 $base-blue: #2626FF;
@@ -24,3 +24,24 @@ $footer-background-color: $base-blue;
 
 @import 'bulma/bulma.sass';
 
+.fade-appear,
+.fade-enter {
+  transform: translate(100%);
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  /*transition: opacity 2s linear;*/
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.fade-exit {
+  /*transition: opacity 1.2s linear;*/
+  transform: translate(0%);
+}
+
+.fade-exit-active {
+  transition: transform 1000ms ease-in-out;
+  transform: translate(0%);
+}

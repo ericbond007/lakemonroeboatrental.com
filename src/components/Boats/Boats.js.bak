@@ -37,6 +37,9 @@ class BoatsWrapper extends Component {
       <Section className="boatsPage">
         <Container>
               <h1 className="landingTitle">Boats For Rent</h1>
+              <BoatLink boatname="Double Decker" boatimg="doubleDecker.jpg" boatimgalt="Double Decker" boatlink="doubledecker"  {...this.state} />
+              <BoatLink boatname="20-pontoon" boatimg="doubleDecker.jpg" boatimgalt="20' Pontoon" boatlink="20-pontoon"  {...this.state} />
+              <BoatLink boatname="ski-boat" boatimg="skiBoat.jpg" boatimgalt="SKi Boat" boatlink="ski-boat"  {...this.state} />
               <h2>
                Jet Skis 
               </h2>
