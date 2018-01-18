@@ -1,7 +1,11 @@
 @import '../../bulmaVars.scss';
 
 .tabs ul {
-  background-color: $base-blue;
+  background-image: linear-gradient(to top, #8585FF 0%, #2626FF 100%)
+}
+
+.active {
+  background-color: blue;
 }
 
 .tabs a:hover {
@@ -48,7 +52,7 @@ a:focus {
 
 .tabs {
   box-shadow: 0px 2px 15px 2px;
-  opacity: .7;
+  opacity: .98;
 }
 
 .appBar {

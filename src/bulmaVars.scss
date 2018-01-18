@@ -12,11 +12,11 @@ $text-blue: #A9DAFF;
 $family-serif: "Merriweather", "Georgia", serif;
 
 /*Nav Tabs variables*/
-$tabs-border-bottom-color: $base-blue;
+$tabs-border-bottom-color: $light-blue;
 $tabs-link-active-color: #fff;
 $tabs-link-hover-color: #fff;
 $tabs-link-color: #fff;
-$tabs-link-hover-border-bottom-color: $dark-blue;
+$tabs-link-hover-border-bottom-color: $light-blue;
 
 /*Footer vars */
 $footer-background-color: $base-blue;
@@ -29,28 +29,6 @@ $footer-background-color: $base-blue;
 
 
 @import 'bulma/bulma.sass';
-
-.fade-appear,
-.fade-enter {
-  transform: translate(100%);
-}
-
-.fade-appear-active,
-.fade-enter-active {
-  /*transition: opacity 2s linear;*/
-  transform: translate(0%);
-  transition: transform 1000ms ease-in-out;
-}
-
-.fade-exit {
-  /*transition: opacity 1.2s linear;*/
-  transform: translate(0%);
-}
-
-.fade-exit-active {
-  transition: transform 1000ms ease-in-out;
-  transform: translate(0%);
-}
 
 .react-swipeable-view-container div{
   overflow: hidden !important;

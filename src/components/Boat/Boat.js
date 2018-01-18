@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Section, Container, Title, SubTitle } from 'reactbulma';
+
 import SEO from '../SEO';
 
 
@@ -55,7 +57,8 @@ class Boat extends Component {
 
 render() {
   return (
-  <div className="content">
+  <Section className="content">
+    <Container>
     <h1 className="boatHeader">
       {this.props.location.state.boatname}
     </h1>
@@ -79,7 +82,8 @@ render() {
       {this.state.rates_weekly ? <p>Weekly: {this.state.rates_weekly} </p> : null}
       
     </div>
-  </div>
+  </Container>
+  </Section>
   
   );
 }
