@@ -15,7 +15,6 @@ import Home from './components/Home/Home';
 import Layout from './components/Layout/Layout';
 
 import './bulmaVars.css';
-import 'animate.css';
 
 import './App.css';
 
