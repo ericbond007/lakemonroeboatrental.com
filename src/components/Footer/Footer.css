@@ -4985,7 +4985,7 @@ label.panel-block {
     margin-bottom: 1.5rem; }
   .tabs a {
     align-items: center;
-    border-bottom-color: #1097FF;
+    border-bottom-color: #8585FF;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     color: #fff;
@@ -4995,7 +4995,7 @@ label.panel-block {
     padding: 0.5em 1em;
     vertical-align: top; }
     .tabs a:hover {
-      border-bottom-color: #1097FF;
+      border-bottom-color: #8585FF;
       color: #fff; }
   .tabs li {
     display: block; }
@@ -5004,7 +5004,7 @@ label.panel-block {
       color: #fff; }
   .tabs ul {
     align-items: center;
-    border-bottom-color: #1097FF;
+    border-bottom-color: #8585FF;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     display: flex;
@@ -6518,7 +6518,8 @@ label.panel-block {
 
 .footer {
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  background-image: linear-gradient(to top, #3273dc 0%, #8585FF 100%); }
 
 .footer a {
   color: #fff; }

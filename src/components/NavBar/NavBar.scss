@@ -1,7 +1,7 @@
 @import '../../bulmaVars.scss';
 
 .tabs ul {
-  background-image: linear-gradient(to top, #8585FF 0%, #2626FF 100%)
+  background-image: linear-gradient(to top, $blue  0%, $light-blue 100%)
 }
 
 .active {
