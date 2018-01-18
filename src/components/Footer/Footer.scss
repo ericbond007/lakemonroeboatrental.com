@@ -4,8 +4,10 @@
 .footer {
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(to top, $blue  0%, $light-blue 100%);
   box-shadow: 0px -2px 15px 2px rgba(74, 74, 74, 1);
+  background: -webkit-linear-gradient(24deg, rgb(0, 0, 152), rgb(38, 38, 255));
+background: linear-gradient(24deg, rgb(0, 0, 152), rgb(38, 38, 255));
+
 }
 
 
