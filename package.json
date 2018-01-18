@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://d3bmmhylkdo5y1.cloudfront.net/",
   "dependencies": {
+    "animate-sass": "^0.8.2",
     "animated": "^0.2.1",
     "bulma": "^0.6.2",
     "history": "^4.7.2",
