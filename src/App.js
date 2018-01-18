@@ -29,11 +29,11 @@ const App = ({ location }) => {
     <Router>
     <Layout>
     <SwipeableRoutes>
-              <Route path="/" exact component={HomePage} />
-              <Route path="/boats" component={BoatsPage} />
               <Route path="/rates" component={RatesPage} />
-              <Route path="/policies" component={PoliciesPage} />
+              <Route path="/boats" component={BoatsPage} />
+              <Route path="/" exact component={HomePage} />
               <Route path="/contact" component={ContactPage} />
+              <Route path="/policies" component={PoliciesPage} />
     </SwipeableRoutes>
     </Layout>
     </Router>

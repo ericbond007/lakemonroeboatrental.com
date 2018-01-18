@@ -21,11 +21,11 @@ class NavBar extends Component {
     header={
                 <div className="tabs is-centered is-fullwidth is-medium" id="noscroll">
                   <ul id="navBarbig">
-                    <li><NavLink  exact activeClassName="active" to="/" >LMBR</NavLink></li>
-                      <li ><NavLink activeClassName="active" to="/boats">Boats</NavLink></li>
                       <li ><NavLink activeClassName="active" to="/rates">Rates</NavLink></li>
-                      <li ><NavLink activeClassName="active" to="/policies">Policies</NavLink></li>
+                      <li ><NavLink activeClassName="active" to="/boats">Boats</NavLink></li>
+                    <li><NavLink  exact activeClassName="active" to="/" >LMBR</NavLink></li>
                       <li ><NavLink activeClassName="active" to="/contact" >Contact</NavLink></li>
+                      <li ><NavLink activeClassName="active" to="/policies">Policies</NavLink></li>
                     </ul>
                   </div>
   

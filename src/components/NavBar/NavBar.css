@@ -6517,7 +6517,9 @@ label.panel-block {
   overflow: hidden !important; }
 
 .tabs ul {
-  background-image: linear-gradient(to top, #3273dc 0%, #8585FF 100%); }
+  background: -webkit-linear-gradient(24deg, #000098, #2626ff);
+  background: linear-gradient(24deg, #000098, #2626ff);
+  border-bottom: none !important; }
 
 .active {
   background-color: blue; }
@@ -6554,7 +6556,7 @@ a:focus {
   background-color: #000098; }
 
 .tabs {
-  box-shadow: 0px 2px 15px 2px;
+  box-shadow: 0px 2px 36px 2px;
   opacity: .98; }
 
 .appBar {

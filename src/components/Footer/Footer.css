@@ -6519,7 +6519,8 @@ label.panel-block {
 .footer {
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(to top, #3273dc 0%, #8585FF 100%); }
+  background-image: linear-gradient(to top, #3273dc 0%, #8585FF 100%);
+  box-shadow: 0px -2px 15px 2px #4a4a4a; }
 
 .footer a {
   color: #fff; }
