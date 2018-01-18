@@ -49,7 +49,7 @@
     "snap": "react-snap",
     "buildcss": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watchcss": "npm run buildcss && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "buildjs": "react-scripts build",
+    "buildjs": "react-scripts build && rm build/static/js/*.map && rm build/static/css/*.map",
     "build": "npm-run-all -p buildcss buildjs",
     "buildS": "react-scripts build && react-snap",
     "dd": "yarn build && yarn deploy",

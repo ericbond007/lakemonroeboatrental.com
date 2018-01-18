@@ -21,6 +21,12 @@ $tabs-link-hover-border-bottom-color: $dark-blue;
 /*Footer vars */
 $footer-background-color: $base-blue;
 
+.section {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+
 
 @import 'bulma/bulma.sass';
 
@@ -45,3 +51,8 @@ $footer-background-color: $base-blue;
   transition: transform 1000ms ease-in-out;
   transform: translate(0%);
 }
+
+.react-swipeable-view-container div{
+  overflow: hidden !important;
+}
+

@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import SEO from '../SEO';
 import Boats from './Boats';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
-import AnimatedWrapper from '../../AnimatedWrapper';
 
 import './Home.css';
 
-class HomeWrapper extends Component {
+class Home extends Component {
   
 
   render() {
@@ -36,6 +35,5 @@ class HomeWrapper extends Component {
   }
 }
 
-const Home = HomeWrapper
 
 export default Home;

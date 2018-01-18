@@ -2,6 +2,11 @@
 /*Set Typeface */
 /*Nav Tabs variables*/
 /*Footer vars */
+.section {
+  text-align: center;
+  padding-top: 3rem;
+  margin-top: 3rem; }
+
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -6525,6 +6530,9 @@ label.panel-block {
 .fade-exit-active {
   transition: transform 1000ms ease-in-out;
   transform: translate(0%); }
+
+.react-swipeable-view-container div {
+  overflow: hidden !important; }
 
 .footer {
   text-align: center;

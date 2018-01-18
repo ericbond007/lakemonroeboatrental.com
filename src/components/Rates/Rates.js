@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import SEO from '../SEO';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css'
+import { Section, Container, Title, SubTitle } from 'reactbulma';
+
 
 
 
@@ -132,7 +134,8 @@ class Rates extends Component {
           path="/"
         />
       
-      <div className="content">
+      <Section className="content">
+      <Container>
               <h1 className="landingTitle">Pricelist</h1>
               <ReactTable
                 data={data}
@@ -144,8 +147,8 @@ class Rates extends Component {
                 resizable={false}
 
               />
-
-            </div>
+        </Container>
+            </Section>
       </div>
 
     );
