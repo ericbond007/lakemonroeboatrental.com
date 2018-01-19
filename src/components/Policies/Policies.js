@@ -12,14 +12,6 @@ class Policies extends Component {
   }
   
   componentDidMount() {
-    let policies = "https://balcarth.com/wordpress/wp-json/wp/v2/br_policies?_embed";
-    fetch (policies)
-      .then(result => result.json())
-      .then(result => {
-        this.setState ({
-          policies: result
-        })
-      })
   }
 
   render() {

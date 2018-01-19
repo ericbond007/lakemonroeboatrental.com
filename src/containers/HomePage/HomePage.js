@@ -1,38 +1,42 @@
 import React, { Component } from 'react';
-import { push } from 'react-router-redux';
-import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import * as boatActions from '../../actions/boatActions';
+import SEO from '../../components/SEO';
 
 import Home from '../../components/Home/Home';
-/*import Home from './Home';*/
+import BoatList from '../../components/BoatList/BoatList';
 
 class HomePage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
-    let dataURL = "https://balcarth.com/wordpress/wp-json/wp/v2/boats?_embed";
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          boats: res
-        })
-      })
-    let policies = "https://balcarth.com/wordpress/wp-json/wp/v2/br_policies?_embed";
-    fetch (policies)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          policies: res
-        })
-      })
-
   }
+
   render() {
     return (
+      <div>
+       <SEO
+          title="Lake Monroe Boat Rental"
+          description="Located in Paynetown SRA"
+          path="/"
+        />
+
       <Home />
+      <BoatList boats={this.props.boats} />
+    </div>
     );
   }
+  }
+
+HomePage.propTypes = {
+  boats: PropTypes.array.isRequired
+};
+
+function mapStateToProps(state, ownProps) {
+  return {
+    boats: state.boats
+  };
 }
 
 
-export default HomePage;
+export default connect(mapStateToProps)(HomePage);

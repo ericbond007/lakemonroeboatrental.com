@@ -13,14 +13,6 @@ class Boats extends Component {
   }
 
    componentDidMount() {
-    let dataURL = "https://balcarth.com/wordpress/wp-json/wp/v2/boats?_embed";
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          boats: res
-        })
-      })
   }
 
   render() {

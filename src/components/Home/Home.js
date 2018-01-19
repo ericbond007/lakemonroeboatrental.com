@@ -17,11 +17,6 @@ class Home extends Component {
 
     return (
       <div>
-        <SEO
-          title="Lake Monroe Boat Rental"
-          description="Located in Paynetown SRA"
-          path="/"
-        />
         <Section className="home">
           <Container>
             <div className="animated fadeIn slideInUp">

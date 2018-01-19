@@ -15,14 +15,6 @@ class BoatsWrapper extends Component {
   }
   
   componentDidMount() {
-    let dataURL = "https://balcarth.com/wordpress/wp-json/wp/v2/boats?_embed";
-    fetch(dataURL)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          boats: res
-        })
-      })
   }
 
   render() {
@@ -36,7 +28,7 @@ class BoatsWrapper extends Component {
       
       <Section className="boatsPage">
         <Container>
-              <h1 className="landingTitle">Boats For Rent</h1>
+              <h1 className="title is-1 is-spaced">Boats For Rent</h1>
               <BoatLink boatname="Double Decker" boatimg="doubleDecker.jpg" boatimgalt="Double Decker" boatlink="doubledecker"  {...this.state} />
               <BoatLink boatname="20-pontoon" boatimg="doubleDecker.jpg" boatimgalt="20' Pontoon" boatlink="20-pontoon"  {...this.state} />
               <BoatLink boatname="ski-boat" boatimg="skiBoat.jpg" boatimgalt="SKi Boat" boatlink="ski-boat"  {...this.state} />
