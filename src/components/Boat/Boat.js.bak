@@ -16,10 +16,10 @@ class Boat extends Component {
 
   componentDidMount(props) {
     window.scrollTo(0, 0);
-      let allboats = this.props.boats;
-      let boatname = this.props.boatname;
+      let allboats = this.props.location.state.boats;
+      let boatname = this.props.location.state.boatname;
 
-    function isCurrentboat(boat) {
+    {/*function isCurrentboat(boat) {
       return boat.acf.boatname === boatname;
     }
 
@@ -44,7 +44,7 @@ class Boat extends Component {
       deposit: boatacf.deposit,
       boatimage: boatacf.boat_image
     
-    });
+    });*/}
           
     
 
@@ -58,8 +58,9 @@ render() {
   <Section className="content">
     <Container>
     <h1 className="boatHeader">
-      {this.props.boatname}
+      {this.props.location.state.boatname}
     </h1>
+    <img src={'/' + this.props.location.state.boatimg} alt={this.props.location.state.boatimgalt} />
     <div>
       <h2>{this.state.max_capacity} Person Max Capacity</h2>
       <p>

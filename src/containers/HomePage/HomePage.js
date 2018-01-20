@@ -5,7 +5,7 @@ import * as boatActions from '../../actions/boatActions';
 import SEO from '../../components/SEO';
 
 import Home from '../../components/Home/Home';
-import BoatList from '../../components/BoatList/BoatList';
+import ForRent from '../../components/Home/ForRent';
 
 class HomePage extends Component {
   componentDidMount() {
@@ -22,7 +22,7 @@ class HomePage extends Component {
         />
 
       <Home />
-      <BoatList boats={this.props.boats} />
+      <ForRent {...this.props} />
     </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Image from '../Image';
 
 import PropTypes from 'prop-types';
 
@@ -12,13 +13,13 @@ class BoatLink extends Component {
   <div>
     <Link to={{
       pathname: `/boats/${this.props.boatlink}`,
-      state: {...this.props}
     }}>
               <h2>
                 {this.props.boatlink}
               </h2>
-              <img src={this.props.boatimg} alt={this.props.boatimgalt}/>
+              <Image imgName={this.props.imgName} imgAlt={this.props.imgAlt} />
             </Link>
+            {this.props.boatname}
             </div>
     
     )

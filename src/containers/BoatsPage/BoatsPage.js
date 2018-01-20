@@ -1,17 +1,42 @@
-import React from 'react';
-import AnimatedWrapper from '../../AnimatedWrapper';
+import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Boats from '../../components/Boats/Boats';
-import Boat from '../../components/Boat/Boat';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import SEO from '../../components/SEO';
 
 
-const BoatsWrapper = () => (
-  <Switch>
-    <Route exact path='/boats' component={Boats}/>
-    <Route path='/boats/:boat' component={Boat}/>
-  </Switch>
-)
 
-const BoatsPage = AnimatedWrapper(BoatsWrapper);
+class BoatsPage extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
-export default BoatsPage;
+  render() {
+    return (
+      <div>
+      <SEO
+        title="Boats | Lake Monroe Boat Rental"
+        description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"
+        path="/boats"
+      />
+      <Boats /> 
+      {this.props.children}
+
+      </div>
+    );
+  }
+}
+
+BoatsPage.propTypes = {
+  boats: PropTypes.array.isRequired
+};
+
+function mapStateToProps(state, ownProps) {
+  return {
+    boats: state.boats
+  };
+}
+
+
+export default connect(mapStateToProps)(BoatsPage);

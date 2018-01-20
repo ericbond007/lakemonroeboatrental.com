@@ -29,9 +29,9 @@ class BoatsWrapper extends Component {
       <Section className="boatsPage">
         <Container>
               <h1 className="title is-1 is-spaced">Boats For Rent</h1>
-              <BoatLink boatname="Double Decker" boatimg="doubleDecker.jpg" boatimgalt="Double Decker" boatlink="doubledecker"  {...this.state} />
-              <BoatLink boatname="20-pontoon" boatimg="doubleDecker.jpg" boatimgalt="20' Pontoon" boatlink="20-pontoon"  {...this.state} />
-              <BoatLink boatname="ski-boat" boatimg="skiBoat.jpg" boatimgalt="SKi Boat" boatlink="ski-boat"  {...this.state} />
+              <BoatLink boatname="Double Decker" imgName="doubleDecker" mgAlt="Double Decker" boatlink="doubledecker">{this.props.children}</BoatLink>
+              <BoatLink boatname="20-pontoon" imgName="pontoon" imgAlt="20' Pontoon" boatlink="20-pontoon" />
+              <BoatLink boatname="ski-boat" imgName="skiBoat" imgAlt="Ski Boat" boatlink="ski-boat"/>
               <h2>
                Jet Skis 
               </h2>
