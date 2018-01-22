@@ -16,8 +16,8 @@ class Rates extends Component {
 
   render() {
     const data = [{
-      boat: '20ft Pontoon',
-      capacity: '8',
+      boat: 'Double Decker',
+      capacity: this.,
       onehour: '$55',
       xtrahour: '$40',
       fourhour: '$150',

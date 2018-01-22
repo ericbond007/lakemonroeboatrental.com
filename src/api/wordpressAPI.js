@@ -14,6 +14,14 @@ class wordpressAPI {
       return error;
     });
   }
+
+  static getRates() {
+    return fetch('https://balcarth.com/wordpress/wp-json/acf/v3/boats?_embed').then(response => {
+      return response.json();
+    }).catch(error => {
+      return error;
+    });
+  }
 }
 
 export default wordpressAPI;
