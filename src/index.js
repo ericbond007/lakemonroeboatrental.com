@@ -12,12 +12,14 @@ import './index.css';
 import { loadBoats } from './actions/boatActions';
 import { loadPolicies } from './actions/policyActions';
 import { loadRates } from './actions/ratesActions';
+import { loadHomepage } from './actions/homeActions';
 
 const store = configureStore();
 
 store.dispatch(loadBoats());
 store.dispatch(loadPolicies());
 store.dispatch(loadRates());
+store.dispatch(loadHomepage());
 
 const rootElement = document.getElementById('root');
 

@@ -12,12 +12,13 @@ import './Rates.css';
 class Rates extends Component {
   
   componentDidMount(prevProps) {
+    window.scrollTo(0, 0);
   }
 
   render() {
     const data = [{
       boat: 'Double Decker',
-      capacity: this.,
+      capacity: '24',
       onehour: '$55',
       xtrahour: '$40',
       fourhour: '$150',
@@ -128,11 +129,6 @@ class Rates extends Component {
     ]
     return (
       <div>
-        <SEO
-          title="Rates | Lake Monroe Boat Rental"
-          description="Located in Paynetown SRA"
-          path="/"
-        />
       
       <Section className="content">
       <Container>

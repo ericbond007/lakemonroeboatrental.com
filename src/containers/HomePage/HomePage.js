@@ -5,6 +5,7 @@ import * as boatActions from '../../actions/boatActions';
 import SEO from '../../components/SEO';
 
 import Home from '../../components/Home/Home';
+import HomeSlug from '../../components/Home/HomeSlug';
 import ForRent from '../../components/Home/ForRent';
 
 class HomePage extends Component {
@@ -21,7 +22,7 @@ class HomePage extends Component {
           path="/"
         />
 
-      <Home />
+      <Home {...this.props} />
       <ForRent {...this.props} />
     </div>
     );
@@ -34,7 +35,8 @@ HomePage.propTypes = {
 
 function mapStateToProps(state, ownProps) {
   return {
-    boats: state.boats
+    boats: state.boats,
+    homepage: state.homepage
   };
 }
 

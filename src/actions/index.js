@@ -25,3 +25,8 @@ export const getContact = (contact) => ({
   type: types.GET_CONTACT,
   contact
 })
+
+export const getHomePage = (homepage) => ({
+  type: types.GET_HOME_PAGE,
+  homepage
+})

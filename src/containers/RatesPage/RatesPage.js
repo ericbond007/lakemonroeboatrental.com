@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Rates from '../../components/Rates/Rates';
 import { connect } from 'react-redux'
+import SEO from '../../components/SEO';
 
 class RatesPage extends Component {
   componentDidMount() {
@@ -10,6 +11,11 @@ class RatesPage extends Component {
   render() {
     return (
       <div>
+        <SEO
+          title="Rates | Lake Monroe Boat Rental"
+          description="Rates page"
+          path="/rates"
+        />
         <Rates />
       </div>
     );

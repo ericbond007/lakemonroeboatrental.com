@@ -22,7 +22,7 @@ import './App.css';
 
 const App = ({ location }) => {
   return (
-    <Router>
+    <Router onUpdate={() => window.scrollTo(0, 0)}>
       <Layout>
         <SwipeableRoutes>
           <Route path="/rates" component={RatesPage} />

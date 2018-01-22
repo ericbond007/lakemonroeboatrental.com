@@ -4,18 +4,12 @@ import Boats from './Boats';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
 import Image from '../Image';
 import Call from '../Call';
+import HomeSlug from './HomeSlug';
 
 import './Home.css';
 
-class Home extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-  
-
-  render() {
-
-    return (
+const Home = (props) => {
+  return (
       <div>
         <Section className="home">
           <Container>
@@ -25,7 +19,8 @@ class Home extends Component {
             <h2 className="subtitle is-3"> Call to Reserve Today!</h2>
             <h3>
               <Call />
-              </h3>
+            </h3>
+            <HomeSlug homepage={props.homepage} />
               <h4>
                 Located just south east of Bloomingtion in Paynetown State Recreational Area
               </h4>
@@ -37,9 +32,10 @@ class Home extends Component {
           </Container>
         </Section>
       </div>
-    );
-  }
-}
+  
+  );
+
+};
 
 
 export default Home;

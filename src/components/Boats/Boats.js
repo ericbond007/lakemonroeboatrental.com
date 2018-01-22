@@ -6,7 +6,7 @@ import { Section, Container, Title, SubTitle } from 'reactbulma';
 
 import './Boats.css';
 
-class BoatsWrapper extends Component {
+class Boats extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -57,6 +57,5 @@ class BoatsWrapper extends Component {
   }
 }
 
-const Boats = AnimatedWrapper(BoatsWrapper);
 
 export default Boats;
