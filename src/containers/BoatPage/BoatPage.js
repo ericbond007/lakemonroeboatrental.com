@@ -6,12 +6,12 @@ import PropTypes from 'prop-types';
 import SEO from '../../components/SEO';
 
 
-
 class BoatPage extends Component {
   constructor(props) {
     super();
     this.state = {
-      ...props
+      ...props,
+      boat: {}
     }
   }
   componentDidMount() {
@@ -20,6 +20,7 @@ class BoatPage extends Component {
   }
 
   render() {
+    console.log(this.props.boat);
     return (
       <div>
       <SEO
@@ -27,32 +28,27 @@ class BoatPage extends Component {
         description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"
         path="/boats/boatname"
       />
-      <div className="container">
-        <div className="section">
-          <p>Boat info goes here</p>
-        </div>
-      </div>
+      <Boat boat={this.props.boat} />
       </div>
     );
   }
 }
 
 BoatPage.propTypes = {
-  boat: PropTypes.array.isRequired
+  boat: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
-  const boatname = ownProps.location.pathname.replace(/\/boats\//, '');
-  const boat = state.boats.filter(boat => boat.acf.boatname === boatname);
-  const boatarray = boat[0];
-  const boatacf = boatarray;
-  const boat_length = boatarray.acf.boat_length_and_type;
+  let boat = {boatname: '', max_capacity: ''};
+  const boats = state.boats;
+  let boatname = ownProps.location.pathname.replace(/\/boats\//, '');
+  if (state.boats) {
+    boat = state.boats.filter(boat => boat.acf.boatname === boatname);
+  }
   return {
-    boatacf: boatacf,
-    boatarray: boatarray,
-    boatname: boatname,
-    boat_length: boat_length
+    boat: boat
   };
+
 }
 
 

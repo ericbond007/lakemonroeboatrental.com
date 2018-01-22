@@ -8,6 +8,7 @@ const BoatSwitch = () => {
   <Switch>
     <Route path="/boats" exact component={BoatsPage} />
     <Route path="/boats/doubledecker" exact component={BoatPage} boatname="Double Decker" />
+    <Route path="/boats/20-pontoon" exact component={BoatPage} boatname="20-pontoon" />
     <Route path="/boats/jet-ski" exact component={BoatPage} boatname="Jet Ski" />
   </Switch>
   )
