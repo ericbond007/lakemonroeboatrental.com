@@ -28,14 +28,16 @@ class BoatPage extends Component {
         description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"
         path="/boats/boatname"
       />
+      {(this.props.boat) && 
       <Boat boat={this.props.boat} />
+      }
       </div>
     );
   }
 }
 
 BoatPage.propTypes = {
-  boat: PropTypes.object.isRequired
+  boat: PropTypes.array.isRequired
 };
 
 function mapStateToProps(state, ownProps) {

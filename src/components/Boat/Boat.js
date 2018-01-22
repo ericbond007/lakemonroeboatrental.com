@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
+import Image from '../Image';
 
 const Boat = ({boat}) => {
+  if (boat[0] !== undefined) {
   return (
     <Section className="content">
       <Container>
         <h1 className="boatHeader">
             {boat[0].acf.boat_length_and_type}
-        </h1>
+          </h1>
+          <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} />
         <div>
           <h2> {boat[0].acf.max_capacity} Person Max Capacity</h2>
           <p>
@@ -30,7 +33,9 @@ const Boat = ({boat}) => {
       </Container>
     </Section>
     );
+    } else {
+      return null;
+    }
     };
-
 
 export default Boat;
