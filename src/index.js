@@ -10,10 +10,12 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 import { loadBoats } from './actions/boatActions';
+import { loadPolicies } from './actions/policyActions';
 
 const store = configureStore();
 
 store.dispatch(loadBoats());
+store.dispatch(loadPolicies());
 
 const rootElement = document.getElementById('root');
 
