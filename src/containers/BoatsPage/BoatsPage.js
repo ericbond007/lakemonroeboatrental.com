@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Boats from '../../components/Boats/Boats';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import SEO from '../../components/SEO';
 
 
@@ -21,22 +19,12 @@ class BoatsPage extends Component {
         path="/boats"
       />
       <Boats /> 
-      {this.props.children}
 
       </div>
     );
   }
 }
 
-BoatsPage.propTypes = {
-  boats: PropTypes.array.isRequired
-};
-
-function mapStateToProps(state, ownProps) {
-  return {
-    boats: state.boats
-  };
-}
 
 
-export default connect(mapStateToProps)(BoatsPage);
+export default BoatsPage;

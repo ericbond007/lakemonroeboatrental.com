@@ -8,8 +8,15 @@ import SEO from '../../components/SEO';
 
 
 class BoatPage extends Component {
+  constructor(props) {
+    super();
+    this.state = {
+      ...props
+    }
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
+
   }
 
   render() {
@@ -22,8 +29,7 @@ class BoatPage extends Component {
       />
       <div className="container">
         <div className="section">
-      <p>Boat info goes here</p>
-      {this.props.boatname}
+          <p>Boat info goes here</p>
         </div>
       </div>
       </div>
@@ -36,17 +42,17 @@ BoatPage.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
-  let boat = [];
-  const boatname = ownProps.location.pathname;
-  console.log(boatname);
-  if (state.boats.filter(boat => {
-    boat.acf.boatname === boatname
-  })) {
+  const boatname = ownProps.location.pathname.replace(/\/boats\//, '');
+  const boat = state.boats.filter(boat => boat.acf.boatname === boatname);
+  const boatarray = boat[0];
+  const boatacf = boatarray;
+  const boat_length = boatarray.acf.boat_length_and_type;
   return {
-    boat: boat
+    boatacf: boatacf,
+    boatarray: boatarray,
+    boatname: boatname,
+    boat_length: boat_length
   };
-  
-  }
 }
 
 
