@@ -29,6 +29,13 @@ class wordpressAPI {
       return error;
     });
   }
+  static getHours() {
+    return fetch('https://balcarth.com/wordpress/wp-json/acf/v3/hours?_embed').then(response => {
+      return response.json();
+    }).catch(error => {
+      return error;
+    });
+  }
 }
 
 export default wordpressAPI;

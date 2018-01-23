@@ -5,11 +5,11 @@ import { Section, Container, Title, SubTitle, Button } from 'reactbulma';
 import Image from '../Image';
 import Call from '../Call';
 import HomeSlug from './HomeSlug';
+import Hours from './Hours';
 
 import './Home.css';
 
-const Home = (props) => {
-  return (
+const Home = (props) => (
       <div>
         <Section className="home">
           <Container>
@@ -21,24 +21,21 @@ const Home = (props) => {
                     <Call className="homeNumber"/>
                   </h3>
                   <HomeSlug homepage={props.homepage} />
+                  <Hours hours={props.hours} />
                   <div className="homeDescrip">
                     <p>
                       Since 1992, Lake Monroe Boat Rental is your choice for family fun on Lake Monroe! Rent our pontoons for a great day on the lake, or bring the whole family on our 34' Double Decker with slide.
                     </p>
+                    <p>
+                      Open April 1st through October 31st, Lake Monroe Boat Rental is now taking reservations. Book your boat now by calling us at 812-837-9909!
+                    </p>
                   </div>
             </div>
-                  <h4>
-                    Located just south east of Bloomingtion in Paynetown State Recreational Area
-                  </h4>
-                  <Image imgName="map" imgAlt="Map of Lake Monroe Boat Rental" className="boxedShadow lmbrMap" />
 
           </Container>
         </Section>
       </div>
   
   );
-
-};
-
 
 export default Home;

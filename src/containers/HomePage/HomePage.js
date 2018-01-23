@@ -7,6 +7,7 @@ import SEO from '../../components/SEO';
 import Home from '../../components/Home/Home';
 import HomeSlug from '../../components/Home/HomeSlug';
 import ForRent from '../../components/Home/ForRent';
+import Map from '../../components/Home/Map';
 
 class HomePage extends Component {
   componentDidMount() {
@@ -23,6 +24,7 @@ class HomePage extends Component {
         />
 
       <Home {...this.props} />
+      <Map />
       <ForRent {...this.props} />
     </div>
     );
@@ -36,7 +38,8 @@ HomePage.propTypes = {
 function mapStateToProps(state, ownProps) {
   return {
     boats: state.boats,
-    homepage: state.homepage
+    homepage: state.homepage,
+    hours: state.hours
   };
 }
 

@@ -6,7 +6,11 @@ const HomeSlug = ({homepage}) => {
     return (
     <Message primary className="homeSlug">
       <Message.Body>
-      {homepage[0].acf.home_page_box}
+        <div className="slugCenter">
+        <p>
+          {homepage[0].acf.home_page_box}
+        </p>
+      </div>
     </Message.Body>
   </Message>
     );

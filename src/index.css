@@ -8,9 +8,6 @@ body {
   background-color: #ffffff;
   background-image: url("/img/dust_scratches.png"); }
 
-body, html {
-  height: 100%; }
-
 html {
   height: 100%;
   overflow: auto; }
@@ -24,3 +21,9 @@ body {
 h3 {
   font-size: 1.25rem;
   font-weight: 700; }
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.7; } }

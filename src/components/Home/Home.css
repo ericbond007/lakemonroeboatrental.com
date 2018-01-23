@@ -6593,6 +6593,18 @@ label.panel-block {
   .boatButtons button {
     max-width: 90%; } }
 
+.homeSlug {
+  height: 10rem; }
+
+.homeSlug > div {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.homeSlug div p {
+  vertical-align: middle; }
+
 .lmbrMap {
   margin-bottom: 2rem;
   max-width: 80%;
@@ -6627,3 +6639,12 @@ label.panel-block {
 
 .boatButtons {
   display: block; }
+
+.homeDescrip p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bold; }
+
+.hours {
+  font-weight: bold;
+  font-size: 2rem; }
