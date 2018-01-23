@@ -1,22 +1,53 @@
 @import '../../bulmaVars.scss';
 
 .home {
+
 }
 
 @media only screen and (min-width: 1000px) {
-  .logo {
-    text-align: center;
-    width: 70%;
-    margin: auto;
-    margin-bottom: 5rem;
-  }
 
   .lmbrMap {
     width: 50%;
     max-width: 80%;
     margin: auto;
   }
+  .homeDescrip {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 4rem;
+  }
+  .homeSlug {
+    max-width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem !important;
+  
+  }
+
+  .homeLogo {
+    width: 30%;
+  }
 }
+
+@media only screen and (max-width: 1000px) {
+  .homeLogo {
+    width: 40%;
+      
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homeLogo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .homeLogo {
+    width: 80%;
+  }
+}
+
 .lmbrMap {
   margin-bottom: 2rem;
   max-width: 80%;
@@ -50,9 +81,6 @@
   display: block;
 }
 
-.logo {
-  border: none;
-}
 
 .homeNumber {
   padding-top: 1rem;

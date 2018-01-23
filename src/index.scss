@@ -2,23 +2,25 @@ body {
   position: relative;
 
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 font-weight: bold;
 
 
 }
 
-/*@font-face {
-  font-family: "Nunito";
-  src: url('Nunito.woff2') format('woff2');
-}*/
+#root {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+
+  background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
 
 
 body {
   font-family:  sans-serif;
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 body, html {
   height: 100%;
