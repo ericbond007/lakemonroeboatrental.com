@@ -1,11 +1,14 @@
 import React from 'react';
+import { Message } from 'reactbulma';
 
 const HomeSlug = ({homepage}) => {
   if (homepage[0] !== undefined && homepage[0].acf.is_visible) {
     return (
-    <div className="homeSlug box">
+    <Message primary className="homeSlug">
+      <Message.Body>
       {homepage[0].acf.home_page_box}
-    </div>
+    </Message.Body>
+  </Message>
     );
     
     } else {
