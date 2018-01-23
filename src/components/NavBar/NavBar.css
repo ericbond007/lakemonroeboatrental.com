@@ -42,7 +42,7 @@ body {
   color: #fff;
   transform: translateY(-5px); }
 
-h1 {
+body * {
   font-family: "vista-slab", serif;
   font-style: normal;
   font-weight: 200; }
