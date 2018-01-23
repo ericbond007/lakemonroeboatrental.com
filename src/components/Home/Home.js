@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SEO from '../SEO';
 import Boats from './Boats';
-import { Section, Container, Title, SubTitle } from 'reactbulma';
+import { Section, Container, Title, SubTitle, Button } from 'reactbulma';
 import Image from '../Image';
 import Call from '../Call';
 import HomeSlug from './HomeSlug';
@@ -14,21 +14,24 @@ const Home = (props) => {
         <Section className="home">
           <Container>
             <div className="animated fadeIn slideInUp">
-            <Image imgName="logo" imgAlt="LMBR Logo" className=""/>
-            <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
-            <h2 className="subtitle is-3"> Call to Reserve Today!</h2>
-            <h3>
-              <Call />
-            </h3>
-            <HomeSlug homepage={props.homepage} />
-              <h4>
-                Located just south east of Bloomingtion in Paynetown State Recreational Area
-              </h4>
+              <Image imgName="logo" imgAlt="LMBR Logo" className=""/>
+                <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
+                  <Button primary large><h2 className=""> Call to Reserve Today!</h2></Button>
+                  <h3>
+                    <Call className="homeNumber"/>
+                  </h3>
+                  <HomeSlug homepage={props.homepage} />
+                  <div className="homeDescrip">
+                    <p>
+                      Since 1992, Lake Monroe Boat Rental is your choice for family fun on Lake Monroe! Rent our pontoons for a great day on the lake, or bring the whole family on our 34' Double Decker with slide.
+                    </p>
+                  </div>
             </div>
-              <div>
-                <Image imgName="map" imgAlt="Map of Lake Monroe Boat Rental" className="boxedShadow lmbrMap" />
+                  <h4>
+                    Located just south east of Bloomingtion in Paynetown State Recreational Area
+                  </h4>
+                  <Image imgName="map" imgAlt="Map of Lake Monroe Boat Rental" className="boxedShadow lmbrMap" />
 
-            </div>
           </Container>
         </Section>
       </div>

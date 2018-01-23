@@ -15,7 +15,7 @@ class HomeBoatLink extends Component {
       pathname: `/boats/${this.props.boatlink}`,
       state: {...this.props}
     }}>
-    <Button primary medium>
+    <Button primary large>
       {this.props.buttonText}
     </Button>
             </Link>
