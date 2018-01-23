@@ -5,9 +5,7 @@ const Hours = ({ hours }) => {
   if (hours[0] !== undefined) {
     return (
       <div className="hours">
-        <p>
           {hours[0].acf.hours}
-        </p>
       </div>
     );
   } else {

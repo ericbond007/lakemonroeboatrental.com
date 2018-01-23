@@ -16,7 +16,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="homePage">
        <SEO
           title="Lake Monroe Boat Rental"
           description="Located in Paynetown SRA"

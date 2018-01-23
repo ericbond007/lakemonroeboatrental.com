@@ -3,15 +3,15 @@ import { Section, Container } from 'reactbulma';
 import Image from '../Image';
 
 const Map = () => (
-  <div>
-    <Section className="map">
+  <div className="map">
+    <Section>
       <Container>
         <h4>
           Located just south east of Bloomingtion in Paynetown State Recreational Area
         </h4>
         <Image imgName="map" imgAlt="Map of Lake Monroe Boat Rental" className="boxedShadow lmbrMap" />
-      </Container>
-    </Section>
+    </Container>
+  </Section>
   </div>
 );
 

@@ -10,8 +10,8 @@ import Hours from './Hours';
 import './Home.css';
 
 const Home = (props) => (
-      <div>
-        <Section className="home">
+      <div className="home">
+        <Section>
           <Container>
             <div className="animated fadeIn slideInUp">
               <Image imgName="logo" imgAlt="LMBR Logo" className="homeLogo"/>
