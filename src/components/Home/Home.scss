@@ -23,16 +23,23 @@
     margin-bottom: 5rem !important;
   
   }
+  .boatButtons button {
+    max-width: 50%;
+  }
 
   .homeLogo {
     width: 30%;
   }
+
 }
 
 @media only screen and (max-width: 1000px) {
   .homeLogo {
     width: 40%;
-      
+  }
+
+  .boatButtons button {
+    max-width: 60%;
   }
 }
 
@@ -40,17 +47,25 @@
   .homeLogo {
     width: 60%;
   }
+
+  .boatButtons button {
+    max-width: 85%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .homeLogo {
     width: 80%;
   }
+  .boatButtons button {
+    max-width: 90%;
+  }
 }
 
 .lmbrMap {
   margin-bottom: 2rem;
   max-width: 80%;
+  margin: auto;
 }
 
 .prettyButtons {
@@ -67,14 +82,13 @@
   text-align: center;
 }
 
-.boatButtons {
+.boatButtons button{
   text-align: center;
+  width: 100%;
 }
 
-.boatButtons button {
+.boatButtons {
   text-align: center;
-  max-width: 80%;
-  width: 100%;
 }
 .boatButtons a {
   padding: 0.5rem;
@@ -86,4 +100,9 @@
   padding-top: 1rem;
   padding-bottom: 3rem;
   font-size: 2rem;
+}
+
+
+.boatButtons {
+  display: block;
 }
