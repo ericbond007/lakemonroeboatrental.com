@@ -30,3 +30,13 @@ export const getHomePage = (homepage) => ({
   type: types.GET_HOME_PAGE,
   homepage
 })
+
+export const getHours = (hours) => ({ 
+  type: type.GET_HOURS,
+  hours
+})
+
+export const getFuel = (fuel) => ({
+  type: type.GET_FUEL,
+  fuel
+})

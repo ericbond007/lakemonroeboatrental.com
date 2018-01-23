@@ -14,6 +14,7 @@ import { loadPolicies } from './actions/policyActions';
 import { loadRates } from './actions/ratesActions';
 import { loadHomepage } from './actions/homeActions';
 import { loadHours } from './actions/hoursActions';
+import { loadFuel } from './actions/fuelActions';
 
 const store = configureStore();
 
@@ -22,6 +23,7 @@ store.dispatch(loadPolicies());
 store.dispatch(loadRates());
 store.dispatch(loadHomepage());
 store.dispatch(loadHours());
+store.dispatch(loadFuel());
 
 const rootElement = document.getElementById('root');
 

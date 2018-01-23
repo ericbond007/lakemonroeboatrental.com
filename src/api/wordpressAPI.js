@@ -36,6 +36,13 @@ class wordpressAPI {
       return error;
     });
   }
+  static getFuel() {
+    return fetch('https://balcarth.com/wordpress/wp-json/acf/v3/fuel_rate?_embed').then(response => {
+      return response.json();
+    }).catch(error => {
+      return error;
+    });
+  }
 }
 
 export default wordpressAPI;

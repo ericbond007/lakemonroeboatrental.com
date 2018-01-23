@@ -24,7 +24,8 @@ class RatesPage extends Component {
 
 function mapStateToProps(state, ownProps) {
   return {
-    rates: state.rates
+    rates: state.rates,
+    fuel: state.fuel_rates
   };
 }
 

@@ -5,5 +5,6 @@ export default {
   rates: [],
   contact: [],
   hours: [],
-  homepage: []
+  homepage: [],
+  fuel: []
 }

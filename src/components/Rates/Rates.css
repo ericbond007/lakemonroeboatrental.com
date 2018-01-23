@@ -1,7 +1,8 @@
 @media only screen and (min-width: 1200px) {
   .priceTable {
-    max-width: 85%;
-    margin: auto; } }
+    margin: auto; }
+  .priceTable .rt-td {
+    white-space: normal; } }
 
 .priceTable {
   margin: auto; }
