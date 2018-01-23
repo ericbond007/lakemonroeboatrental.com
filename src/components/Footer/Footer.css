@@ -42,6 +42,11 @@ body {
   color: #fff;
   transform: translateY(-5px); }
 
+h1 {
+  font-family: "vista-slab", serif;
+  font-style: normal;
+  font-weight: 200; }
+
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {

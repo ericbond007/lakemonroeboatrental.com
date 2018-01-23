@@ -1,18 +1,12 @@
 body {
-  position: relative;
-  font-weight: bold; }
+  position: relative; }
 
 #root {
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-color: #ffffff;
-  background-image: url("/img/dust_scratches.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
-
-body {
-  font-family: sans-serif;
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ }
+  background-image: url("/img/dust_scratches.png"); }
 
 body, html {
   height: 100%; }

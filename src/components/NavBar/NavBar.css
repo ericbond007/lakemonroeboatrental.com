@@ -42,6 +42,11 @@ body {
   color: #fff;
   transform: translateY(-5px); }
 
+h1 {
+  font-family: "vista-slab", serif;
+  font-style: normal;
+  font-weight: 200; }
+
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -6604,8 +6609,8 @@ label.panel-block {
 #noscroll a {
   padding-right: 0.25rem;
   padding-left: 0.25rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem; }
 
 a:hover {
   background-color: none; }
