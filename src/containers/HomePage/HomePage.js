@@ -28,7 +28,7 @@ class HomePage extends Component {
           path="/"
         />
       <div className="column is-2 is-offset-3 is-mobile is-fullheight is-hidden-mobile">
-        <Sidebar header="test" body="body"/>
+        <Sidebar body="Early Bird Jet Ski special! Rent and return by 11:30 AM $60 per hour $180 four hours"/>
       </div>
       <div className="column is-fullheight">
         <Home {...this.props} />

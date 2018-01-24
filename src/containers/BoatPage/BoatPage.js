@@ -4,6 +4,7 @@ import Boat from '../../components/Boat/Boat';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import SEO from '../../components/SEO';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 
 class BoatPage extends Component {
@@ -23,14 +24,19 @@ class BoatPage extends Component {
     console.log(this.props.boat);
     return (
       <div>
-      <SEO
-        title="Boat | Lake Monroe Boat Rental"
-        description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"
-        path="/boats/boatname"
-      />
-      {(this.props.boat) && 
-      <Boat boat={this.props.boat} />
-      }
+        <div className="columns is-fullheight boatPage">
+          <div className="column is-2 is-offset-3 is-mobile is-fullheight">
+            <Sidebar body="Policies: 8 hour minimum on weekends and holidays on Pontoons and Double Decker boats
+"/>
+          </div>
+          <div className="column is-fullheight">
+            {(this.props.boat) && 
+            <Boat boat={this.props.boat} />
+            }
+          </div>
+          <div className="column is-2">
+          </div>
+        </div>
       </div>
     );
   }

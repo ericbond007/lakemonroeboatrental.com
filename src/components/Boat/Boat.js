@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
+import Sidebar from '../Sidebar/Sidebar';
 import Image from '../Image';
 
 const Boat = ({boat}) => {
   if (boat[0] !== undefined) {
   return (
-    <Section className="content">
-      <Container>
+    <div className="boat">
+      <Section className="content">
         <h1 className="boatHeader">
-            {boat[0].acf.boat_length_and_type}
-          </h1>
-          <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} />
+          {boat[0].acf.boat_length_and_type}
+        </h1>
+        <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} />
         <div>
           <h2> {boat[0].acf.max_capacity} Person Max Capacity</h2>
           <p>
@@ -28,10 +29,9 @@ const Boat = ({boat}) => {
       {boat[0].acf.rates_oneday ? <p>24 Hours: {boat[0].acf.rates_oneday}</p>: null}
       {boat[0].acf.rates_threeday ? <p>Three Days: {boat[0].acf.rates_threeday}</p> : null}
       {boat[0].acf.rates_weekly ? <p>Weekly: {boat[0].acf.rates_weekly} </p> : null}
-
         </div>
-      </Container>
-    </Section>
+      </Section>
+    </div>
     );
     } else {
       return null;
