@@ -3,7 +3,7 @@ import Pontoon from '../../components/Pontoon/Pontoon';
 
 class PontoonPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 800);
   }
   render() {
     return (

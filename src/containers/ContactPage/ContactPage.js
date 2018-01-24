@@ -3,7 +3,7 @@ import Contact from '../../components/Contact/Contact';
 
 class ContactPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 800);
   }
   render() {
     return (

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 class PoliciesPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 800);
   }
   render() {
     return (

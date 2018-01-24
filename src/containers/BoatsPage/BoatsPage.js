@@ -7,7 +7,7 @@ import SEO from '../../components/SEO';
 
 class BoatsPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 800);
   }
 
   render() {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AnimatedWrapper from '../../AnimatedWrapper';
 import BoatLink from '../BoatLink/BoatLink';
 import SEO from '../SEO';
 import { Section, Container, Title, SubTitle } from 'reactbulma';

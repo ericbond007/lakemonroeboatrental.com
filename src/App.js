@@ -2,12 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SwipeableRoutes from 'react-swipeable-routes';
 
-import HomePage from './containers/HomePage/HomePage';
-import BoatsPage from './containers/BoatsPage/BoatsPage';
-import BoatSwitch from './components/BoatSwitch';
-import RatesPage from './containers/RatesPage/RatesPage';
-import PoliciesPage from './containers/PoliciesPage/PoliciesPage';
-import ContactPage from './containers/ContactPage/ContactPage';
+import Home from './components/Switches/Home';
+import Boat from './components/Switches/Boat';
+import Rates from './components/Switches/Rates';
+import Policies from './components/Switches/Policies';
+import Contact from './components/Switches/Contact';
 
 
 
@@ -25,11 +24,11 @@ const App = ({ location }) => {
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <Layout>
         <SwipeableRoutes>
-          <Route path="/rates" component={RatesPage} />
-          <Route path="/boats" component={BoatSwitch} />
-          <Route path="/" exact component={HomePage} />
-          <Route path="/contact" component={ContactPage} />
-          <Route path="/policies" component={PoliciesPage} />
+          <Route path="/rates" component={Rates} />
+          <Route path="/boats" component={Boat} />
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/policies" component={Policies} />
         </SwipeableRoutes>
       </Layout>
     </Router>
