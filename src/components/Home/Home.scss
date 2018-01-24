@@ -10,9 +10,12 @@
     width: 50%;
     max-width: 80%;
     margin: auto;
+    display: block;
+  }
+
+  .map img {
   }
   .homeDescrip {
-    max-width: 50%;
     margin: auto;
     margin-bottom: 4rem;
   }
@@ -62,6 +65,10 @@
   }
 }
 
+.homeLogo {
+  text-align: center;
+}
+
 .homeSlug {
   height: 10rem;
 }
@@ -78,8 +85,6 @@
 }
 
 .lmbrMap {
-  margin-bottom: 2rem;
-  max-width: 80%;
   margin: auto;
 }
 
@@ -93,12 +98,11 @@
   text-align: center;
 }
 
-.home {
+.home  .section {
   text-align: center;
 }
 
 .boatButtons button{
-  text-align: center;
   width: 100%;
 }
 
@@ -138,6 +142,11 @@
   padding-bottom: 0rem;
 }
 
+.map h4 {
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
 .home .section {
   padding-bottom: 0rem;
 }
@@ -146,7 +155,29 @@
   padding-top: 0rem;
 }
 
+.forRent h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
 .homePage p {
   text-align: left;
   text-indent: 1rem;
+}
+
+.message .message-body {
+  padding-bottom: 0rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+
+.hero {
+  background-image: url('/img/landingImg-lg_1x.jpg');
+}
+
+.hero h1 {
+  font-size: 6rem;
+
 }

@@ -23,7 +23,6 @@ $tabs-link-hover-border-bottom-color: $light-blue;
 $footer-background-color: $base-blue;
 
 .section {
-  text-align: center;
   padding-top: 3rem;
   margin-top: 3rem;
 }
@@ -43,6 +42,12 @@ body * {
   font-family: "vista-slab", serif;
   font-style: normal;
   font-weight: 200;
+}
+
+.hero-foot {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 

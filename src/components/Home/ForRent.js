@@ -7,7 +7,6 @@ import BoatButton from '../BoatButton/BoatButton';
 const ForRent = (props) => {
   return (
     <div className="forRent">
-    <Container>
       <Section>
         <h2>Available For Rent</h2>
         <div className="boatButtons">
@@ -19,7 +18,6 @@ const ForRent = (props) => {
           <BoatButton boatName="Non-Motorized" boatname="non-motorized" />
         </div>
       </Section>
-    </Container>
   </div>
   );
 };

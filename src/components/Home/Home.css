@@ -28,7 +28,6 @@ body {
 /*Nav Tabs variables*/
 /*Footer vars */
 .section {
-  text-align: center;
   padding-top: 3rem;
   margin-top: 3rem; }
 
@@ -46,6 +45,11 @@ body * {
   font-family: "vista-slab", serif;
   font-style: normal;
   font-weight: 200; }
+
+.hero-foot {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
@@ -6560,9 +6564,9 @@ label.panel-block {
   .lmbrMap {
     width: 50%;
     max-width: 80%;
-    margin: auto; }
+    margin: auto;
+    display: block; }
   .homeDescrip {
-    max-width: 50%;
     margin: auto;
     margin-bottom: 4rem; }
   .homeSlug {
@@ -6593,6 +6597,9 @@ label.panel-block {
   .boatButtons button {
     max-width: 90%; } }
 
+.homeLogo {
+  text-align: center; }
+
 .homeSlug {
   height: 10rem; }
 
@@ -6606,8 +6613,6 @@ label.panel-block {
   vertical-align: middle; }
 
 .lmbrMap {
-  margin-bottom: 2rem;
-  max-width: 80%;
   margin: auto; }
 
 .prettyButtons {
@@ -6618,11 +6623,10 @@ label.panel-block {
 .landingTitle {
   text-align: center; }
 
-.home {
+.home .section {
   text-align: center; }
 
 .boatButtons button {
-  text-align: center;
   width: 100%; }
 
 .boatButtons {
@@ -6653,12 +6657,33 @@ label.panel-block {
   padding-top: 0rem;
   padding-bottom: 0rem; }
 
+.map h4 {
+  padding-bottom: 2rem;
+  font-weight: bold; }
+
 .home .section {
   padding-bottom: 0rem; }
 
 .forRent .section {
   padding-top: 0rem; }
 
+.forRent h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1rem; }
+
 .homePage p {
   text-align: left;
   text-indent: 1rem; }
+
+.message .message-body {
+  padding-bottom: 0rem;
+  padding-right: 0rem;
+  padding-left: 0rem; }
+
+.hero {
+  background-image: url("/img/landingImg-lg_1x.jpg"); }
+
+.hero h1 {
+  font-size: 6rem; }

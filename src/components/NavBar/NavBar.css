@@ -28,7 +28,6 @@ body {
 /*Nav Tabs variables*/
 /*Footer vars */
 .section {
-  text-align: center;
   padding-top: 3rem;
   margin-top: 3rem; }
 
@@ -46,6 +45,11 @@ body * {
   font-family: "vista-slab", serif;
   font-style: normal;
   font-weight: 200; }
+
+.hero-foot {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
@@ -6556,7 +6560,8 @@ label.panel-block {
 .react-swipeable-view-container div {
   overflow: hidden !important; }
 
-.tabs ul {
+.tabs .navTabs {
+  width: 100%;
   background-position: -3rem 0rem !important;
   background: radial-gradient(ellipse farthest-corner, #000098 30%, #2626FF);
   border-bottom: none !important; }

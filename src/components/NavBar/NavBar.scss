@@ -1,6 +1,7 @@
 @import '../../bulmaVars.scss';
 
-.tabs ul {
+.tabs .navTabs {
+  width: 100%;
 //  background-image: linear-gradient(to top, $blue  0%, $light-blue 100%)
 //background: -webkit-linear-gradient(24deg, transparent, rgb(0, 0, 152), rgb(38, 38, 255));
 //background: linear-gradient(24deg, transparent, rgb(0, 0, 152), rgb(38, 38, 255));
@@ -101,4 +102,7 @@ a:focus {
 
 .is-sticky {
   padding-bottom: 3rem;
+}
+
+.hero-foot {
 }

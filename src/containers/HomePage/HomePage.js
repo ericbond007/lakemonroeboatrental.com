@@ -4,10 +4,14 @@ import { connect } from 'react-redux';
 import * as boatActions from '../../actions/boatActions';
 import SEO from '../../components/SEO';
 
+import { Hero } from 'reactbulma';
+
 import Home from '../../components/Home/Home';
 import HomeSlug from '../../components/Home/HomeSlug';
 import ForRent from '../../components/Home/ForRent';
 import Map from '../../components/Home/Map';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import Image from '../../components/Image';
 
 class HomePage extends Component {
   componentDidMount() {
@@ -16,17 +20,25 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div className="homePage">
+      <div>
+      <div className="columns is-fullheight homePage">
        <SEO
           title="Lake Monroe Boat Rental"
           description="Located in Paynetown SRA"
           path="/"
         />
-
-      <Home {...this.props} />
-      <Map />
-      <ForRent {...this.props} />
+      <div className="column is-2 is-offset-3 is-mobile is-fullheight is-hidden-mobile">
+        <Sidebar />
+      </div>
+      <div className="column is-fullheight">
+        <Home {...this.props} />
+        <Map />
+        <ForRent {...this.props} />
+      </div>
+      <div className="column is-2">
+      </div>
     </div>
+  </div>
     );
   }
   }
