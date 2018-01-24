@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Boats from '../../components/Boats/Boats';
+import Sidebar from '../../components/Sidebar/Sidebar';
 import SEO from '../../components/SEO';
 
 
@@ -20,7 +21,7 @@ class BoatsPage extends Component {
         path="/boats"
       />
       <div className="column is-2 is-offset-3 is-fullheight is-hidden-mobile">
-        <p>sidebar goes here</p>
+        <Sidebar header="boats" body="rent a boat" />
       </div>
       <div className="column is-fullheight">
         <Boats /> 

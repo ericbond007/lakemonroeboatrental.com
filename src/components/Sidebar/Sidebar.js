@@ -7,14 +7,14 @@ import { Section, Container, Message } from 'reactbulma';
 
 import './Sidebar.css';
 
-const Sidebar = () => (
+const Sidebar = (props) => (
   <div className="sidebar">
     <Message primary>
       <Message.Header>
-        Herro
+        {props.header ? <div>{props.header}</div> : <div>header</div>}
       </Message.Header>
       <Message.Body>
-        Lookie Here!~
+        {props.body ? <div>{props.body}</div> : <div>herro</div>}
       </Message.Body>
     </Message>
 </div>

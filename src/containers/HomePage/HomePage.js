@@ -28,7 +28,7 @@ class HomePage extends Component {
           path="/"
         />
       <div className="column is-2 is-offset-3 is-mobile is-fullheight is-hidden-mobile">
-        <Sidebar />
+        <Sidebar header="test" body="body"/>
       </div>
       <div className="column is-fullheight">
         <Home {...this.props} />
