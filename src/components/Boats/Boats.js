@@ -19,15 +19,18 @@ class Boats extends Component {
   render() {
     return (
       <div>
-        <SEO
-          title="Boats | Lake Monroe Boat Rental"
-          description="Located in Paynetown SRA"
-          path="/"
-        />
-      
       <Section className="boatsPage">
-        <Container>
               <h1 className="title is-1 is-spaced">Boats For Rent</h1>
+              <div>
+                <p>
+                  Choose from a variety of boats to rent. Single families do well on the single deck pontoons or ski boat. Large groups can take out our 34' Double Decker for a great day out on the lake
+                
+
+                Don't forget about watercraft accessories! We have pull behind tubes, skis, wakeboards, and more!
+                </p>
+              </div>
+
+
               <BoatLink boatname="Double Decker" imgName="doubleDecker" imgAlt="Double Decker" boatlink="doubledecker">{this.props.children}</BoatLink>
               <BoatLink boatname="20-pontoon" imgName="pontoon" imgAlt="20' Pontoon" boatlink="20-pontoon">{this.props.children}</BoatLink>
               <BoatLink boatname="ski-boat" imgName="skiBoat" imgAlt="Ski Boat" boatlink="ski-boat"/>
@@ -48,9 +51,8 @@ class Boats extends Component {
               </h2>
               <img src="doubleDecker.jpg"  alt="Double Decker"/>
 
-            </Container>
           </Section>
-        </div>
+      </div>
 
     );
   }
