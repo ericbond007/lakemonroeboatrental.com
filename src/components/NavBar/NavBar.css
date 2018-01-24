@@ -46,11 +46,6 @@ body * {
   font-style: normal;
   font-weight: 200; }
 
-.hero-foot {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0; }
-
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
