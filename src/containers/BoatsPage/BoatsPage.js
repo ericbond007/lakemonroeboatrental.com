@@ -14,21 +14,12 @@ class BoatsPage extends Component {
   render() {
     return (
       <div>
-        <div className="columns is-full-height boatsPage">
       <SEO
         title="Boats | Lake Monroe Boat Rental"
         description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"
         path="/boats"
       />
-      <div className="column is-2 is-offset-3 is-fullheight is-hidden-mobile">
-        <Sidebar header="boats" body="rent a boat" />
-      </div>
-      <div className="column is-fullheight">
         <Boats /> 
-      </div>
-      <div className="column is-2">
-      </div>
-    </div>
 
       </div>
     );
