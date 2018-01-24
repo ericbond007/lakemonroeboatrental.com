@@ -1,6 +1,9 @@
 .boatsPage {
   min-height: 80%; }
 
+.boatsPage .container {
+  text-align: center; }
+
 .boats {
   text-align: center; }
 
