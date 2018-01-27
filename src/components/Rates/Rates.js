@@ -197,7 +197,7 @@ class Rates extends Component {
     return (
       <div>
       
-      <Section className="content">
+      <Section className="content is-hidden-mobile">
       <Container>
               <h1 className="landingTitle">Pricelist</h1>
               <ReactTable

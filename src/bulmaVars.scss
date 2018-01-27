@@ -45,7 +45,13 @@ body * {
 }
 
 
-
+.card-header p{
+display: block;
+}
+.card-header-title p{
+  text-align: center;
+  display: block;
+}
 
 @import 'bulma/bulma.sass';
 

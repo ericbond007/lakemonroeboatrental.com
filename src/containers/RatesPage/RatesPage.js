@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Rates from '../../components/Rates/Rates';
+import Fuel from '../../components/Rates/Fuel';
 import { connect } from 'react-redux'
 import SEO from '../../components/SEO';
 
@@ -17,6 +18,7 @@ class RatesPage extends Component {
           path="/rates"
         />
         <Rates />
+        <Fuel />
       </div>
     );
   }

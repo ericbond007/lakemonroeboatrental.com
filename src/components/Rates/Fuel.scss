@@ -1,0 +1,15 @@
+.fuelRow {
+  clear: both;
+}
+
+.fuelLeft {
+  float: left;
+}
+
+.fuelRight {
+float: right;
+  }
+
+  .fuelRow:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.03);
+  }

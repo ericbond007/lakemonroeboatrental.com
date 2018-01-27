@@ -13,7 +13,7 @@ class BoatsPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="is-size-4-desktop">
       <SEO
         title="Boats | Lake Monroe Boat Rental"
         description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"
