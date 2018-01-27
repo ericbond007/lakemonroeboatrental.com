@@ -24,9 +24,10 @@ const Policies = ({ policies }) => (
               </li>)}
             </ul>
           </div>
-          <Title className="is-spaced">Cancellations</Title>
+          <Title className="is-spaced">Refunds & Cancellations</Title>
           <div>
             <ul className="left">
+              <li>There are no refunds due to late check-ins, early return, change of plans, illness, weather, or car problems</li>
               <li>Pontoon & Jet Ski cancellations: must be made 72 HOURS prior to reservation time</li>
               <li>Double Decker and Ski Boat: must be made TWO WEEKS prior to scheduled reservation</li>
               <li>Multiple boat rentals: must be made ONE MONTH prior to the scheduled reservation</li>
@@ -34,7 +35,16 @@ const Policies = ({ policies }) => (
           </div>
           <div>
             <h2>Weather Policy</h2>
-            <p>If conditions are hazardous (tornado, hail, lightening, down pour) at the time of your scheduled rental, you will be allowed to reschedule your reservation during the same rental season. Our weather policy is based on ACTUAL weather conditions on Lake Monroe at your scheduled time, not predictions or forecasts.</p>
+            <p>
+              Inclement weather is defined as weather where there are unsafe conditions. This includes: warning of severe storms, lightning, high wind advisory, or tornado. If there are inclement weather conditions at Lake Monroe you will be able to reschedule your reservation or delay your departure time.
+            </p>
+            <p>
+              Reschedules are based on actual weather conditions on the lake at the time of the rental, not future weather forecasts. If weather conditions are overcast, cold, cloudy, or rainy, your rental still stands for the day.
+            </p>
+            <p>
+              We cannot give refunds for time not used during a pop-up storm
+            </p>
+
           </div>
         </Container>
       </Section>
