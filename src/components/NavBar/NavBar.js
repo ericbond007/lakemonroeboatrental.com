@@ -10,7 +10,7 @@ const NavBar = () => (
                       <li ><NavLink activeClassName="active" to="/rates">Rates</NavLink></li>
                       <li ><NavLink activeClassName="active" to="/boats">Boats</NavLink></li>
                       <li><NavLink  exact activeClassName="active" to="/" >LMBR</NavLink></li>
-                      <li ><NavLink activeClassName="active" to="/contact" >Contact</NavLink></li>
+                      <li ><NavLink activeClassName="active" to="/about" >About</NavLink></li>
                       <li ><NavLink activeClassName="active" to="/policies">Policies</NavLink></li>
                     </ul>
                   </div>

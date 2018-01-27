@@ -6,7 +6,7 @@ import Home from './components/Switches/Home';
 import Boat from './components/Switches/Boat';
 import Rates from './components/Switches/Rates';
 import Policies from './components/Switches/Policies';
-import Contact from './components/Switches/Contact';
+import About from './components/Switches/About';
 
 
 
@@ -27,7 +27,7 @@ const App = ({ location }) => {
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={Home} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
           <Route path="/policies" component={Policies} />
         </SwipeableRoutes>
       </Layout>

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Contact from '../../components/Contact/Contact';
+import About from '../../components/About/About';
 
-class ContactPage extends Component {
+class AboutPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 800);
   }
   render() {
     return (
       <div>
-        <Contact />
+        <About />
       </div>
     );
   }
 }
 
-export default ContactPage;
+export default AboutPage;

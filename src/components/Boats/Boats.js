@@ -25,11 +25,14 @@ class Boats extends Component {
         <Container>
               <h1 className="title is-1 is-spaced">Boats For Rent</h1>
               <div>
-                <p>
+                <p className="leftAlign">
                   Choose from a variety of boats to rent. Single families do well on the single deck pontoons or ski boat. Large groups can take out our 34' Double Decker for a great day out on the lake
                 
 
                 Don't forget about watercraft accessories! We have pull behind tubes, skis, wakeboards, and more!
+                </p>
+                <p className="withSpace">
+                  Click the images below to see more info about the boat!
                 </p>
               </div>
               <div className="columns is-centered is-multiline" >

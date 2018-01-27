@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
 import Sidebar from '../Sidebar/Sidebar';
 import Image from '../Image';
+import './Boat.css';
 
 const Boat = ({boat}) => {
   if (boat[0] !== undefined) {
@@ -19,16 +20,52 @@ const Boat = ({boat}) => {
           </p>
         </div>
         <div className="boatRates">
-          <h3>Rates</h3>
-           <p>One Hour: {boat[0].acf.rates_onehour}</p>
-      <p>Extra Hour: {boat[0].acf.rates_extra_hour}</p>
-      <p>Four Hours: {boat[0].acf.rates_fourhour}</p>
-      <p>Eight Hours: {boat[0].acf.rates_eighthour}</p>
-      {boat[0].acf.rates_all_day ? <p>All Day: {boat[0].acf.rates_all_day}</p>: null}
-      {boat[0].acf.rates_overnight ? <p>Overnight: {boat[0].acf.rates_overnight}</p>: null}
-      {boat[0].acf.rates_oneday ? <p>24 Hours: {boat[0].acf.rates_oneday}</p>: null}
-      {boat[0].acf.rates_threeday ? <p>Three Days: {boat[0].acf.rates_threeday}</p> : null}
-      {boat[0].acf.rates_weekly ? <p>Weekly: {boat[0].acf.rates_weekly} </p> : null}
+          <h3 className="regalTitle">Rates</h3>
+          <div className="ratesRow">
+            <div className="boatLeft">One Hour:</div>
+            <div className="boatRight"> ${boat[0].acf.rates_onehour}</div>
+          </div>
+          <div className="ratesRow">
+            <div className="boatLeft">Extra Hour:</div>
+            <div className="boatRight">${boat[0].acf.rates_extra_hour}</div>
+          </div>
+          <div className="ratesRow">
+            <div className="boatLeft">Four Hours:</div>
+            <div className="boatRight">${boat[0].acf.rates_fourhour}</div>
+          </div>
+          <div className="ratesRow">
+            <div className="boatLeft">Eight Hours:</div>
+            <div className="boatRight">${boat[0].acf.rates_eighthour}</div>
+          </div>
+          {boat[0].acf.rates_all_day ? 
+          <div className="ratesRow">
+            <div className="boatLeft">All Day:</div>
+            <div className="boatRight">${boat[0].acf.rates_all_day}</div>
+          </div>: null}
+          {boat[0].acf.rates_overnight ? 
+          <div className="ratesRow">
+            <div className="boatLeft">Overnight:</div>
+            <div className="boatRight">${boat[0].acf.rates_overnight}</div>
+          </div>: null}
+          {boat[0].acf.rates_oneday ? 
+          <div className="ratesRow">
+            <div className="boatLeft">24 Hours:</div>
+            <div className="boatRight">${boat[0].acf.rates_oneday}</div>
+          </div>: null}
+          {boat[0].acf.rates_threeday ? 
+          <div className="ratesRow">
+            <div className="boatLeft">Three Days:</div>
+            <div className="boatRight">${boat[0].acf.rates_threeday}</div>
+          </div> : null}
+          {boat[0].acf.rates_weekly ? 
+          <div className="ratesRow">
+            <div className="boatLeft">Weekly:</div>
+            <div className="boatRight">${boat[0].acf.rates_weekly} </div>
+          </div>: null}
+          <div className="ratesRow">
+            <div className="boatLeft">Deposit:</div>
+            <div className="boatRight">${boat[0].acf.deposit}</div>
+          </div>
         </div>
       </Section>
     </div>

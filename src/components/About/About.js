@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import SEO from '../SEO';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
 
-import './Contact.css';
+import './About.css';
 
-class Contact extends Component {
+class About extends Component {
   constructor() {
     super();
     this.state = {
@@ -19,14 +19,14 @@ class Contact extends Component {
     return (
       <div>
         <SEO
-          title="Contact | Lake Monroe Boat Rental"
+          title="About | Lake Monroe Boat Rental"
           description="Located in Paynetown SRA"
           path="/"
         />
       
-      <Section className="content">
+      <Section className="about">
         <Container>
-              <h1 className="landingTitle">Contact Us</h1>
+              <h1 className="landingTitle">About Us</h1>
         </Container>
         </Section>
       </div>
@@ -35,4 +35,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default About;
