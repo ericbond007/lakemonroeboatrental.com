@@ -4,8 +4,6 @@ import { Section, Container, Title, SubTitle } from 'reactbulma';
 import './Policies.css';
 
 const Policies = ({ policies }) => (
-  <div className="columns is-fullheight policies">
-    <div className="column is-offset-3 is-fullheight is-size-4-desktop">
       <Section className="policies">
           <Title> Policies</Title>
           <div>
@@ -48,10 +46,6 @@ const Policies = ({ policies }) => (
 
           </div>
       </Section>
-    </div>
-    <div className="column is-2 is-hidden-mobile">
-    </div>
-  </div>
 );
 
 export default Policies;

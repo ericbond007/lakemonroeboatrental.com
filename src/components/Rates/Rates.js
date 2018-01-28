@@ -199,7 +199,8 @@ class Rates extends Component {
       
       <Section className="content is-hidden-mobile">
       <Container>
-              <h1 className="landingTitle">Pricelist</h1>
+              <h1 className="title">Boat Rental Rates</h1>
+              <p className="is-size-4-desktop">Please call 812-837-9909 for more info!</p>
               <ReactTable
                 data={data}
                 columns={columns}

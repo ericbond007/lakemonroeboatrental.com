@@ -27,8 +27,8 @@ const App = ({ location }) => {
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
           <Route path="/policies" component={Policies} />
+          <Route path="/about" component={About} />
         </SwipeableRoutes>
       </Layout>
     </Router>

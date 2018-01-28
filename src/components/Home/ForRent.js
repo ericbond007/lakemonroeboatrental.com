@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Section } from 'reactbulma'
+import BoatList from '../Boats/BoatList';
 
 import BoatButton from '../BoatButton/BoatButton';
 
@@ -9,14 +10,7 @@ const ForRent = (props) => {
     <div className="forRent">
       <Section>
         <h2>Available For Rent</h2>
-        <div className="boatButtons">
-          <BoatButton boatName="Double Decker" boatname="doubledecker" />
-          <BoatButton boatName="Pontoon Boats" boatname="pontoons"/>
-          <BoatButton boatName="Jet Skis" boatname="jet-ski" />
-          <BoatButton boatName="Ski Boats" boatname="ski-boat" />
-          <BoatButton boatName="Fishing Boats" boatname="fishing-boats" />
-          <BoatButton boatName="Non-Motorized" boatname="non-motorized" />
-        </div>
+        <BoatList />
       </Section>
   </div>
   );

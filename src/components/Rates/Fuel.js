@@ -7,11 +7,11 @@ const Fuel = () => (
         <div className="title">
           Fuel Fees
         </div>
+    <div className="columns">
+      <div className="column is-offset-one-quarter is-half is-size-4-desktop">
         <p className="is-size-4-desktop">
           Boats are sent out with a full tank of gas and do not require a refill upon return. Fuel fees are calculated by rental period. If you require more fuel, additional fees may apply.
         </p>
-    <div className="columns">
-      <div className="column is-offset-3 is-5 is-size-4-desktop">
         <div className="fuelRates">
 
           <div className="fuelRow">

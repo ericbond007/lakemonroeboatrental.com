@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
-import Sidebar from '../Sidebar/Sidebar';
 import Image from '../Image';
 import './Boat.css';
 

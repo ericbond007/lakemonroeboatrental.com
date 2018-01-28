@@ -13,12 +13,12 @@ const Sidebar = (props) => {
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <p className="title is-4">Early Bird Jet Ski Special</p>
+            <p className="title is-4">{props.header}</p>
           </div>
         </div>
 
         <div className="content">
-          Get out on the lake at the best time for jet ski's! All our jet ski's are $60 per hour when you rent and return by 11:30AM! The 4 hour rate is only $180!
+          {props.content}
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ import Home from '../../components/Home/Home';
 import HomeSlug from '../../components/Home/HomeSlug';
 import ForRent from '../../components/Home/ForRent';
 import Map from '../../components/Home/Map';
-import Sidebar from '../../components/Sidebar/Sidebar';
+import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
 import Image from '../../components/Image';
 
 class HomePage extends Component {
@@ -27,13 +27,13 @@ class HomePage extends Component {
           description="Located in Paynetown SRA"
           path="/"
         />
-      <div className="column is-2 is-offset-3 is-mobile is-fullheight is-hidden-mobile">
-        <Sidebar body="Early Bird Jet Ski special! Rent and return by 11:30 AM $60 per hour $180 four hours"/>
+      <div className="column is-3 is-offset-2 is-mobile is-fullheight is-hidden-mobile">
+        <HomeSidebar /> 
       </div>
       <div className="column is-fullheight">
         <Home {...this.props} />
         <Map />
-        <ForRent {...this.props} />
+        <ForRent />
       </div>
       <div className="column is-2">
       </div>

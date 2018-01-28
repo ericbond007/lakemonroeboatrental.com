@@ -21,12 +21,11 @@ class BoatPage extends Component {
   }
 
   render() {
-    console.log(this.props.boat);
     return (
       <div>
         <div className="columns is-fullheight boatPage">
           <div className="column is-2 is-offset-3 is-fullheight is-hidden-mobile">
-            <Sidebar body="Policies: 8 hour minimum on weekends and holidays on Pontoons and Double Decker boats
+            <Sidebar content="8 hour minimum on weekends and holidays on Pontoons and Double Decker boats
 "/>
           </div>
           <div className="column is-fullheight">
