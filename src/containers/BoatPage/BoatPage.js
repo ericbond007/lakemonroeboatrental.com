@@ -32,9 +32,6 @@ class BoatPage extends Component {
             <Boat boat={this.props.boat} />
             }
           </div>
-          <div className="column is-2 is-hidden-desktop">
-            <Sidebar className="is-hidden-desktop"/ >
-          </div>
           <div className="column is-2 is-hidden-mobile">
           </div>
         </div>

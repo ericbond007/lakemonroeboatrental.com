@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
 import Image from '../Image';
+import Sidebar from '../Sidebar/Sidebar';
+import Reserve from '../Reserve';
 import './Boat.css';
 
 const Boat = ({boat}) => {
@@ -66,7 +68,13 @@ const Boat = ({boat}) => {
             <div className="boatRight">${boat[0].acf.deposit}</div>
           </div>
         </div>
+        <div className="is-hidden-desktop">
+          <Sidebar />
+        </div>
       </Section>
+        <div>
+          <Reserve />
+        </div>
     </div>
     );
     } else {

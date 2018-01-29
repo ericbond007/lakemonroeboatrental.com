@@ -49,14 +49,18 @@ body * {
   border-radius: 10px;
 }
 
-
-.card-header {
+.card .card-header p{
+  text-align: center;
 }
 
-.card-header p{
+.card-content {
+  display: block;
+}
+
+.card-header{
 display: block;
 }
-.card-header-title p{
+.card-header-title{
   text-align: center;
   display: block;
 }
