@@ -27,7 +27,7 @@ $footer-background-color: $base-blue;
   margin-top: 3rem;
 }
 .button.is-primary {
-border-radius: 90px;
+  border-radius: 5px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
 }
@@ -44,6 +44,14 @@ body * {
   font-weight: 200;
 }
 
+.card {
+  border-radius: 5px;
+  box-shadow: none !important;
+}
+
+.card-header {
+  box-shadow: none !important;
+}
 
 .card-header p{
 display: block;
