@@ -5,10 +5,34 @@
 //  background-image: linear-gradient(to top, $blue  0%, $light-blue 100%)
 //background: -webkit-linear-gradient(24deg, transparent, rgb(0, 0, 152), rgb(38, 38, 255));
 //background: linear-gradient(24deg, transparent, rgb(0, 0, 152), rgb(38, 38, 255));
-background-position: -3rem 0rem !important;
-background: radial-gradient(ellipse farthest-corner, $dark-blue 30%, $base-blue);
+
+//background-position: -3rem 0rem !important;
+//background: radial-gradient(ellipse farthest-corner, $dark-blue 30%, $base-blue);
 border-bottom: none !important;
 
+background: rgba(38,38,255,0.94);
+background: -moz-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(38,38,255,0.94)), color-stop(18%, rgba(18,18,200,0.97)), color-stop(34%, rgba(0,0,152,0.99)), color-stop(46%, rgba(0,0,152,1)), color-stop(74%, rgba(0,0,152,0.97)), color-stop(96%, rgba(38,38,255,0.94)), color-stop(100%, rgba(38,38,255,0.94)));
+background: -webkit-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: -o-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: -ms-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: linear-gradient(to right, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2626ff', endColorstr='#2626ff', GradientType=1 );
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .tabs .navTabs {
+    background: rgba(38,38,255,1);
+background: -moz-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(38,38,255,1)), color-stop(2%, rgba(0,0,152,1)), color-stop(49%, rgba(0,0,152,1)), color-stop(98%, rgba(0,0,152,1)), color-stop(100%, rgba(38,38,255,1)));
+background: -webkit-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: -o-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: -ms-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: linear-gradient(to right, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2626ff', endColorstr='#2626ff', GradientType=1 );
+  }
 }
 
 .tabs a{
@@ -92,8 +116,10 @@ a:focus {
 
 
 .tabs {
-  box-shadow: 0px 2px 36px 2px;
   opacity: .90;
+  -webkit-box-shadow: 0px 6px 17px 3px rgba(66,65,69,1);
+-moz-box-shadow: 0px 6px 17px 3px rgba(66,65,69,1);
+box-shadow: 0px 6px 17px 3px rgba(66,65,69,1);
 }
 
 .appBar {

@@ -27,7 +27,7 @@ class HomePage extends Component {
           description="Located in Paynetown SRA"
           path="/"
         />
-      <div className="column is-3 is-offset-2 is-mobile is-fullheight is-hidden-mobile">
+      <div className="column is-3 is-offset-2 is-hidden-mobile">
         <HomeSidebar /> 
       </div>
       <div className="column is-fullheight">

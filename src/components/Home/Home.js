@@ -31,6 +31,10 @@ const Home = (props) => (
                     </p>
                   </div>
             </div>
+            <div className="is-hidden-desktop">
+              Like us on Facebook!
+<div class="fb-page" data-href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/">Lake Monroe Boat Rental, INC</a></blockquote></div>
+            </div>
 
         </Section>
       </div>

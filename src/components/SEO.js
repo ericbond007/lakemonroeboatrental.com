@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-const seoImageURL = `https://thefishinshedd.com/sheddLogo-min.png`;
+const seoImageURL = `https://lakemonroeboatrental.com/img/lmbrLogo.png`;
 
 const getMetaTags = ({
   title, description, url,  published, updated, category, tags 
@@ -38,12 +38,12 @@ const SEO = ({
     }}
     title={ title }
     link={[
-      { rel: 'canonical', href: `https://thefishinshedd.com${path}` },
+      { rel: 'canonical', href: `https://lakemonroeboatrental.com${path}` },
     ]}
     meta={getMetaTags({
       title,
       description,
-      url: `https://thefishinshedd.com${path}`,
+      url: `https://lakemonroeboatrental.com${path}`,
       published,
       updated,
       category,

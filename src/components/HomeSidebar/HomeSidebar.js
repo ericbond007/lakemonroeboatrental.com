@@ -8,6 +8,7 @@ import './HomeSidebar.css';
 
 const HomeSidebar = (props) => {
   return (
+    <div className="homesidebar">
     <div className="card sidebar">
       <div className="card-content">
         <div className="media">
@@ -31,6 +32,7 @@ const HomeSidebar = (props) => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
