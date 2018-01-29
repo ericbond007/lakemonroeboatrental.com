@@ -10,7 +10,7 @@ import About from './components/Switches/About';
 
 
 
-import Layout from './components/Layout/Layout';
+import Layout from './containers/Layout/Layout';
 
 import './bulmaVars.css';
 import 'animate.css';
