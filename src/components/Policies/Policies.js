@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SEO from '../SEO';
 import { Section, Container, Title, SubTitle } from 'reactbulma';
+import PoliciesSidebar from '../PoliciesSidebar/PoliciesSidebar';
 import './Policies.css';
 
 const Policies = ({ policies }) => (
@@ -31,6 +32,9 @@ const Policies = ({ policies }) => (
               <li>Double Decker and Ski Boat: must be made TWO WEEKS prior to scheduled reservation</li>
               <li>Multiple boat rentals: must be made ONE MONTH prior to the scheduled reservation</li>
             </ul>
+          </div>
+          <div className="is-hidden-desktop">
+            <PoliciesSidebar />
           </div>
           <div>
             <Title className="titleSpace">Weather Policy</Title>

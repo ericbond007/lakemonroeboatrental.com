@@ -17,7 +17,7 @@ class PoliciesPage extends Component {
             description="Our policies are designed for the safety and security of our customers"
             path="/policies"
           />
-          <div className="column is-3 is-offset-2 is-fullheight">
+          <div className="column is-3 is-offset-2 is-fullheight is-hidden-mobile">
             <PoliciesSidebar />
           </div>
           <div className="column is-fullheight">

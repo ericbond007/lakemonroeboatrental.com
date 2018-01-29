@@ -4,11 +4,11 @@ import Image from '../Image';
 
 const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   return (
-    <div>
+    <div className="boatCard">
     <Link to={{
       pathname: `/boats/${cardLink}`,
     }}>
-    <div className="card boatCard">
+    <div className="card">
       <div className="card-header">
         <p className="card-header-title">
           {cardHeader}

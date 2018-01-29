@@ -5,16 +5,12 @@ import Image from '../Image';
 const Map = () => (
   <div className="map">
     <Section>
-        <Message primary>
-          <Message.Header>
-        <h4>
-          Located just south east of Bloomingtion in Paynetown State Recreational Area
+        <h4 className="is-indent">
+          Lake Monroe Boat Rental is located just south east of Bloomingtion in Paynetown State Recreational Area
         </h4>
-      </Message.Header>
-      <Message.Body>
-        <Image imgName="map" imgAlt="Map of Lake Monroe Boat Rental" className="boxedShadow lmbrMap" />
-      </Message.Body>
-    </Message>
+        <a rel="noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/Lake+Monroe+Boat+Rental+Inc/@39.0817314,-86.4368141,17z/data=!3m1!4b1!4m5!3m4!1s0x886c654522e1fb7f:0x7e1299e6fcb7313!8m2!3d39.0817314!4d-86.4346254">
+          <Image imgName="map" imgAlt="Map of Lake Monroe Boat Rental" className="lmbrMap" />
+        </a>
   </Section>
   </div>
 );

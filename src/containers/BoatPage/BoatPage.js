@@ -24,9 +24,8 @@ class BoatPage extends Component {
     return (
       <div>
         <div className="columns is-fullheight boatPage">
-          <div className="column is-2 is-offset-3 is-fullheight is-hidden-mobile">
-            <Sidebar content="8 hour minimum on weekends and holidays on Pontoons and Double Decker boats
-"/>
+          <div className="column is-2 is-offset-3 is-fullheight is-hidden-mobile boatsidebar">
+            <Sidebar />
           </div>
           <div className="column is-fullheight">
             {(this.props.boat) && 

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Section } from 'reactbulma'
-import BoatList from '../Boats/BoatList';
+import BoatList from './BoatList';
 
 import BoatButton from '../BoatButton/BoatButton';
 

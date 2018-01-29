@@ -19,7 +19,7 @@ const HomeSidebar = (props) => {
 
         <div className="">
           Like us on Facebook!
-          <div class="fb-page" 
+          <div className="fb-page" 
             data-href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" 
             data-tabs="timeline,messages" 
             data-width="450"
@@ -28,7 +28,7 @@ const HomeSidebar = (props) => {
             data-adapt-container-width="true" 
             data-hide-cover="true" 
             data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/">Lake Monroe Boat Rental, INC</a></blockquote></div>
+              <blockquote cite="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/">Lake Monroe Boat Rental, INC</a></blockquote></div>
         </div>
       </div>
     </div>

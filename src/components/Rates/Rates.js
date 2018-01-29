@@ -197,7 +197,7 @@ class Rates extends Component {
     return (
       <div>
       
-      <Section className="content is-hidden-mobile">
+      <Section className="content">
       <Container>
               <h1 className="title">Boat Rental Rates</h1>
               <p className="is-size-4-desktop">Please call 812-837-9909 for more info!</p>
@@ -205,7 +205,7 @@ class Rates extends Component {
                 data={data}
                 columns={columns}
                 showPagination={false}
-                className="-striped -highlight priceTable"
+                className="-striped -highlight priceTable is-hidden-mobile"
                 style={{ }}
                 defaultPageSize={8}
                 resizable={false}
