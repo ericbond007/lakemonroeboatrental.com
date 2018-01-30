@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import SEO from '../SEO';
-import { Section, Container, Title, SubTitle } from 'reactbulma';
+import React from 'react';
+import { Section, Title } from 'reactbulma';
 import PoliciesSidebar from '../PoliciesSidebar/PoliciesSidebar';
 import './Policies.css';
 

@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import * as boatActions from '../../actions/boatActions';
 import SEO from '../../components/SEO';
 
-import { Hero } from 'reactbulma';
 
 import Home from '../../components/Home/Home';
-import HomeSlug from '../../components/Home/HomeSlug';
 import ForRent from '../../components/Home/ForRent';
 import Map from '../../components/Home/Map';
 import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
-import Image from '../../components/Image';
 
 class HomePage extends Component {
   componentDidMount() {

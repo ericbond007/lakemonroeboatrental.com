@@ -1,9 +1,6 @@
 import React from 'react';
-import SEO from '../SEO';
-import Boats from './Boats';
-import { Section, Container, Title, SubTitle, Button } from 'reactbulma';
+import { Section } from 'reactbulma';
 import Image from '../Image';
-import Call from '../Call';
 import Reserve from '../Reserve';
 import HomeSlug from './HomeSlug';
 import Hours from './Hours';

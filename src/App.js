@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SwipeableRoutes from 'react-swipeable-routes';
 
 import Home from './components/Switches/Home';
@@ -12,9 +12,8 @@ import About from './components/Switches/About';
 
 import Layout from './containers/Layout/Layout';
 
-import './bulmaVars.css';
 import './bulmaOverride.css';
-//import 'animate.css';
+import 'animate.css';
 
 import './App.css';
 

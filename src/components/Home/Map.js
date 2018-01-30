@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, Container, Message } from 'reactbulma';
+import { Section } from 'reactbulma';
 import Image from '../Image';
 
 const Map = () => (

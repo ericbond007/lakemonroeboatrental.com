@@ -1,9 +1,4 @@
 import React from 'react';
-import 'react-table/react-table.css'
-import { Section, Container, Message } from 'reactbulma';
-
-
-
 
 import './Sidebar.css';
 

@@ -1,9 +1,4 @@
 import React from 'react';
-import { Section, Container, Message } from 'reactbulma';
-
-
-
-
 import './BoatsSidebar.css';
 
 const BoatsSidebar = (props) => {

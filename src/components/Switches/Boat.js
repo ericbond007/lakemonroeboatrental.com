@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Router, Route } from 'react-router-dom';
+import { Switch,  Route } from 'react-router-dom';
 import BoatsPage from '../../containers/BoatsPage/BoatsPage';
 import BoatPage from '../../containers/BoatPage/BoatPage';
 

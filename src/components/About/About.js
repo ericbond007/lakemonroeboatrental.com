@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import SEO from '../SEO';
-import { Section, Container, Title, SubTitle } from 'reactbulma';
+import { Section, Container } from 'reactbulma';
 
 import './About.css';
 

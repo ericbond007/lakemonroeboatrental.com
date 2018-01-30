@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Section } from 'reactbulma'
+import {  Section } from 'reactbulma'
 import BoatList from './BoatList';
-
-import BoatButton from '../BoatButton/BoatButton';
 
 const ForRent = (props) => {
   return (

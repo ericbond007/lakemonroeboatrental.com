@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Section, Container, Title, SubTitle } from 'reactbulma';
+import React from 'react';
+import { Section } from 'reactbulma';
 import Image from '../Image';
 import Sidebar from '../Sidebar/Sidebar';
 import Reserve from '../Reserve';

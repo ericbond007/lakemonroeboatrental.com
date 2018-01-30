@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import BoatLink from '../BoatLink/BoatLink';
-import SEO from '../SEO';
-import { Section, Container, Title, SubTitle } from 'reactbulma';
-import Image from '../Image';
+import { Section } from 'reactbulma';
 import BoatCard from './BoatCard';
 
 import './Boats.css';

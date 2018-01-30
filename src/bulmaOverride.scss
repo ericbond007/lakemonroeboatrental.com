@@ -1,7 +1,27 @@
 @import 'bulma/sass/utilities/initial-variables.sass';
 @import 'bulma/sass/utilities/functions.sass';
 @import '../node_modules/animate-sass/animate';
-@import './bulmaVars.scss';
+/*Set Colors*/
+$base-blue: #2626FF;
+$blue: $base-blue;
+$dark-blue: #000098;
+$light-blue: #8585FF;
+$primary: $base-blue;
+$text-blue: #A9DAFF;
+
+/*Set Typeface */
+$family-serif: "Merriweather", "Georgia", serif;
+
+/*Nav Tabs variables*/
+$tabs-border-bottom-color: $light-blue;
+$tabs-link-active-color: #fff;
+$tabs-link-hover-color: #fff;
+$tabs-link-color: #fff;
+$tabs-link-hover-border-bottom-color: $light-blue;
+
+/*Footer vars */
+$footer-background-color: $base-blue;
+
 
 .section {
   padding-top: 3rem;
