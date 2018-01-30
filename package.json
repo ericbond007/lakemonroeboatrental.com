@@ -31,6 +31,7 @@
     "react-router-redux": "^5.0.0-alpha.9",
     "react-scripts": "1.1.0",
     "react-snap": "^1.10.0",
+    "react-snapshot": "^1.3.0",
     "react-sticky": "^6.0.1",
     "react-sticky-header": "^0.1.9",
     "react-swipeable-routes": "^0.4.0",
@@ -55,6 +56,7 @@
   "scripts": {
     "startjs": "react-scripts start",
     "start": "npm-run-all -p watchcss startjs",
+    "ii": "yarn build && rsync -Par build/* balcarth.com:/srv/http/balcarth.com/www/",
     "snap": "react-snap",
     "buildcss": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watchcss": "npm run buildcss && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
@@ -62,7 +64,9 @@
     "build": "npm-run-all -p buildcss buildjs",
     "buildS": "react-scripts build && react-snap",
     "dd": "yarn build && yarn deploy",
+    "ee": "yarn build && yarn deployEC",
     "deploy": "aws s3 sync build/ s3://lakemonroeboatrental.com && aws s3 sync build/ s3://www.lakemonroeboatrental.com",
+    "deployEC": "scp -r -i '~/ebondawskey.pem' build/* ubuntu@ec2-54-89-228-69.compute-1.amazonaws.com:/var/www/html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
