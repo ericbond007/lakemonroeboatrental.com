@@ -44,6 +44,7 @@
     "redux-wordpress": "^1.1.0",
     "sass": "^1.0.0-beta.4",
     "sass-loader": "^6.0.6",
+    "serve": "^6.4.9",
     "styled-components": "^3.0.2"
   },
   "reactSnap": {
@@ -60,7 +61,7 @@
     "snap": "react-snap",
     "buildcss": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watchcss": "npm run buildcss && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "buildjs": "react-scripts build && rm build/static/js/*.map && rm build/static/css/*.map",
+    "buildjs": "react-scripts build ",
     "build": "npm-run-all -p buildcss buildjs",
     "buildS": "react-scripts build && react-snap",
     "dd": "yarn build && yarn deploy",
