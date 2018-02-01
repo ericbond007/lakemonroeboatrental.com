@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Boats from '../../components/Boats/Boats';
+import Sidebar from '../../components/Sidebar/Sidebar';
 import SEO from '../../components/SEO';
 import BoatsSidebar from '../../components/BoatsSidebar/BoatsSidebar';
 

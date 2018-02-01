@@ -19,3 +19,51 @@ $tabs-link-hover-border-bottom-color: $light-blue;
 /*Footer vars */
 $footer-background-color: $base-blue;
 
+<<<<<<< HEAD
+=======
+.section {
+  padding-top: 3rem;
+  margin-top: 3rem;
+}
+.button.is-primary {
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.button.is-primary:hover {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+body * {
+  font-family: "vista-slab", serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+.card {
+  box-shadow: none !important;
+  border-radius: 10px;
+}
+
+
+.card-header {
+}
+
+.card-header p{
+display: block;
+}
+.card-header-title p{
+  text-align: center;
+  display: block;
+}
+
+@import 'bulma/bulma.sass';
+
+.react-swipeable-view-container div{
+  overflow: hidden !important;
+}
+
+>>>>>>> parent of d00ff95... getting things looking cohesive across the site

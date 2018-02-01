@@ -14,14 +14,8 @@ const BoatsSidebar = (props) => {
           </div>
         </div>
 
-        <div className="leftAlign is-size-5-desktop">
-          <p>
-            Don't forget to get tube with your boat! We have pull behind tubes, skis, wake boards, and more available for rent. Call us at 812-837-990 for more information!
-          </p>
-          <br />
-          <p>
-            Life jackets are provided for every rental. Boats come with life jackets aboard. Children's vests are given at time of check-in.
-          </p>
+        <div className="is-indent is-size-5-desktop">
+          Don't forget to get tube with your boat! We have pull behind tubes, skis, wake boards, and more available for rent. Call us at 812-837-990 for more information!
         </div>
       </div>
     </div>

@@ -4,11 +4,11 @@ import './Sidebar.css';
 
 const Sidebar = ({boat}) => {
   return (
-    <div className="card boatsidebar is-size-5-desktop">
+    <div className="card sidebar is-size-5-desktop">
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <div className="title is-4 is-centered">Policies</div>
+            <p className="title is-4">Policies</p>
           </div>
         </div>
 
@@ -19,7 +19,7 @@ const Sidebar = ({boat}) => {
           <p>
             4 hour minimuom on weekends or holidays for Ski Boats
           </p>
-          <div className="title is-4 is-centered">Fuel Fees</div>
+          <p>Feul Fees</p>
           <p>Pontoons and Double Deckers: $3 per hour
           </p>
           <p>Ski Boats: $9 per hour</p>
