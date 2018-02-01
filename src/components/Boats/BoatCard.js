@@ -10,7 +10,7 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
     }}>
     <div className="card">
       <div className="card-header">
-        <p className="card-header-title is-centered">
+        <p className="card-header-title">
           {cardHeader}
         </p>
       </div>
@@ -20,8 +20,8 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
         </figure>
       </div>
       <div className="card-content">
-        <div className="is-centered">
-          <p className="is-centered">{cardText}</p>
+        <div className="content">
+          <p>{cardText}</p>
         </div>
       </div>
     </div>

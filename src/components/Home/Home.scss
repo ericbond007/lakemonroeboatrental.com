@@ -184,7 +184,7 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
   padding-bottom: 1rem;
 }
 
-.homePage .left {
+.homePage p {
   text-align: left;
   text-indent: 1rem;
 }
@@ -205,6 +205,7 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 .column .is-hidden-mobile {
   padding-top: 5rem;
 }
+<<<<<<< HEAD
 #root {
   background-attachment: fixed;
   background-position: center;
@@ -244,4 +245,9 @@ background-image: url("/img/dust_scratches.png");
 }
 
 .home {
+=======
+
+.homeImg {
+  margin: auto;
+>>>>>>> master
 }

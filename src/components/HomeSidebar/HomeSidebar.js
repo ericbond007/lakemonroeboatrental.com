@@ -1,8 +1,4 @@
 import React from 'react';
-import { Section, Container, Message } from 'reactbulma';
-
-
-
 
 import './HomeSidebar.css';
 

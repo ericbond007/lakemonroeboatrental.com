@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import HomeBoatLink from '../HomeBoatLink/HomeBoatLink';
-import { Button, Box } from 'reactbulma'
 
 
 const Boats = () => {

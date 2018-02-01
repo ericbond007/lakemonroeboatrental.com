@@ -1,5 +1,4 @@
 import React from 'react';
-import { Section, Container, Button, Message } from 'reactbulma';
 
 const Hours = ({ hours }) => {
   if (hours[0] !== undefined) {

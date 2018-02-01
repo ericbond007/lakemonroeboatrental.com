@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import BoatLink from '../BoatLink/BoatLink';
-import SEO from '../SEO';
-import { Section, Container, Title, SubTitle } from 'reactbulma';
-import Image from '../Image';
+import { Section } from 'reactbulma';
 import BoatCard from './BoatCard';
 
 import './Boats.css';
@@ -23,13 +20,12 @@ class Boats extends Component {
       <div>
       <Section className="boatsPage">
               <h1 className="title is-1 is-spaced">Boats For Rent</h1>
-              <div className="leftAlign">
-                <p>
+              <div>
+                <p className="leftAlign">
                   Choose from a variety of boats to rent. Single families do well on the single deck pontoons or ski boat. Large groups can take out our 34' Double Decker for a great day out on the lake
-                </p>
-                <br />
-                <p>
-                  For the adventerous type, we have canoes, kayak, and paddleboards. All our kayaks are tandem and can fit one or two people. Canoes are great for two, with room to spare. Our paddleboards are a blast to float around the bay!
+                
+
+                Don't forget about watercraft accessories! We have pull behind tubes, skis, wakeboards, and more!
                 </p>
                 <p className="withSpace">
                   Click the images below to see more info about the boat!
@@ -65,7 +61,7 @@ class Boats extends Component {
                   <BoatCard cardImg="fishing-boat" cardHeader="16ft Fishing Boat" cardLink="fishing-boat" cardText="2 person max capacity" imgAlt="16ft Fishing Boat" />
               </div>
                 <div className="column is-half">
-                  <BoatCard cardImg="canoe" cardHeader="Canoes, Kayaks, & Paddleboards" cardLink="non-motorized" cardText="1-3 person max capacity"  imgAlt="Canoes, Kayaks, & Paddleboards" />
+                  <BoatCard cardImg="canoe" cardHeader="Canoes, Kayaks, & Paddleboards" cardLink="non-motorized" cardText="1-3 people"  imgAlt="Canoes, Kayaks, & Paddleboards" />
               </div>
         </div>
           </Section>

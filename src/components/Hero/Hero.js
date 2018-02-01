@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React from 'react';
 import NavBar from '../NavBar/NavBar';
 import Sticky from '../Sticky/Sticky';
 import ProgressiveImage from 'react-progressive-bg-image';

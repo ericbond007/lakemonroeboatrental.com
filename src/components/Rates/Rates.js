@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import SEO from '../SEO';
 import ReactTable from 'react-table';
 import 'react-table/react-table.css'
-import { Section, Container, Title, SubTitle } from 'reactbulma';
+import { Section, Container } from 'reactbulma';
 
 
 

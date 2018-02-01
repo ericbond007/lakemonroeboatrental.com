@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SwipeableRoutes from 'react-swipeable-routes';
 
 import Home from './components/Switches/Home';
@@ -12,7 +12,11 @@ import About from './components/Switches/About';
 
 import Layout from './containers/Layout/Layout';
 
+<<<<<<< HEAD
 //import './bulmaVars.css';
+=======
+import './bulmaOverride.css';
+>>>>>>> master
 import 'animate.css';
 
 import './App.css';
@@ -23,7 +27,11 @@ const App = ({ location }) => {
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <Layout>
+<<<<<<< HEAD
         <SwipeableRoutes resistance enableMouseEvents>
+=======
+        <SwipeableRoutes resistance  enableMouseEvents>
+>>>>>>> master
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={Home} />

@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
 import Boat from '../../components/Boat/Boat';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import SEO from '../../components/SEO';
 import Sidebar from '../../components/Sidebar/Sidebar';
 
 
@@ -32,6 +30,9 @@ class BoatPage extends Component {
             <Boat boat={this.props.boat} />
             }
           </div>
+          <div className="column is-2 is-hidden-desktop">
+            <Sidebar className="is-hidden-desktop"/ >
+          </div>
           <div className="column is-2 is-hidden-mobile">
           </div>
         </div>
@@ -46,7 +47,6 @@ BoatPage.propTypes = {
 
 function mapStateToProps(state, ownProps) {
   let boat = {boatname: '', max_capacity: ''};
-  const boats = state.boats;
   let boatname = ownProps.location.pathname.replace(/\/boats\//, '');
   if (state.boats) {
     boat = state.boats.filter(boat => boat.acf.boatname === boatname);
