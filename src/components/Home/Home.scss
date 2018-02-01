@@ -1,4 +1,4 @@
-@import '../../bulmaVars.scss';
+@import 'bulmaVars.scss';
 
 .home {
 
@@ -204,4 +204,44 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 
 .column .is-hidden-mobile {
   padding-top: 5rem;
+}
+#root {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+
+
+  background-color: #ffffff;
+background-image: url("/img/dust_scratches.png");
+}
+
+
+.App {
+  text-align: center;
+
+}
+
+
+/*CSS Grid Definition*/
+
+.header {
+  height: 4rem;
+}
+
+.content {
+  text-align: center;
+}
+
+.content > img {
+  max-width: 80%;
+}
+
+.footer {
+}
+
+.main-wrapper {
+  background: #C2C2F2;
+}
+
+.home {
 }

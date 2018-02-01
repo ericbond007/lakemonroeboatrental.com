@@ -20,7 +20,7 @@ const Home = (props) => (
                   <HomeSlug homepage={props.homepage} />
                   <Hours hours={props.hours} />
                   <div className="homeDescrip left">
-                    <p>
+                    <p className="is-size-5-touch">
                       Since 1992, Lake Monroe Boat Rental is your choice for family fun on Lake Monroe! Rent our pontoons for a great day on the lake, or bring the whole family on our 34' Double Decker with slide.
                     </p>
                     <Image imgName="greenDD" imgAlt="Green Double Decker" />

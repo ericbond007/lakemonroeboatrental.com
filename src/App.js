@@ -12,7 +12,7 @@ import About from './components/Switches/About';
 
 import Layout from './containers/Layout/Layout';
 
-import './bulmaVars.css';
+//import './bulmaVars.css';
 import 'animate.css';
 
 import './App.css';
@@ -23,7 +23,7 @@ const App = ({ location }) => {
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <Layout>
-        <SwipeableRoutes>
+        <SwipeableRoutes resistance enableMouseEvents>
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={Home} />

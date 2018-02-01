@@ -1,13 +1,14 @@
 @import 'bulma/sass/utilities/initial-variables.sass';
 @import 'bulma/sass/utilities/functions.sass';
 @import '../node_modules/animate-sass/animate';
-/*Set Colors*/
-$base-blue: #2626FF;
+
+$base-blue:#2626FF;
 $blue: $base-blue;
 $dark-blue: #000098;
 $light-blue: #8585FF;
 $primary: $base-blue;
 $text-blue: #A9DAFF;
+
 
 /*Set Typeface */
 $family-serif: "Merriweather", "Georgia", serif;
@@ -65,9 +66,44 @@ display: block;
   display: block;
 }
 
-@import 'bulma/bulma.sass';
 
 .react-swipeable-view-container div{
   overflow: hidden !important;
 }
 
+body {
+  position: relative;
+
+
+
+
+}
+
+#root {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+
+
+  background-color: #ffffff;
+background-image: url("/img/dust_scratches.png");
+}
+
+
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
+
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+}
+@import 'bulma/bulma.sass';

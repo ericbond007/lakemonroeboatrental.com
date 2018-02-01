@@ -58,10 +58,12 @@
     "snap": "react-snap",
     "buildcss": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watchcss": "npm run buildcss && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "buildjs": "react-scripts build && rm build/static/js/*.map && rm build/static/css/*.map",
+    "buildjs": "react-scripts build", 
     "build": "npm-run-all -p buildcss buildjs",
     "buildS": "react-scripts build && react-snap",
     "dd": "yarn build && yarn deploy",
+    "ee": "yarn build && yarn deployEC",
+    "deployEC": "rsync -Pavr -e 'ssh -i /home/eric/ebondawskey.pem' build/* ubuntu@ec2-54-89-228-69.compute-1.amazonaws.com:/var/www/html",
     "deploy": "aws s3 sync build/ s3://lakemonroeboatrental.com && aws s3 sync build/ s3://www.lakemonroeboatrental.com",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
