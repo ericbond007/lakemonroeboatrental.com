@@ -13,7 +13,6 @@ import About from './components/Switches/About';
 import Layout from './containers/Layout/Layout';
 
 import './bulmaOverride.css';
-import 'animate.css';
 
 import './App.css';
 
