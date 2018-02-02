@@ -6,12 +6,11 @@ import { connect } from 'react-redux';
 
 class PoliciesPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 800);
   }
   render() {
     return (
       <div>
-        <div className="columns is-fullheight policiesPage is-size-4-desktop">
+        <div className="columns is-fullheight policiesPage is-size-4-desktop is-size-5-mobile">
           <SEO
             title="Policies | Lake Monroe Boat Rental"
             description="Our policies are designed for the safety and security of our customers"

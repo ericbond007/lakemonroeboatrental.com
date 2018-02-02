@@ -3,7 +3,6 @@ import About from '../../components/About/About';
 
 class AboutPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 800);
   }
   render() {
     return (

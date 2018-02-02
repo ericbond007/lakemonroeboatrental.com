@@ -14,7 +14,7 @@ class BoatPage extends Component {
     }
   }
   componentDidMount() {
-    window.scrollTo(0, 800);
+    window.scrollTo(0, 750);
 
   }
 

@@ -11,7 +11,6 @@ import './Rates.css';
 class Rates extends Component {
   
   componentDidMount(prevProps) {
-    window.scrollTo(0, 0);
   }
 
   render() {
@@ -194,7 +193,7 @@ class Rates extends Component {
 
     ]
     return (
-      <div>
+      <div className="rates">
       
       <Section className="content">
       <Container>

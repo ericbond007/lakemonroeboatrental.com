@@ -6,12 +6,10 @@ import SEO from '../../components/SEO';
 
 class RatesPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 800);
-
   }
   render() {
     return (
-      <div>
+      <div className="is-size-5-mobile">
         <SEO
           title="Rates | Lake Monroe Boat Rental"
           description="Rates page"

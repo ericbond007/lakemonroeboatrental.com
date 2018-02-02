@@ -26,7 +26,7 @@ const Hero = (props) => {
         </div>
       </div>
       <div className="hero-foot">
-        <Sticky>
+        <Sticky id="navbar">
           <NavBar />
         </Sticky>
       </div>

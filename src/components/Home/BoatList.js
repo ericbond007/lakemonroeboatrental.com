@@ -1,13 +1,15 @@
 import React from 'react';
 import BoatCard from '../Boats/BoatCard';
-
+import Scroll from 'react-scroll-to-element';
 
 
 const BoatList = () => (
 	<div>
  <div className="columns is-centered is-multiline" >
                 <div className="column is-half">
-                  <BoatCard cardImg="doubleDecker" cardHeader="34' Double Decker with Slide" cardText="24 person max capacity" cardLink="doubledecker" imgAlt="Double Decker with Slide" />
+                  <Scroll type="class" element="navTabs">
+                    <BoatCard cardImg="doubleDecker" cardHeader="34' Double Decker with Slide" cardText="24 person max capacity" cardLink="doubledecker" imgAlt="Double Decker with Slide" />
+                  </Scroll>
                 </div>
 
                 <div className="column is-half">
@@ -38,7 +40,6 @@ const BoatList = () => (
                   <BoatCard cardImg="fishing-boat" cardHeader="16ft Fishing Boat" cardLink="fishing-boat"            cardText="2 person max capacity" imgAlt="16ft Fishing Boat" />
               </div>
         </div>
-
   </div>
 );
 

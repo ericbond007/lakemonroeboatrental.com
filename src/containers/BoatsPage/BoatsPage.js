@@ -7,12 +7,11 @@ import BoatsSidebar from '../../components/BoatsSidebar/BoatsSidebar';
 
 class BoatsPage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 800);
   }
 
   render() {
     return (
-      <div className="columns is-fullheight boatsPage is-size-4-desktop">
+      <div className="columns is-fullheight boatsPage is-size-4-desktop is-size-5-mobile">
       <SEO
         title="Boats | Lake Monroe Boat Rental"
         description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"

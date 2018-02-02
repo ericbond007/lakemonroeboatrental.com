@@ -11,7 +11,6 @@ import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
 
 class HomePage extends Component {
   componentDidMount() {
-    window.scrollTo(0, 800);
   }
 
   render() {

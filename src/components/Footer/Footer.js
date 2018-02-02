@@ -7,12 +7,12 @@ const Footer = () => (
   <div className="footer">
     <div className="columns is-mobile is-multiline is-centered-mobile">
       <div className="column is-offset-one-third-desktop is-1-desktop is-half-mobile  is-size-2">
-            <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/fishinshedd">
+            <a rel="noopener noreferrer" target="_blank" href="https://urlgeni.us/facebook/zi2i">
                 <FaFacebookSquare />
             </a>
       </div>
       <div className="column is-1-desktop is-half-mobile is-size-2">
-            <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/thefishinshedd/">
+            <a rel="noopener noreferrer" target="_blank" href="https://urlgeni.us/instagram/cBgM">
                 <FaInstagram />
  
             </a>
