@@ -149,7 +149,7 @@ i:hover{
 
 .boatCard {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease-out;
 }
 
 .boatCard:hover {
@@ -165,4 +165,13 @@ i:hover{
 .leftAlign {
   text-align: left;
   text-indent: 1rem;
+}
+
+.boatCard .card-image {
+  opacity: 1;
+  transition: all 0.4s ease-out;
+}
+
+.boatCard .card-image:hover {
+  opacity: .75;
 }

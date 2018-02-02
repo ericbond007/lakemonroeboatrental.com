@@ -4,6 +4,7 @@ import './Sidebar.css';
 
 const Sidebar = ({boat}) => {
   return (
+    <div className="boatssidebar">
     <div className="card sidebar is-size-5-desktop">
       <div className="card-content">
         <div className="media">
@@ -27,6 +28,7 @@ const Sidebar = ({boat}) => {
         </div>
       </div>
     </div>
+  </div>
     );
 };
 
