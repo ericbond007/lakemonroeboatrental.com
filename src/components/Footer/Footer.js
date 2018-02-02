@@ -1,21 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
+import FaFacebookSquare from 'react-icons/lib/fa/facebook-official';
+import FaInstagram from 'react-icons/lib/fa/instagram';
 import './Footer.css';
 
-class Footer extends Component {
-  render() {
-    return (
-      <div className="footer">
-        <div className="rowBehave">
-          <ul className="footUl">
+const Footer = () => (
+  <div className="footer">
+    <div className="columns">
+      <div className="column is-offset-one-third is-1 is-size-2">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/fishinshedd">
+                <FaFacebookSquare />
+            </a>
+      </div>
+      <div className="column is-1 is-size-2">
+            <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/thefishinshedd/">
+                <FaInstagram />
+ 
+            </a>
+      </div>
+      <div className="column is-vertical-align">
+            <p className="is-size-5">&copy; 2018 Lake Monroe Boat Rental</p>
+      </div>
+    </div>
+    </div>
+);
 
-            <li><a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/fishinshedd"><i className="fab facebook-square" aria-label="https://www.facebook.com/fishinshedd"></i></a></li>
-            <li><a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/thefishinshedd/"><i className="fab instagram" aria-label="https://www.instagram.com/thefishinshedd"></i> </a></li>
-            <li><p>&copy; 2018 Lake Monroe Boat Rental</p></li>
-          </ul>
-      </div>
-      </div>
-    );
-  }
-}
 
 export default Footer;

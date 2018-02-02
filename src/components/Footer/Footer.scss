@@ -1,13 +1,26 @@
 @import '../../bulmaVars.scss';
 
+.footer .is-vertical-align {
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 
 .footer {
-  text-align: center;
+  text-align: left;
   color: #fff;
-  box-shadow: 0px -2px 15px 2px rgba(74, 74, 74, 1);
-  background: -webkit-linear-gradient(24deg, rgb(0, 0, 152), rgb(38, 38, 255));
-background: linear-gradient(24deg, rgb(0, 0, 152), rgb(38, 38, 255));
-
+  //box-shadow: 0px -2px 15px 2px rgba(74, 74, 74, 1);
+  //background: -webkit-linear-gradient(24deg, rgb(0, 0, 152), rgb(38, 38, 255));
+//background: linear-gradient(24deg, rgb(0, 0, 152), rgb(38, 38, 255));
+background: rgba(38,38,255,0.94);
+background: -moz-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(38,38,255,0.94)), color-stop(18%, rgba(18,18,200,0.97)), color-stop(34%, rgba(0,0,152,0.99)), color-stop(46%, rgba(0,0,152,1)), color-stop(74%, rgba(0,0,152,0.97)), color-stop(96%, rgba(38,38,255,0.94)), color-stop(100%, rgba(38,38,255,0.94)));
+background: -webkit-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: -o-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: -ms-linear-gradient(left, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+background: linear-gradient(to right, rgba(38,38,255,0.94) 0%, rgba(18,18,200,0.97) 18%, rgba(0,0,152,0.99) 34%, rgba(0,0,152,1) 46%, rgba(0,0,152,0.97) 74%, rgba(38,38,255,0.94) 96%, rgba(38,38,255,0.94) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2626ff', endColorstr='#2626ff', GradientType=1 );
 }
 
 
@@ -15,30 +28,15 @@ background: linear-gradient(24deg, rgb(0, 0, 152), rgb(38, 38, 255));
   color: #fff;
 }
 
-.footUl {
-  display: inline-block;
-  float: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media only screen and (max-width: 1200px) {
+  .footer {
+    background: rgba(38,38,255,1);
+background: -moz-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(38,38,255,1)), color-stop(2%, rgba(0,0,152,1)), color-stop(49%, rgba(0,0,152,1)), color-stop(98%, rgba(0,0,152,1)), color-stop(100%, rgba(38,38,255,1)));
+background: -webkit-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: -o-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: -ms-linear-gradient(left, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+background: linear-gradient(to right, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, rgba(0,0,152,1) 49%, rgba(0,0,152,1) 98%, rgba(38,38,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2626ff', endColorstr='#2626ff', GradientType=1 );
+  }
 }
-
-.footUl li {
-  float: left;
-  display: block;
-  position: relative;
-}
-
-.rowBehave {
-  margin-top: 1rem;
-}
-
-
-
-.footUl i {
-  padding: unset;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  font-size: 2.6rem;
-}
-

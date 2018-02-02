@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {  Section } from 'reactbulma'
 import BoatList from './BoatList';
 
-const ForRent = (props) => {
+const ForRent = () => {
   return (
     <div className="forRent">
       <Section>
@@ -14,9 +13,6 @@ const ForRent = (props) => {
   );
 };
 
-ForRent.propTypes = {
-  boats: PropTypes.array.isRequired
-}
 
 export default ForRent;
 
