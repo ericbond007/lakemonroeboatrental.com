@@ -40,3 +40,9 @@ background: linear-gradient(to right, rgba(38,38,255,1) 0%, rgba(0,0,152,1) 2%, 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2626ff', endColorstr='#2626ff', GradientType=1 );
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer .columns {
+    text-align: center;
+  }
+}

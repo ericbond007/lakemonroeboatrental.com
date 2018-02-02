@@ -18,6 +18,7 @@
 
   .map img {
   }
+
   .homeDescrip {
     margin: auto;
     margin-bottom: 4rem;
@@ -42,6 +43,9 @@
 @media only screen and (max-width: 1000px) {
   .homeLogo {
     width: 40%;
+  }
+  .map a{
+    text-align: center;
   }
 
   .boatButtons button {

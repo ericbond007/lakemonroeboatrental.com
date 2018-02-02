@@ -19,7 +19,7 @@ const Boat = ({boat}) => {
             {boat[0].acf.description}
           </p>
         </div>
-        <div className="boatRates">
+        <div className="boatRates is-size-5-touch">
           <h3 className="regalTitle">Rates</h3>
           <div className="ratesRow">
             <div className="boatLeft">One Hour:</div>

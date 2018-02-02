@@ -5,19 +5,19 @@ import './Footer.css';
 
 const Footer = () => (
   <div className="footer">
-    <div className="columns">
-      <div className="column is-offset-one-third is-1 is-size-2">
+    <div className="columns is-mobile is-multiline is-centered-mobile">
+      <div className="column is-offset-one-third-desktop is-1-desktop is-half-mobile  is-size-2">
             <a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/fishinshedd">
                 <FaFacebookSquare />
             </a>
       </div>
-      <div className="column is-1 is-size-2">
+      <div className="column is-1-desktop is-half-mobile is-size-2">
             <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/thefishinshedd/">
                 <FaInstagram />
  
             </a>
       </div>
-      <div className="column is-vertical-align">
+      <div className="column  is-vertical-align">
             <p className="is-size-5">&copy; 2018 Lake Monroe Boat Rental</p>
       </div>
     </div>
