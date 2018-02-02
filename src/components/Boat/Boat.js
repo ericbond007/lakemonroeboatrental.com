@@ -1,6 +1,7 @@
 import React from 'react';
 import { Section } from 'reactbulma';
 import Image from '../Image';
+import Reserve from '../Reserve';
 import './Boat.css';
 
 const Boat = ({boat}) => {
@@ -65,6 +66,7 @@ const Boat = ({boat}) => {
             <div className="boatLeft">Deposit:</div>
             <div className="boatRight">${boat[0].acf.deposit}</div>
           </div>
+          <Reserve />
         </div>
       </Section>
     </div>

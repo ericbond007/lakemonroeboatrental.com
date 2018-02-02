@@ -23,7 +23,7 @@ const App = ({ location }) => {
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <Layout>
-        <SwipeableRoutes resistance  enableMouseEvents>
+        <SwipeableRoutes resistance>
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={Home} />

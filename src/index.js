@@ -7,7 +7,6 @@ import { Provider } from 'react-redux';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
 
 import { loadBoats } from './actions/boatActions';
 import { loadPolicies } from './actions/policyActions';
@@ -16,7 +15,14 @@ import { loadHomepage } from './actions/homeActions';
 import { loadHours } from './actions/hoursActions';
 import { loadFuel } from './actions/fuelActions';
 
+const preloadedState = window.__PRELOADED_STATE_
+delete window.__PRELOADED_STATE__
+
 const store = configureStore();
+
+window.snapSaveState = () => ({
+  "__PRELOADED_STATE__": store.getState()
+})
 
 store.dispatch(loadBoats());
 store.dispatch(loadPolicies());
@@ -48,7 +54,7 @@ if (rootElement.hasChildNodes()) {
   );
 }
 }
-
 renderApp(App);
 
-registerServiceWorker();
+
+//registerServiceWorker();

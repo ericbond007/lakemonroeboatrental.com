@@ -209,3 +209,64 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 .homeImg {
   margin: auto;
 }
+body {
+  position: relative;
+
+
+
+
+}
+
+#root {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+
+
+  background-color: #ffffff;
+background-image: url("/img/dust_scratches.png");
+}
+
+
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
+
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+}
+
+.App {
+  text-align: center;
+
+}
+
+
+/*CSS Grid Definition*/
+
+.header {
+  height: 4rem;
+}
+
+.content {
+  text-align: center;
+}
+
+.content > img {
+  max-width: 80%;
+}
+
+
+.reserve .section h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}

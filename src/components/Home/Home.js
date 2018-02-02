@@ -1,11 +1,7 @@
 import React from 'react';
 import { Section } from 'reactbulma';
 import Image from '../Image';
-<<<<<<< HEAD
 import Reserve from '../Reserve';
-=======
-import Call from '../Call';
->>>>>>> parent of d00ff95... getting things looking cohesive across the site
 import HomeSlug from './HomeSlug';
 import Hours from './Hours';
 
@@ -17,10 +13,7 @@ const Home = (props) => (
             <div className="animated fadeIn slideInUp">
               <Image imgName="logo" imgAlt="LMBR Logo" className="homeLogo"/>
                 <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
-                  <Button primary large><h2 className=""> Call to Reserve Today!</h2></Button>
-                  <h3>
-                    <Call className="homeNumber"/>
-                  </h3>
+                  <Reserve />
                   <HomeSlug homepage={props.homepage} />
                   <Hours hours={props.hours} />
                   <div className="homeDescrip">
