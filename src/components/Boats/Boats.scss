@@ -152,10 +152,22 @@ i:hover{
   transition: all 0.4s ease-out;
 }
 
-.boatCard:hover {
+.boatCard:hover, .boatCard:active {
  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
  transform: translateY(-5px);
 }
+
+
+.boatCard .card-image {
+  opacity: 1;
+  transition: all 0.4s ease-out;
+}
+
+.boatCard .card-image:hover, .boatCard .card-image:active {
+  opacity: .75;
+}
+
+
 
 .withSpace {
   margin-top: 1rem;
@@ -165,13 +177,4 @@ i:hover{
 .leftAlign {
   text-align: left;
   text-indent: 1rem;
-}
-
-.boatCard .card-image {
-  opacity: 1;
-  transition: all 0.4s ease-out;
-}
-
-.boatCard .card-image:hover {
-  opacity: .75;
 }

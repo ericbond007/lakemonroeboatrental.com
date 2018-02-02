@@ -17,7 +17,7 @@ class Boats extends Component {
 
   render() {
     return (
-      <div>
+      <div id="list-page" className="transition-item">
       <Section className="boatsPage">
               <h1 className="title is-1 is-spaced">Boats For Rent</h1>
               <div>

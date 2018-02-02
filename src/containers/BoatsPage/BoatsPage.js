@@ -22,7 +22,7 @@ class BoatsPage extends Component {
         <BoatsSidebar />
       </div>
       <div clssname="column is-fullheight">
-        <Boats /> 
+          <Boats /> 
       </div>
       <div className="column is-2">
       </div>
