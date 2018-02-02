@@ -16,7 +16,7 @@ class wordpressAPI {
   }
 
   static getRates() {
-    return fetch('https://balcarth.com/wordpress/wp-json/acf/v3/boats?_embed').then(response => {
+    return fetch('https://balcarth.com/wordpress/wp-json/acf/v3/rates?_embed').then(response => {
       return response.json();
     }).catch(error => {
       return error;

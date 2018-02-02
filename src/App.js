@@ -8,6 +8,8 @@ import Rates from './components/Switches/Rates';
 import Policies from './components/Switches/Policies';
 import About from './components/Switches/About';
 
+import Typekit from 'react-typekit';
+
 
 
 import Layout from './containers/Layout/Layout';
@@ -22,6 +24,7 @@ const App = ({ location }) => {
   return (
     <Router onUpdate={() => window.scrollTo(0, 0)}>
       <Layout>
+        <Typekit kitId="bmb7wkn" />
         <SwipeableRoutes resistance>
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />

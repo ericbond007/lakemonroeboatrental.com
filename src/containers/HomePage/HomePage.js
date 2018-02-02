@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import SEO from '../../components/SEO';
+import LazyLoad from 'react-lazyload';
 
 
 import Home from '../../components/Home/Home';
@@ -28,7 +29,9 @@ class HomePage extends Component {
       <div className="column is-fullheight">
         <Home {...this.props} />
         <Map />
-        <ForRent />
+        <LazyLoad height={500} offset={800} once >
+          <ForRent />
+        </LazyLoad>
       </div>
       <div className="column is-2">
       </div>

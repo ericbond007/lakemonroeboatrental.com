@@ -26,7 +26,6 @@ window.snapSaveState = () => ({
 
 store.dispatch(loadBoats());
 store.dispatch(loadPolicies());
-store.dispatch(loadRates());
 store.dispatch(loadHomepage());
 store.dispatch(loadHours());
 store.dispatch(loadFuel());

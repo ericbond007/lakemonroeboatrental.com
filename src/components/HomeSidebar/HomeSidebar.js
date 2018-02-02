@@ -1,4 +1,6 @@
 import React from 'react';
+import FacebookProvider, { Page } from 'react-facebook';
+
 
 import './HomeSidebar.css';
 
@@ -12,20 +14,9 @@ const HomeSidebar = (props) => {
             <p className="title is-4"></p>
           </div>
         </div>
-
-        <div className="">
-          Like us on Facebook!
-          <div className="fb-page" 
-            data-href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" 
-            data-tabs="timeline,messages" 
-            data-width="450"
-            data-height="800"
-            data-small-header="false" 
-            data-adapt-container-width="true" 
-            data-hide-cover="true" 
-            data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/">Lake Monroe Boat Rental, INC</a></blockquote></div>
-        </div>
+        <FacebookProvider appId="565402577162682">
+          <Page href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" tabs="timeline, messages" smallHeader="false" width="500" height="800" adaptContainerWidth="true" hideCover="true" showFacefile="true" />
+        </FacebookProvider>
       </div>
     </div>
   </div>
