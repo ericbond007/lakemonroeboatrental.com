@@ -23,7 +23,7 @@ const NavBar = () => (
                   </li>
                     <li>
                       <NavLink  exact activeClassName="active" to="/" >
-                        LMBR
+                       Home 
                     </NavLink>
                   </li>
                     <li>

@@ -14,6 +14,7 @@ import { loadRates } from './actions/ratesActions';
 import { loadHomepage } from './actions/homeActions';
 import { loadHours } from './actions/hoursActions';
 import { loadFuel } from './actions/fuelActions';
+import { loadAbout } from './actions/aboutActions';
 
 const preloadedState = window.__PRELOADED_STATE_
 delete window.__PRELOADED_STATE__
@@ -29,6 +30,7 @@ store.dispatch(loadPolicies());
 store.dispatch(loadHomepage());
 store.dispatch(loadHours());
 store.dispatch(loadFuel());
+store.dispatch(loadAbout());
 
 const rootElement = document.getElementById('root');
 

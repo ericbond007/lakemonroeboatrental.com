@@ -6,5 +6,6 @@ export default {
   contact: [],
   hours: [],
   homepage: [],
-  fuel: []
+  fuel: [],
+  about: []
 }

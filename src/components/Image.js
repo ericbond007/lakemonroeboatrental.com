@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Image = ({imgName, imgAlt, className, imgLink}) => (
+const Image = ({imgName, imgAlt, className, imgLink, imgHover}) => (
   <div>
     <picture>
  <source
@@ -26,6 +26,9 @@ const Image = ({imgName, imgAlt, className, imgLink}) => (
    type="image/jpeg"
    alt={imgAlt} />
 </picture>
+<div className="is-size-1 imgHover">
+  {imgHover}
+</div>
 </div>
 );
 

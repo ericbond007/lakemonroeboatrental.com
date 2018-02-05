@@ -1,38 +1,31 @@
-import React, { Component } from 'react';
-import SEO from '../SEO';
-import { Section, Container } from 'reactbulma';
+import React from 'react';
+import { Section, Title } from 'reactbulma';
+import Directions from './Directions';
 
 import './About.css';
 
-class About extends Component {
-  constructor() {
-    super();
-    this.state = {
-      boats: []
-    }
-  }
-  
-  componentDidMount(prevProps) {
-  }
-
-  render() {
-    return (
+const About = ({ about }) => (
       <div>
-        <SEO
-          title="About | Lake Monroe Boat Rental"
-          description="Located in Paynetown SRA"
-          path="/"
-        />
-      
       <Section className="about">
-        <Container>
-              <h1 className="landingTitle">About Us</h1>
-        </Container>
-        </Section>
+              <Title>About Us</Title>
+              <p className="withSpace">
+                {about[0].acf.paragraph0}
+              </p>
+              <p className="withSpace">
+                {about[0].acf.paragraph1}
+              </p>
+              <p className="withSpace">
+                {about[0].acf.paragraph2}
+              </p>
+              <p className="withSpace">
+                {about[0].acf.paragraph3}
+              </p>
+              <p className="withSpace">
+                {about[0].acf.paragraph4}
+              </p>
+            </Section>
+            <Directions />
       </div>
-
     );
-  }
-}
 
 export default About;

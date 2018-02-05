@@ -5738,6 +5738,12 @@ react-router-dom@^4.2.2:
     react-router "^4.2.0"
     warning "^3.0.0"
 
+react-router-hash-link@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-router-hash-link/-/react-router-hash-link-1.1.1.tgz#7380cc7a8809243d94385924af52dc9d2c9fbaa1"
+  dependencies:
+    prop-types "^15.6.0"
+
 react-router-page-transition@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/react-router-page-transition/-/react-router-page-transition-3.0.2.tgz#bc769458fa20659b5f86313014d83266bf089e2b"
@@ -6373,6 +6379,10 @@ schema-utils@^0.3.0:
   resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
   dependencies:
     ajv "^5.0.0"
+
+scroll-background@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/scroll-background/-/scroll-background-1.0.5.tgz#fcaf014d8f531e5e4239e5cac08dc5eef83bc999"
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"

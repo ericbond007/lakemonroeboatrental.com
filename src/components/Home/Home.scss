@@ -154,7 +154,6 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 .homeDescrip p {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-weight: bold;
 }
 
 .hours {
@@ -169,7 +168,6 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 
 .map h4 {
   padding-bottom: 2rem;
-  font-weight: bold;
 }
 
 .home .section {
@@ -222,9 +220,54 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
   padding-top: 5rem;
 }
 
-.homeImg {
+.homeImgDD {
   margin: auto;
+  -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+-moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  display: block;
 }
+
+.homeImgDD:hover {
+  opacity: .45;
+
+}
+
+.hoverText {
+  display: inline-block;
+  position: relative;
+  -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+-moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+  transition: all 0.4s ease-out;
+  opacity: 1;
+}
+
+.hoverText:hover {
+   box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
+ -webkit-box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
+ transform: translateY(-5px);
+}
+
+.hoverText .imgHover {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  opacity: 0.1;
+  visibility: hidden;
+  transition: opacity 0.7s ease-out;
+  color: #fff;
+  text-shadow: #000 3px 2px 0;
+}
+
+.hoverText:hover .imgHover {
+  visibility: visible;
+  opacity: 1;
+}
+
 body {
   position: relative;
 

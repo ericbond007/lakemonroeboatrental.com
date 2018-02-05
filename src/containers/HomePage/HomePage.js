@@ -28,7 +28,6 @@ class HomePage extends Component {
       </div>
       <div className="column is-fullheight">
         <Home {...this.props} />
-        <Map />
         <LazyLoad height={500} offset={800} once >
           <ForRent />
         </LazyLoad>
