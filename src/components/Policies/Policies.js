@@ -6,7 +6,7 @@ import './Policies.css';
 const Policies = ({ policies }) => (
       <Section className="policies">
           <Title> Policies</Title>
-          <div>
+          <div className="is-size-5-desktop">
             <p className="withSpace">
               Here at Lake Monroe Boat Rental we strive to provide the best boat rental experience on Lake Monroe. We do our best to ensure customer safety and satisfaction during the rental period. Venture out to Lake Monroe and have a safe, fun day on a boat!
             </p>
@@ -16,7 +16,7 @@ const Policies = ({ policies }) => (
               Lake Monroe Boat Rental Policies are as follows:
             </p>
             
-            <ul className="left">
+            <ul className="left is-size-5-desktop">
               {policies.map(policy =>
               <li key={policy.id}>
                 {policy.acf.policy}
@@ -25,7 +25,7 @@ const Policies = ({ policies }) => (
           </div>
           <Title className="titleSpace">Refunds & Cancellations</Title>
           <div>
-            <ul className="left">
+            <ul className="left is-size-5-desktop">
               <li>There are no refunds due to late check-ins, early return, change of plans, illness, weather, or car problems</li>
               <li>Pontoon & Jet Ski cancellations: must be made 72 HOURS prior to reservation time</li>
               <li>Double Decker and Ski Boat: must be made TWO WEEKS prior to scheduled reservation</li>
@@ -37,6 +37,7 @@ const Policies = ({ policies }) => (
           </div>
           <div>
             <Title className="titleSpace">Weather Policy</Title>
+            <div className="left is-size-5-desktop">
             <p>
               Inclement weather is defined as weather where there are unsafe conditions. This includes: warning of severe storms, lightning, high wind advisory, or tornado. If there are inclement weather conditions at Lake Monroe you will be able to reschedule your reservation or delay your departure time.
             </p>
@@ -46,7 +47,7 @@ const Policies = ({ policies }) => (
             <p>
               We cannot give refunds for time not used during a pop-up storm
             </p>
-
+            </div>
           </div>
       </Section>
 );

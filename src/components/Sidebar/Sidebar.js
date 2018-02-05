@@ -9,22 +9,24 @@ const Sidebar = ({boat}) => {
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <p className="title is-4">Policies</p>
+            <p className="title is-4 has-text-centered">Policies</p>
           </div>
         </div>
 
-        <div className="content">
+        <div className="has-text-left">
           <p>
             8 hour minimum on weekends or holidays for pontoons or Double Deckers
           </p>
           <p>
             4 hour minimum on weekends or holidays for Ski Boats
           </p>
-          <p>Feul Fees</p>
+          <p className="title is-4 has-text-centered">Fuel Fees</p>
+          <div className="has-text-left">
           <p>Pontoons and Double Deckers: $3 per hour up to 8 hours
           </p>
           <p>Ski Boats: $9 per hour up to 8 hours</p>
           <p>Jet Skis: $7 per hour up to 8 hours</p>
+        </div>
         </div>
       </div>
     </div>

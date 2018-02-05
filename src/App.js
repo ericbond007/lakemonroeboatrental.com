@@ -30,7 +30,7 @@ const App = ({ location }) => {
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={Home} />
           <Route path="/policies" component={Policies} />
-          <Route path="/about" component={About} />
+          <Route path="/contact" component={About} />
         </SwipeableRoutes>
       </Layout>
     </Router>

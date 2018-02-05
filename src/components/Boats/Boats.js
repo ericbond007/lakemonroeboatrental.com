@@ -63,6 +63,9 @@ class Boats extends Component {
                 <div className="column is-half">
                   <BoatCard cardImg="canoe" cardHeader="Canoes, Kayaks, & Paddleboards" cardLink="non-motorized" cardText="1-3 people"  imgAlt="Canoes, Kayaks, & Paddleboards" />
               </div>
+                <div className="column is-half">
+                  <BoatCard cardImg="canoe" cardHeader="Water Accesories" cardLink="accessories" cardText="Tubes, Skis, and more!"  imgAlt="Water Accessories" />
+              </div>
         </div>
           </Section>
       </div>

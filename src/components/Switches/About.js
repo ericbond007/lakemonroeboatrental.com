@@ -5,7 +5,7 @@ import AboutPage from '../../containers/AboutPage/AboutPage';
 const About = () => {
   return (
   <Switch>
-    <Route path="/about" exact component={AboutPage} />
+    <Route path="/contact" exact component={AboutPage} />
   </Switch>
   );
 }

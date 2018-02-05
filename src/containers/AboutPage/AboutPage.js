@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import SEO from '../../components/SEO';
 import About from '../../components/About/About';
 import { connect } from 'react-redux';
-import PoliciesSidebar from '../../components/PoliciesSidebar/PoliciesSidebar';
+import ContactSidebar from '../../components/ContactSidebar/ContactSidebar';
 import Directions from '../../components/About/Directions';
+import Contact from '../../components/About/Contact';
 
 class AboutPage extends Component {
   componentDidMount() {
@@ -18,9 +19,10 @@ class AboutPage extends Component {
           path="/about"
         />
         <div className="column is-3 is-offset-2 is-fullheight is-hidden-mobile">
-          <PoliciesSidebar />
+          <ContactSidebar />
         </div>
         <div className="column is-fullheight">
+          <Contact />
         {(this.props.about) &&
         <About about={this.props.about} />
         }

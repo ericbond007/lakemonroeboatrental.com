@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch,  Route } from 'react-router-dom';
 import BoatsPage from '../../containers/BoatsPage/BoatsPage';
 import BoatPage from '../../containers/BoatPage/BoatPage';
+import AccessoriesPage from '../../containers/AccessoriesPage/AccessoriesPage';
 
 const Boat = () => {
   return (
@@ -15,6 +16,7 @@ const Boat = () => {
     <Route path="/boats/ski-boat" exact component={BoatPage} />
     <Route path="/boats/fishing-boat" exact component={BoatPage} />
     <Route path="/boats/non-motorized" exact component={BoatPage} />
+    <Route path="/boats/accessories" exact component={AccessoriesPage} />
   </Switch>
   );
 }

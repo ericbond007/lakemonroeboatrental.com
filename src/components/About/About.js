@@ -8,6 +8,7 @@ const About = ({ about }) => (
       <div>
       <Section className="about">
               <Title>About Us</Title>
+              <div className="is-size-5-desktop">
               <p className="withSpace">
                 {about[0].acf.paragraph0}
               </p>
@@ -23,6 +24,7 @@ const About = ({ about }) => (
               <p className="withSpace">
                 {about[0].acf.paragraph4}
               </p>
+            </div>
             </Section>
             <Directions />
       </div>

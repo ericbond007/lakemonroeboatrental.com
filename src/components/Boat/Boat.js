@@ -12,7 +12,7 @@ const Boat = ({boat}) => {
         <h1 className="boatHeader">
           {boat[0].acf.boat_length_and_type}
         </h1>
-        <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} />
+        <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} className="singleBoatImg"/>
         <div>
           <h2> {boat[0].acf.max_capacity} Person Max Capacity</h2>
           <p>
