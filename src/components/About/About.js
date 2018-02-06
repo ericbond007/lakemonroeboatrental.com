@@ -26,7 +26,6 @@ const About = ({ about }) => (
               </p>
             </div>
             </Section>
-            <Directions />
       </div>
     );
 

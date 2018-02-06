@@ -4,7 +4,7 @@ import Image from '../Image';
 
 const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   return (
-    <div className="boatCard">
+    <div className="boatCard ripple">
     <Link to={{
       pathname: `/boats/${cardLink}`,
     }}>

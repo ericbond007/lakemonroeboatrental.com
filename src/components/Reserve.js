@@ -6,7 +6,7 @@ const Reserve = () => (
   <div className="reserve is-size-4-desktop is-centered">
     <Section>
       <a href="tel:+1-812-837-9909">
-        <Button primary large>
+        <Button primary large className="ripple">
 
       <h2>
         Call to Reserve Today!

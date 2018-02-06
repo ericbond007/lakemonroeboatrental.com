@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Section } from 'reactbulma'
-import BoatList from './BoatList';
+import BoatList from '../Boats/BoatList';
 
 const ForRent = () => {
   return (

@@ -1,7 +1,9 @@
 import React from 'react';
+import { Section } from 'reactbulma';
 
 const Contact = () => (
-  <div className="contact" id="contact">
+  <div>
+  <Section className="contact" id="contact">
     <div className="title has-text-centered">
       Contact Us
     </div>
@@ -13,6 +15,7 @@ const Contact = () => (
         We currently only accept boat reservations over the phone, so please give us a call! For other inquiries, please email us at boat.rental@hotmail.com. Thanks!
       </p>
     </div>
+    </Section>
   </div>
 );
 

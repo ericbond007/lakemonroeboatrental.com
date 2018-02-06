@@ -11,27 +11,27 @@ const NavBar = () => (
                     
                       <Scroll type="class" element="navTabs">
                   <ul  id="navBarbig">
-                    <li >
+                    <li className="ripple">
                         <NavLink activeClassName="active" to="/rates">
                           Rates
                         </NavLink>
                     </li>
-                    <li>
+                    <li className="ripple">
                       <NavLink activeClassName="active" to="/boats">
                         Boats
                     </NavLink>
                   </li>
-                    <li>
+                    <li className="ripple">
                       <NavLink  exact activeClassName="active" to="/" >
                        Home 
                     </NavLink>
                   </li>
-                    <li>
+                    <li className="ripple">
                       <NavLink activeClassName="active" to="/policies">
                         Policies
                     </NavLink>
                   </li>
-                    <li>
+                    <li className="ripple">
                       <NavLink activeClassName="active" to="/contact">
                         Contact
                     </NavLink>
