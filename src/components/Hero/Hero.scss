@@ -6,12 +6,12 @@
 
 .hero {
   text-align: center;
-  max-height: 80vh;
+  overflow: hidden;
 }
 
 .heroImg {
-  max-height: 80vh;
-
+  overflow: hidden;
+height: 93vh;
 }
 
 .hero .title {
@@ -20,6 +20,7 @@
 
 .heroWrapper {
   max-height: 93vh;
+  min-height: 90vh;
 }
 
 .title {
@@ -28,7 +29,12 @@
 
 
 .hero-body {
-  max-height: 90vh
+  max-height: 95vh;
+  overflow: hidden;
+}
+
+.hero .is-primary {
+  background-color: none !important;
 }
 
 .hero-body .title {
@@ -37,6 +43,14 @@
 }
 
 
+@media only screen and (max-width: 1000px) {
+  .heroWrapper {
+    max-height: 95vh;
+  }
 
+  .heroImg {
+    max-height: 95vh;
+  }
+}
 
 

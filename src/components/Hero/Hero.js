@@ -15,7 +15,7 @@ const Hero = () => {
           style={{
             backgroundSize: 'cover'
           }}
-          className="heroImg hero is-primary is-large is-fullheight" 
+          className="heroImg hero is-primary is-large" 
         >
       <div className="hero-body">
         <div className="container is-centered">
