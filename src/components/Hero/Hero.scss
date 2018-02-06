@@ -6,15 +6,20 @@
 
 .hero {
   text-align: center;
+  max-height: 80vh;
+}
+
+.heroImg {
+  max-height: 80vh;
+
 }
 
 .hero .title {
- padding-bottom: 10vh;
  text-shadow: #000 3px 2px 0;
 }
 
-.heroImg picture{
-  filter: blur(5px);
+.heroWrapper {
+  max-height: 93vh;
 }
 
 .title {
@@ -23,7 +28,7 @@
 
 
 .hero-body {
-  background-image:  url('/img/landingImg.jpg');
+  max-height: 90vh
 }
 
 .hero-body .title {

@@ -5,6 +5,7 @@ import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
 
 
+
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -25,6 +26,7 @@ window.snapSaveState = () => ({
   "__PRELOADED_STATE__": store.getState()
 })
 
+
 store.dispatch(loadBoats());
 store.dispatch(loadPolicies());
 store.dispatch(loadHomepage());
@@ -34,12 +36,12 @@ store.dispatch(loadAbout());
 
 const rootElement = document.getElementById('root');
 
-const renderApp = Component => {
+
 if (rootElement.hasChildNodes()) {
   hydrate(
     <Provider store={store}>
       <BrowserRouter>
-          <Component />
+          <App />
         </BrowserRouter>
     </Provider>,
     rootElement
@@ -48,14 +50,14 @@ if (rootElement.hasChildNodes()) {
   render(
     <Provider store={store}>
       <BrowserRouter>
-          <Component />
+          <App />
         </BrowserRouter>
     </Provider>,
     rootElement
   );
 }
-}
-renderApp(App);
+
+
 
 
 //registerServiceWorker();

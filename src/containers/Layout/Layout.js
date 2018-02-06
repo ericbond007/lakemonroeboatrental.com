@@ -3,8 +3,9 @@ import Footer from '../../components/Footer/Footer';
 import Hero from '../../components/Hero/Hero';
 
 class Layout extends Component {
-  componentDidMount() {
-  }
+  shouldComponentUpdate(nextProps, nextState) {
+  return false;
+}
 
 
   render() {
@@ -20,4 +21,4 @@ class Layout extends Component {
 
 }
 
-export default Layout
+export default Layout;

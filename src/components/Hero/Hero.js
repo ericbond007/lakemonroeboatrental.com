@@ -6,15 +6,14 @@ import ProgressiveImage from 'react-progressive-bg-image';
 
 import './Hero.css';
 
-const Hero = (props) => {
+const Hero = () => {
   return (
-    <div>
-      <div>
+    <div className="heroWrapper">
         <ProgressiveImage
           src={'/img/landingImg-newBlur-1920w.jpg'}
           placeholder={'/img/landingImg-50px.jpg'}
           style={{
-            backgroundSize: 'cover',
+            backgroundSize: 'cover'
           }}
           className="heroImg hero is-primary is-large is-fullheight" 
         >
@@ -26,13 +25,7 @@ const Hero = (props) => {
           </h1>
         </div>
       </div>
-      <div className="hero-foot">
-        <Sticky id="navbar">
-          <NavBar />
-        </Sticky>
-      </div>
         </ProgressiveImage>
-    </div>
   </div>
   );
 }

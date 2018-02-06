@@ -7,7 +7,12 @@ import Boat from './components/Switches/Boat';
 import Rates from './components/Switches/Rates';
 import Policies from './components/Switches/Policies';
 import About from './components/Switches/About';
+import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer';
+import { Section } from 'reactbulma'
+import NavBar from './components/NavBar/NavBar';
 
+import HomePage from './containers/HomePage/HomePage';
 import Typekit from 'react-typekit';
 
 
@@ -20,21 +25,21 @@ import './App.css';
 
 
 
-const App = ({ location }) => {
+const App = () => {
   return (
-    <Router onUpdate={() => window.scrollTo(0, 0)}>
-      <Layout>
+      <div>
+        <Hero />
+        <NavBar />
         <Typekit kitId="bmb7wkn" />
-        <SwipeableRoutes resistance>
+        <SwipeableRoutes resistance> 
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={HomePage} />
           <Route path="/policies" component={Policies} />
           <Route path="/contact" component={About} />
         </SwipeableRoutes>
-      </Layout>
-    </Router>
-  
+        <Footer />
+      </div>
   )
 }
 

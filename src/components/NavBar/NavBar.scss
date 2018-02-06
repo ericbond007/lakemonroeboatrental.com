@@ -1,5 +1,10 @@
 @import '../../bulmaVars.scss';
 
+.tabs ul {
+  
+border-bottom: none !important;
+}
+
 .tabs .navTabs {
   width: 100%;
 //  background-image: linear-gradient(to top, $blue  0%, $light-blue 100%)
