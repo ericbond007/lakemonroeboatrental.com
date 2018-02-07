@@ -19,11 +19,11 @@ class BoatPage extends Component {
 
   render() {
     return (
-        <div className="columns is-fullheight boatPage" id="boat">
-          <div className="column is-2 is-offset-3 is-fullheight is-hidden-touch boatsidebar">
+        <div className="columns is-fullheight boatPage">
+          <div className="column is-2 is-offset-3 is-hidden-touch boatsidebar">
             <Sidebar />
           </div>
-          <div className="column is-fullheight">
+          <div className="column is-fullheight" id="boat">
             {(this.props.boat) && 
             <Boat boat={this.props.boat} />
             }

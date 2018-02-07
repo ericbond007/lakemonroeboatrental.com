@@ -1,6 +1,5 @@
 import React from 'react';
 import BoatCard from '../Boats/BoatCard';
-import Scroll from 'react-scroll-to-element';
 
 const BoatList = () => (
 	<div>
@@ -10,9 +9,7 @@ const BoatList = () => (
                 </div>
 
                 <div className="column is-half">
-                  <Scroll type="id" element="boat">
                     <BoatCard cardImg="jetSki" cardHeader="Jet Ski" cardLink="jet-ski" cardText="2 person max          capacity" imgAlt="Jet Ski" />
-                  </Scroll>
               </div>
 
                 <div className="column is-half">

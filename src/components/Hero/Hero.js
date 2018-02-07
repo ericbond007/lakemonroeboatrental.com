@@ -27,6 +27,8 @@ const Hero = () => {
         </div>
       </div>
         </ProgressiveImage>
+        <div id="herobottom">
+        </div>
   </div>
   );
 }

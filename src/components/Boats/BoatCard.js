@@ -5,6 +5,7 @@ import Scroll from 'react-scroll-to-element';
 
 const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   return (
+    <Scroll type="id" element="herobottom">
     <div className="boatCard ripple">
     <Link to={{
       pathname: `/boats/${cardLink}`,
@@ -28,6 +29,7 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
     </div>
   </Link>
 </div>
+  </Scroll>
   );
   }
 

@@ -9,10 +9,10 @@ const Boat = ({boat}) => {
   return (
     <div className="boat is-size-4-desktop">
       <Section className="">
-        <h1 className="boatHeader">
+        <h1 className="boatHeader is-size-1 is-centered">
           {boat[0].acf.boat_length_and_type}
         </h1>
-        <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} className="singleBoatImg"/>
+        <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} className="singleBoatImg is-centered"/>
         <div>
           <h2> {boat[0].acf.max_capacity} Person Max Capacity</h2>
           <p>
