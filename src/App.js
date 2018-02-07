@@ -31,7 +31,17 @@ const App = () => {
         <Hero />
         <NavBar />
         <Typekit kitId="bmb7wkn" />
-        <SwipeableRoutes resistance> 
+        <SwipeableRoutes animateHeight resistance springConfig={{
+          duration: '0.55s',
+            easeFunction: 'cubic-bezier(0.465, 0.183, .153, .946)',
+            delay: '0.15s'
+        }}
+        slideStyle={{
+          
+        }}
+        hysteresis='0.7'
+        threshold='10'
+        >
           <Route path="/rates" component={Rates} />
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={HomePage} />

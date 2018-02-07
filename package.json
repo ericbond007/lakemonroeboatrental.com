@@ -67,6 +67,7 @@
     "deploy": "aws s3 sync build/ s3://lakemonroeboatrental.com && aws s3 sync build/ s3://www.lakemonroeboatrental.com",
     "deployEC": "rsync -Pavr -e 'ssh -i /home/eric/ebondawskey.pem' build/* ubuntu@ec2-54-89-228-69.compute-1.amazonaws.com:/var/www/html",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "rmcss": "find src/ -name '*.css' -exec rm {} \\;"
   }
 }

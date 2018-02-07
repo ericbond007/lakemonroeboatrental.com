@@ -226,14 +226,17 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
   -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 -moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
-  transition: all 0.4s ease-out;
+  transition: all .4s ease-out;
   opacity: 1;
   display: block;
 }
 
 .homeImgDD:hover {
-  opacity: .35;
 
+}
+
+.hoverText:hover .homeImgDD {
+  opacity: .35;
 }
 
 .hoverText {
@@ -242,7 +245,7 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
   -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 -moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
-  transition: all 0.4s ease-out;
+  transition: all .4s ease-out;
   opacity: 1;
   border-radius: 10px;
 }
@@ -255,19 +258,26 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 
 .hoverText .imgHover {
   position: absolute;
+  visibility: hidden;
   top: 30%;
   left: 15%;
   opacity: 0.1;
-  visibility: hidden;
-  transition: opacity 0.7s ease-out;
+  transition: all 0.4s ease-out;
   color: #fff;
+  color: #2626FF;
   text-shadow: #000 3px 2px 0;
-  transform: rotate(-20deg);
 }
 
-.hoverText:hover .imgHover {
-  visibility: visible;
+
+
+.hoverText:hover .imgHover{
   opacity: 1;
+  visibility: visible;
+  transition: all 0.4s ease-out;
+  transform: scale(1.2, 1.2) rotate(-20deg);;
+}
+
+hoverText:hover .imgHover {
 }
 
 body {
@@ -328,7 +338,6 @@ h3 {
 
 .reserve .section h2 {
   color: #fff;
-  font-size: 1.5rem;
 }
 
 .is-spaced {

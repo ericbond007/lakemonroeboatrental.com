@@ -7,17 +7,6 @@ $primary: $base-blue;
 $text-blue: #A9DAFF;
 
 /*Set Typeface */
-$family-serif: "Merriweather", "Georgia", serif;
-
-/*Nav Tabs variables*/
-$tabs-border-bottom-color: $light-blue;
-$tabs-link-active-color: #fff;
-$tabs-link-hover-color: #fff;
-$tabs-link-color: #fff;
-$tabs-link-hover-border-bottom-color: $light-blue;
-
-/*Footer vars */
-$footer-background-color: $base-blue;
 
 .section {
   padding-top: 3rem;
@@ -58,7 +47,6 @@ display: block;
   display: block;
 }
 
-@import 'bulma/bulma.sass';
 
 .react-swipeable-view-container div{
   overflow: hidden !important;
