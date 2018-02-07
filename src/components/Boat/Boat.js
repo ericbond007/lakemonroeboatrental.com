@@ -12,15 +12,17 @@ const Boat = ({boat}) => {
         <h1 className="boatHeader is-size-1 is-centered">
           {boat[0].acf.boat_length_and_type}
         </h1>
-        <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} className="singleBoatImg is-centered"/>
+        <div style={{ textAlign: 'center'}}>
+          <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} className="singleBoatImg"/>
+        </div>
         <div>
-          <h2> {boat[0].acf.max_capacity} Person Max Capacity</h2>
-          <p>
+          <h2 className="is-centered is-size-4" style={{ paddingBottom: '2rem' }}> {boat[0].acf.max_capacity} Person Max Capacity</h2>
+          <p style={{textIndent: '1rem' }}>
             {boat[0].acf.description}
           </p>
         </div>
         <div className="boatRates is-size-5-touch">
-          <h3 className="regalTitle">Rates</h3>
+          <h3 className="regalTitle is-size-3">Rates</h3>
           <div className="ratesRow">
             <div className="boatLeft">One Hour:</div>
             <div className="boatRight"> ${boat[0].acf.rates_onehour}</div>
