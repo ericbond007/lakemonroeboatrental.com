@@ -18,7 +18,10 @@ const Footer = () => (
             </a>
       </div>
       <div className="column  is-vertical-align">
-            <p className="is-size-5">&copy; 2018 Lake Monroe Boat Rental</p>
+        <p className="is-size-5">&copy; 2018 Lake Monroe Boat Rental</p>
+      </div>
+            <div className="column is-vertical-align">
+            <p className="is-size-5">Call us! 812-837-9909</p>
       </div>
     </div>
     </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import BoatCard from '../Boats/BoatCard';
 
+
 const BoatList = () => (
-	<div>
  <div className="columns is-centered is-multiline" >
                 <div className="column is-half">
                     <BoatCard cardImg="doubleDecker" cardHeader="34' Double Decker with Slide" cardText="24 person max capacity" cardLink="doubledecker" imgAlt="Double Decker with Slide" />
@@ -39,7 +39,6 @@ const BoatList = () => (
                   <BoatCard cardImg="canoe" cardHeader="Water Accessories" cardLink="accessories"            cardText="Tubes, Skis, and more!" imgAlt="Water Accessories" />
               </div>
         </div>
-  </div>
 );
 
 export default BoatList;

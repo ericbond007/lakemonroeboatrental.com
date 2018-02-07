@@ -18,7 +18,7 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
       </div>
       <div className="card-image">
         <figure className="is-4by3 image">
-          <Image imgName={cardImg} imgAlt={imgAlt} imgLink={cardLink} />
+          <Image imgName={cardImg} imgAlt={imgAlt} imgLink={cardLink} style={{width: '100%'}}/>
         </figure>
       </div>
       <div className="card-content">

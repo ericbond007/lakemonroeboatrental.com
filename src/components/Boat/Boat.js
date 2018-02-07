@@ -1,7 +1,8 @@
 import React from 'react';
 import { Section } from 'reactbulma';
-import Image from '../Image';
+import Image from './Image';
 import Reserve from '../Reserve';
+import PolicyButton from '../PolicyButton';
 import './Boat.css';
 
 const Boat = ({boat}) => {
@@ -12,9 +13,7 @@ const Boat = ({boat}) => {
         <h1 className="boatHeader is-size-1 is-centered">
           {boat[0].acf.boat_length_and_type}
         </h1>
-        <div style={{ textAlign: 'center'}}>
-          <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} className="singleBoatImg"/>
-        </div>
+          <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} divClassName="boatImgdiv" className="singleBoatImg"/>
         <div>
           <h2 className="is-centered is-size-4" style={{ paddingBottom: '2rem' }}> {boat[0].acf.max_capacity} Person Max Capacity</h2>
           <p style={{textIndent: '1rem' }}>
@@ -68,7 +67,7 @@ const Boat = ({boat}) => {
             <div className="boatLeft">Deposit:</div>
             <div className="boatRight">${boat[0].acf.deposit}</div>
           </div>
-          <Reserve />
+          <Reserve style={{marginBottom: '0vh'}}/>
         </div>
       </Section>
     </div>

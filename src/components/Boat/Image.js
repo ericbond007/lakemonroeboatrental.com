@@ -26,9 +26,6 @@ const Image = ({imgName, imgAlt, className, imgLink, imgHover, divClassName}) =>
    type="image/jpeg"
    alt={imgAlt} />
 </picture>
-<div className="is-size-1 imgHover">
-  {imgHover}
-</div>
 </div>
 );
 

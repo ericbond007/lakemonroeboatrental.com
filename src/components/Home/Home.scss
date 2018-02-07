@@ -198,10 +198,6 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
   padding-bottom: 1rem;
 }
 
-.homePage p {
-  text-align: left;
-  text-indent: 1rem;
-}
 
 
 .message .message-body {
@@ -222,6 +218,7 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 }
 
 .homeImgDD {
+  width: 100%;
   margin: auto;
   -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 -moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);

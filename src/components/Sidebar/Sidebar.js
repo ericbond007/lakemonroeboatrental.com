@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import Scroll from 'react-scroll-to-element';
 import './Sidebar.css';
 
 const Sidebar = ({boat}) => {
@@ -20,12 +21,24 @@ const Sidebar = ({boat}) => {
           <p>
             4 hour minimum on weekends or holidays for Ski Boats
           </p>
+          <Scroll type="id" element="herobottom">
+            <div>
+            <Link to="/policies">
+              Click here for more policy info
+            </Link>
+          </div>
+        </Scroll>
           <p className="title is-4 has-text-centered">Fuel Fees</p>
           <div className="has-text-left">
           <p>Pontoons and Double Deckers: $3 per hour up to 8 hours
           </p>
           <p>Ski Boats: $9 per hour up to 8 hours</p>
           <p>Jet Skis: $7 per hour up to 8 hours</p>
+          <Scroll type="id" element="herobottom">
+            <div>
+          <Link to="/rates">All Boat and Fuel Rates</Link>
+          </div>
+        </Scroll>
         </div>
         </div>
       </div>

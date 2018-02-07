@@ -54,10 +54,16 @@
   }
 }
 
-.singleBoatImg {
+.singleBoatImg{
    -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 -moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 border-radius: 10px;
+width: 100%;
+margin: auto;
+}
+
+.boatImgdiv {
+ padding: .5rem; 
 
 }
