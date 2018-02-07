@@ -32,12 +32,11 @@ const App = () => {
         <NavBar />
         <Typekit kitId="bmb7wkn" />
         <SwipeableRoutes animateHeight resistance springConfig={{
-          duration: '0.55s',
-            easeFunction: 'cubic-bezier(0.465, 0.183, .153, .946)',
-            delay: '0.15s'
+          duration: '0.5s',
+            easeFunction: 'cubic-bezier(0.175, 0.885, 0.32, 1)',
+            delay: '0.0s'
         }}
         slideStyle={{
-          
         }}
         hysteresis='0.7'
         threshold='10'
