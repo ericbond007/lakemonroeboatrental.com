@@ -2,18 +2,17 @@ import React from 'react';
 import BoatCard from '../Boats/BoatCard';
 import Scroll from 'react-scroll-to-element';
 
-
 const BoatList = () => (
 	<div>
  <div className="columns is-centered is-multiline" >
                 <div className="column is-half">
-                  <Scroll type="class" element="navTabs">
                     <BoatCard cardImg="doubleDecker" cardHeader="34' Double Decker with Slide" cardText="24 person max capacity" cardLink="doubledecker" imgAlt="Double Decker with Slide" />
-                  </Scroll>
                 </div>
 
                 <div className="column is-half">
-                  <BoatCard cardImg="jetSki" cardHeader="Jet Ski" cardLink="jet-ski" cardText="2 person max          capacity" imgAlt="Jet Ski" />
+                  <Scroll type="id" element="boat">
+                    <BoatCard cardImg="jetSki" cardHeader="Jet Ski" cardLink="jet-ski" cardText="2 person max          capacity" imgAlt="Jet Ski" />
+                  </Scroll>
               </div>
 
                 <div className="column is-half">

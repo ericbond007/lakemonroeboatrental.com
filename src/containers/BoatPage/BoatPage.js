@@ -14,15 +14,13 @@ class BoatPage extends Component {
     }
   }
   componentDidMount() {
-    window.scrollTo(0, 750);
 
   }
 
   render() {
     return (
-      <div>
-        <div className="columns is-fullheight boatPage">
-          <div className="column is-2 is-offset-3 is-fullheight is-hidden-mobile boatsidebar">
+        <div className="columns is-fullheight boatPage" id="boat">
+          <div className="column is-2 is-offset-3 is-fullheight is-hidden-touch boatsidebar">
             <Sidebar />
           </div>
           <div className="column is-fullheight">
@@ -36,7 +34,6 @@ class BoatPage extends Component {
           <div className="column is-2 is-hidden-mobile">
           </div>
         </div>
-      </div>
     );
   }
 }

@@ -9,7 +9,7 @@ class RatesPage extends Component {
   }
   render() {
     return (
-      <div className="is-size-5-mobile">
+      <div className="is-size-5-mobile" id="rates">
         <SEO
           title="Rates | Lake Monroe Boat Rental"
           description="Rates page"

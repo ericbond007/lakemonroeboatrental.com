@@ -4,7 +4,9 @@ import Directions from './Directions';
 
 import './About.css';
 
-const About = ({ about }) => (
+const About = ({ about }) => {
+  if (about[0] !== undefined) {
+    return (
       <div>
       <Section className="about">
               <Title>About Us</Title>
@@ -27,6 +29,10 @@ const About = ({ about }) => (
             </div>
             </Section>
       </div>
-    );
+      );
+      } else {
+        return null;
+      }
+      };
 
 export default About;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../Image';
+import Scroll from 'react-scroll-to-element';
 
 const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   return (

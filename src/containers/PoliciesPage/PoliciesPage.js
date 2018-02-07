@@ -9,8 +9,7 @@ class PoliciesPage extends Component {
   }
   render() {
     return (
-      <div>
-        <div className="columns is-fullheight policiesPage is-size-4-desktop is-size-5-mobile">
+        <div className="columns is-fullheight policiesPage is-size-4-desktop is-size-5-mobile" id="policies">
           <SEO
             title="Policies | Lake Monroe Boat Rental"
             description="Our policies are designed for the safety and security of our customers"
@@ -27,7 +26,6 @@ class PoliciesPage extends Component {
         <div className="column is-2">
         </div>
       </div>
-    </div>
     );
   }
   }

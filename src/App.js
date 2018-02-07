@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
 import SwipeableRoutes from 'react-swipeable-routes';
 
 import Home from './components/Switches/Home';
@@ -13,9 +13,14 @@ import { Section } from 'reactbulma'
 import NavBar from './components/NavBar/NavBar';
 
 import HomePage from './containers/HomePage/HomePage';
+import BoatsPage from './containers/BoatsPage/BoatsPage';
+import PoliciesPage from './containers/PoliciesPage/PoliciesPage';
+import RatesPage from './containers/RatesPage/RatesPage';
+import AboutPage from './containers/AboutPage/AboutPage';
 import Typekit from 'react-typekit';
 
-
+import BoatPage from './containers/BoatPage/BoatPage';
+import AccessoriesPage from './containers/AccessoriesPage/AccessoriesPage';
 
 import Layout from './containers/Layout/Layout';
 
@@ -41,12 +46,13 @@ const App = () => {
         hysteresis='0.7'
         threshold='10'
         >
-          <Route path="/rates" component={Rates} />
+          <Route path="/rates" component={RatesPage} />
           <Route path="/boats" component={Boat} />
           <Route path="/" exact component={HomePage} />
-          <Route path="/policies" component={Policies} />
-          <Route path="/contact" component={About} />
+          <Route path="/policies" component={PoliciesPage} />
+          <Route path="/contact" component={AboutPage} />
         </SwipeableRoutes>
+        
         <Footer />
       </div>
   )
