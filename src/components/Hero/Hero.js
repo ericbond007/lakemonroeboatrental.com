@@ -14,7 +14,8 @@ const Hero = () => {
           placeholder={'/img/landingImg-50px.jpg'}
           style={{
             backgroundSize: 'cover',
-            height: '93vh'
+            height: '93vh',
+            transition: 'all .7s ease-out'
           }}
           className="heroImg hero is-primary is-large" 
         >
