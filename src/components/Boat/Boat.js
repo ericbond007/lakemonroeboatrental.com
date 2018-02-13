@@ -15,13 +15,13 @@ const Boat = ({boat}) => {
         </h1>
           <Image imgName={boat[0].acf.boat_image} imgAlt={boat[0].acf.boat_image_alt} divClassName="boatImgdiv" className="singleBoatImg"/>
         <div>
-          <h2 className="is-centered is-size-4" style={{ paddingBottom: '2rem' }}> {boat[0].acf.max_capacity} Person Max Capacity</h2>
-          <p style={{textIndent: '1rem' }}>
+          <h2 className="is-centered is-size-3" style={{ paddingBottom: '2rem' }}> {boat[0].acf.max_capacity} Person Max Capacity</h2>
+          <p style={{textIndent: '1rem' }} className="is-size-4-touch">
             {boat[0].acf.description}
           </p>
         </div>
-        <div className="boatRates is-size-5-touch">
-          <h3 className="regalTitle is-size-3">Rates</h3>
+        <div className="boatRates is-size-4-touch">
+          <h3 className="regalTitle is-size-1">Rates</h3>
           <div className="ratesRow">
             <div className="boatLeft">One Hour:</div>
             <div className="boatRight"> ${boat[0].acf.rates_onehour}</div>

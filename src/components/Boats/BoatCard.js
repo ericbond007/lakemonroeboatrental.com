@@ -12,7 +12,7 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
     }}>
     <div className="card">
       <div className="card-header">
-        <p className="card-header-title">
+        <p className="card-header-title is-size-3-touch">
           {cardHeader}
         </p>
       </div>
@@ -22,7 +22,7 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
         </figure>
       </div>
       <div className="card-content">
-        <div className="content">
+        <div className="content is-size-4-touch">
           <p>{cardText}</p>
         </div>
       </div>

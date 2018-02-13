@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
-import SwipeableRoutes from 'react-swipeable-routes';
+import SwipeableRoutes from './components/swipeable-routes';
 
 import Home from './components/Switches/Home';
 import Boat from './components/Switches/Boat';
@@ -43,8 +43,11 @@ const App = () => {
         }}
         slideStyle={{
         }}
-        hysteresis='0.7'
-        threshold='10'
+        style={{
+
+        }}
+        hysteresis={0.7}
+        threshold={10}
         >
           <Route path="/rates" component={RatesPage} />
           <Route path="/boats" component={Boat} />

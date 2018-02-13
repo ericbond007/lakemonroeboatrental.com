@@ -81,6 +81,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2626ff', end
   color: #fff;
 }
 
+.tabs a {
+  //text-shadow: #363636 2px 1px 2px;
+  text-shadow: $dark-blue 2px 1px 2px;
+}
+
 .header {
   text-align: center;
 }

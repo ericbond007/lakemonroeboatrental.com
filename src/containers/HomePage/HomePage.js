@@ -16,7 +16,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div className="columns is-fullheight homePage is-size-4-desktop" id="home">
+      <div className="columns is-fullheight homePage is-size-4-desktop" id="home" style={{minHeight: '100%'}}>
        <SEO
           title="Lake Monroe Boat Rental"
           description="Located in Paynetown SRA"
