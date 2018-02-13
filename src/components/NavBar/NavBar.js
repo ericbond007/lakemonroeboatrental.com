@@ -21,7 +21,7 @@ const NavBar = () => (
                         </NavLink>
                     </li>
                       </Scroll>
-                      <Scroll type="id" element="boats">
+                      <Scroll type="id" element="herobottom">
                     <li className="ripple">
                       <NavLink activeClassName="active" to="/boats">
                         Boats

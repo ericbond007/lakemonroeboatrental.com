@@ -55,7 +55,7 @@ const App = () => {
           <Route path="/policies" component={PoliciesPage} />
           <Route path="/contact" component={AboutPage} />
         </SwipeableRoutes>
-        
+ 
         <Footer />
       </div>
   )

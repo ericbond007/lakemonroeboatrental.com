@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Boats from '../../components/Boats/Boats';
+import { Switch,  Route } from 'react-router-dom';
+import BoatPage from '../../containers/BoatPage/BoatPage';
+import AccessoriesPage from '../../containers/AccessoriesPage/AccessoriesPage';
 import SEO from '../../components/SEO';
 import BoatsSidebar from '../../components/BoatsSidebar/BoatsSidebar';
 
@@ -25,7 +28,9 @@ class BoatsPage extends Component {
       </div>
       <div className="column is-2">
       </div>
+
     </div>
+
     );
   }
 }
