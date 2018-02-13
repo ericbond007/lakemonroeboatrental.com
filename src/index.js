@@ -11,14 +11,11 @@ import registerServiceWorker from './registerServiceWorker';
 
 import { loadBoats } from './actions/boatActions';
 import { loadPolicies } from './actions/policyActions';
-import { loadRates } from './actions/ratesActions';
 import { loadHomepage } from './actions/homeActions';
 import { loadHours } from './actions/hoursActions';
 import { loadFuel } from './actions/fuelActions';
 import { loadAbout } from './actions/aboutActions';
 
-const preloadedState = window.__PRELOADED_STATE_
-delete window.__PRELOADED_STATE__
 
 const store = configureStore();
 
@@ -60,4 +57,4 @@ if (rootElement.hasChildNodes()) {
 
 
 
-//registerServiceWorker();
+registerServiceWorker();

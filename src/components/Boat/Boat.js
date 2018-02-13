@@ -2,7 +2,6 @@ import React from 'react';
 import { Section } from 'reactbulma';
 import Image from './Image';
 import Reserve from '../Reserve';
-import PolicyButton from '../PolicyButton';
 import './Boat.css';
 
 const Boat = ({boat}) => {

@@ -7,7 +7,6 @@ import LazyLoad from 'react-lazyload';
 
 import Home from '../../components/Home/Home';
 import ForRent from '../../components/Home/ForRent';
-import Map from '../../components/Home/Map';
 import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
 
 class HomePage extends Component {

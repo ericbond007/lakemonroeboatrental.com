@@ -1,6 +1,5 @@
 import React from 'react';
 import { Section } from 'reactbulma';
-import Image from '../Image';
 
 const Accessories = () => (
   <div className="accessories is-size-4-desktop">

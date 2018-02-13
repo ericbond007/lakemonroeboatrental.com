@@ -3,7 +3,6 @@ import SEO from '../../components/SEO';
 import About from '../../components/About/About';
 import { connect } from 'react-redux';
 import ContactSidebar from '../../components/ContactSidebar/ContactSidebar';
-import Directions from '../../components/About/Directions';
 import Contact from '../../components/About/Contact';
 
 class AboutPage extends Component {

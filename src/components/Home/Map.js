@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import { Section } from 'reactbulma';
 import Image from '../Image';
 
 const Map = () => (

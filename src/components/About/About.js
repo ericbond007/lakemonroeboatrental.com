@@ -1,6 +1,5 @@
 import React from 'react';
 import { Section, Title } from 'reactbulma';
-import Directions from './Directions';
 
 import './About.css';
 

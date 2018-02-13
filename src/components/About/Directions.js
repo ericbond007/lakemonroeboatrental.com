@@ -1,6 +1,4 @@
 import React from 'react';
-import { Section, Container } from 'reactbulma';
-import Image from '../Image';
 
 const Directions = () => (
   <div className="directions" id="directions">

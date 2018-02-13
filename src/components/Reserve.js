@@ -1,7 +1,5 @@
 import React from 'react';
-import Call from './Call.js';
 import Media from 'react-media';
-import { Section, Button } from 'reactbulma';
 
 const Reserve = () => (
   <div className="reserve is-size-1-desktop is-centered" style={{marginBottom: '10vh'}}>

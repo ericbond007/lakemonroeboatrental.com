@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Section } from 'reactbulma';
-import BoatCard from './BoatCard';
 import BoatList from './BoatList';
 
 import './Boats.css';

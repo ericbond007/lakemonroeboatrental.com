@@ -1,7 +1,4 @@
 import React from 'react';
-import Call from './Call.js';
-import Media from 'react-media';
-import { Section, Button } from 'reactbulma';
 import { Link } from 'react-router-dom';
 
 const PolicyButton = () => (
