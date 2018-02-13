@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Scroll from 'react-scroll-to-element';
 import Sticky from '../Sticky/Sticky';
 
@@ -6,8 +6,10 @@ import { NavLink } from 'react-router-dom';
 
 import './NavBar.css';
 
-const NavBar = () => (
-  <div className="navWrapper">
+class NavBar extends Component {
+  render() {
+    return (
+  <div className="navWrapper" ref="navbar">
   <Sticky id="navbar">
   <div className="tabs is-centered is-fullwidth is-medium">
                   <div className="navTabs" id="noscroll">
@@ -56,5 +58,9 @@ const NavBar = () => (
               </Sticky>
             </div>
 );
+
+  }
+}
+
   
 export default NavBar;

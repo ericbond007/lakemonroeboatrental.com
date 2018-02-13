@@ -13,7 +13,8 @@ const Hero = () => {
           style={{
             backgroundSize: 'cover',
             height: '93vh',
-            transition: 'all .7s ease-out'
+            transition: 'all .7s ease-out',
+            backgroundPositionX: '65%'
           }}
           className="heroImg hero is-primary is-large" 
         >

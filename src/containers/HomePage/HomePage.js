@@ -10,12 +10,13 @@ import ForRent from '../../components/Home/ForRent';
 import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
 
 class HomePage extends Component {
+
   componentDidMount() {
   }
 
   render() {
     return (
-      <div className="columns is-fullheight homePage is-size-4-desktop" id="home" style={{minHeight: '100%'}}>
+      <div className="columns is-fullheight homePage is-size-4-desktop" id="home" style={{minHeight: '100%'}} ref="homepage">
        <SEO
           title="Lake Monroe Boat Rental"
           description="Located in Paynetown SRA"

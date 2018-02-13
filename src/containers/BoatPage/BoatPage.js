@@ -20,7 +20,7 @@ class BoatPage extends Component {
   render() {
     return (
         <div className="columns is-fullheight boatPage">
-          <div className="column is-2 is-offset-3 is-hidden-touch boatsidebar">
+          <div className="column is-2 is-offset-3 is-hidden-touch">
             <Sidebar />
           </div>
           <div className="column is-fullheight" id="boat">
