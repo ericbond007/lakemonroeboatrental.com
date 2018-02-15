@@ -1,16 +1,22 @@
 {
-  "short_name": "Lake Monroe Boat Rental",
+  "short_name": "LMBR",
   "name": "Lake Monroe Boat Rental",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "192x192",
       "type": "image/png"
-    }
+    },
+    {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#0505FD",
-  "background_color": "#6666ff",
+  "theme_color": "#2626ff",
+    "background_color": "#2626ff",
   "orientation": "portrait"
 }
