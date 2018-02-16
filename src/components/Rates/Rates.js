@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
-import 'react-table/react-table.css'
+import { connect } from 'react-redux';
+import './react-table.css'
 import { Section, Container } from 'reactbulma';
 
 
@@ -9,8 +10,19 @@ import { Section, Container } from 'reactbulma';
 import './Rates.css';
 
 class Rates extends Component {
-  
-  componentDidMount(prevProps) {
+  constructor(props) {
+    super();
+    this.state = {
+      ...props,
+      boats: {}
+    }
+  }
+
+  filterBoat(boatname) {
+    let boat = this.props.boats.filter(boat => boat.acf.boatname === boatname);
+    return {
+      boat: boat
+    };
   }
 
   render() {
@@ -203,7 +215,8 @@ class Rates extends Component {
                 data={data}
                 columns={columns}
                 showPagination={false}
-                className="-striped -highlight priceTable is-hidden-mobile"
+                className="-striped priceTable is-hidden-mobile"
+                sortable={false}
                 style={{ }}
                 defaultPageSize={8}
                 resizable={false}
@@ -212,9 +225,14 @@ class Rates extends Component {
         </Container>
             </Section>
       </div>
+      );
+      }
+      }
 
-    );
+function mapStateToProps(state, ownProps) {
+  return {
+    boats: state.boats
   }
 }
 
-export default Rates;
+export default connect(mapStateToProps)(Rates);

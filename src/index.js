@@ -13,7 +13,6 @@ import { loadBoats } from './actions/boatActions';
 import { loadPolicies } from './actions/policyActions';
 import { loadHomepage } from './actions/homeActions';
 import { loadHours } from './actions/hoursActions';
-import { loadFuel } from './actions/fuelActions';
 import { loadAbout } from './actions/aboutActions';
 
 
@@ -28,7 +27,6 @@ store.dispatch(loadBoats());
 store.dispatch(loadPolicies());
 store.dispatch(loadHomepage());
 store.dispatch(loadHours());
-store.dispatch(loadFuel());
 store.dispatch(loadAbout());
 
 const rootElement = document.getElementById('root');

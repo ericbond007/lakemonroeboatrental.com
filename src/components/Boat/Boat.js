@@ -8,7 +8,7 @@ const Boat = ({boat}) => {
   if (boat[0] !== undefined) {
   return (
     <div className="boat is-size-4-desktop">
-      <Section className="">
+      <Section style={{paddingBottom: '-3rem'}}>
         <h1 className="boatHeader is-size-1 is-centered">
           {boat[0].acf.boat_length_and_type}
         </h1>
