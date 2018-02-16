@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="heroWrapper">
         <ProgressiveImage
-          src={'/img/landingImg-newBlur-1920w.jpg'}
+          src={'/img/newHero-lg_1x.jpg'}
           placeholder={'/img/landingImg-50px.jpg'}
           style={{
             backgroundSize: 'cover',
