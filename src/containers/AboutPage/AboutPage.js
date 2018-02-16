@@ -25,6 +25,9 @@ class AboutPage extends Component {
         <About about={this.props.about} />
         }
       </div>
+        <div className="column is-3 is-offset-2 is-fullheight is-hidden-desktop">
+          <ContactSidebar />
+        </div>
       <div className="column is-2">
       </div>
     </div>

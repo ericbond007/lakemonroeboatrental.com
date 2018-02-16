@@ -21,6 +21,13 @@ $tabs-link-hover-border-bottom-color: $light-blue;
 /*Footer vars */
 $footer-background-color: $base-blue;
 
+$message-body-color: initial;
+
+.message.is-primary .message-body {
+  padding: 1rem;
+  color: initial !important;
+} 
+
 
 .section {
   padding-top: 3rem;

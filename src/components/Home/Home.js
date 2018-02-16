@@ -4,6 +4,7 @@ import Image from '../Image';
 import Reserve from '../Reserve';
 import HomeSlug from './HomeSlug';
 import Hours from './Hours';
+import FacebookProvider, { Page } from 'react-facebook';
 
 import './Home.css';
 
@@ -11,7 +12,7 @@ const Home = (props) => (
       <div className="home">
         <Section>
             <div className="animated fadeIn slideInUp">
-              <Image imgName="lmbrGray" imgAlt="LMBR Logo" className="homeLogo"/>
+              <Image imgName="lmbrGray" imgAlt="LMBR Logo" className="homeLogo" />
                 <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
                   <Reserve />
                   <HomeSlug homepage={props.homepage} />
@@ -20,7 +21,7 @@ const Home = (props) => (
                     <p>
                       Since 1992, Lake Monroe Boat Rental is your choice for family fun on Lake Monroe! Rent our pontoons for a great day on the lake, or bring the whole family on our 34' Double Decker with slide.
                     </p>
-                    <div className="hoverText">
+                    <div className="hoverText" style={{ width: '90%'}}>
                       <Image imgName="greenDD" imgAlt="Green Double Decker" className="homeImgDD" imgHover="Holds 24 people!"/>
                     </div>
                     <p>
@@ -30,7 +31,9 @@ const Home = (props) => (
             </div>
             <div className="is-hidden-desktop">
               Like us on Facebook!
-<div className="fb-page" data-href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/">Lake Monroe Boat Rental, INC</a></blockquote></div>
+              <FacebookProvider appId="565402577162682">
+                <Page href="https://www.facebook.com/Lake-Monroe-Boat-Rental-INC-177394578979696/" tabs="" smallHeader={false} width="500"  adaptContainerWidth={true} hideCover={true} showFacefile={false} />
+        </FacebookProvider>
             </div>
 
         </Section>

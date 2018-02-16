@@ -3,6 +3,7 @@ import ReactTable from 'react-table';
 import { connect } from 'react-redux';
 import './react-table.css'
 import { Section, Container } from 'reactbulma';
+import MobileRateCard from './MobileRateCard';
 
 
 
@@ -12,10 +13,18 @@ import './Rates.css';
 class Rates extends Component {
   constructor(props) {
     super();
+    this.toggleMessage = this.toggleMessage.bind(this);
     this.state = {
       ...props,
-      boats: {}
+      boats: {},
+      condition: false
     }
+  }
+
+  toggleMessage() {
+    this.setState(prevState => ({
+      condition: !prevState.condition
+    }));
   }
 
   filterBoat(boatname) {
@@ -222,6 +231,16 @@ class Rates extends Component {
                 resizable={false}
 
               />
+              <div className="is-hidden-desktop">
+                <MobileRateCard messageName="20' Pontoon" data={data[0]}/>
+                <MobileRateCard messageName="24' Pontoon" data={data[1]}/>
+                <MobileRateCard messageName="28' Pontoon" data={data[2]}/>
+                <MobileRateCard messageName="34' Double Decker" data={data[3]}/>
+                <MobileRateCard messageName="Ski Boat" data={data[4]}/>
+                <MobileRateCard messageName="Jet Ski" data={data[5]}/>
+                <MobileRateCard messageName="16' Fishing Boat" data={data[6]}/>
+                <MobileRateCard messageName="Canoes & Kayaks" data={data[7]}/>
+              </div>
         </Container>
             </Section>
       </div>

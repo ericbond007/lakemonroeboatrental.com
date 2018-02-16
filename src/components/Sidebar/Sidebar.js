@@ -28,7 +28,7 @@ const Sidebar = ({boat}) => {
             </Link>
           </div>
         </Scroll>
-          <p className="title is-4 has-text-centered">Fuel Fees</p>
+          <p className="title is-4 has-text-centered" style={{marginTop: '2rem'}}>Fuel Fees</p>
           <div className="has-text-left">
           <p>Pontoons and Double Deckers: $3 per hour up to 8 hours
           </p>
