@@ -3,7 +3,7 @@ import BoatCard from '../Boats/BoatCard';
 
 
 const BoatList = () => (
- <div className="columns is-centered is-multiline" >
+  <div className="columns is-centered is-multiline" style={{marginRight: '.1rem'}}>
    <div className="column is-half">
        <BoatCard cardImg="doubleDecker" cardHeader="34' Double Decker with Slide" cardText="24 person max capacity" cardLink="doubledecker" imgAlt="Double Decker with Slide" />
                 </div>
