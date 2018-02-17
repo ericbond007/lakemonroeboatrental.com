@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Slide from 'react-reveal/Slide';
-import Scroll from 'react-scroll-to-element';
 import './MobileRateCard.css';
 
 class MobileRateCard extends Component {
@@ -29,7 +28,7 @@ class MobileRateCard extends Component {
     return (
       <Slide bottom>
 			<div className="message is-primary has-text-centered" onClick={this.handleSlide} id="mobileboat">  
-				<div className="message-header has-text-centered is-size-3-mobile ripple" style={{display: 'block', zIndex: '9999'}}>                                 
+          <div className="message-header has-text-centered is-size-3-mobile ripple" style={{display: 'block', zIndex: '9999'}}>                                 
 					<p style={{display: 'block'}}className="has-text-centered is-centered">{this.props.messageName}</p>                                             
 				</div>                                                           
         <Slide top collapse when={this.state.show}>
@@ -89,7 +88,7 @@ class MobileRateCard extends Component {
 				</div>                                                           
       </Slide>
     </div>
-    </Slide>
+  </Slide>
     );
   }
 }
