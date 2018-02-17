@@ -163,14 +163,36 @@ box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
  transform: translateY(-5px);
 }
 
+.boatCard {
+text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.boatCard .card-header-title {
+  color: #4a4a4a;
+  font-weight: 400;
+}
 
 .boatCard .card-image {
   opacity: 1;
   transition: all 0.4s ease-out;
+  border-top: 5px double rgba(38,38,255,0.11);
+  border-bottom: 5px double rgba(38,38,255,0.11);
 }
 
 .boatCard .card-image:hover, .boatCard .card-image:active {
   opacity: .75;
+}
+
+.boatCard .card-header {
+
+}
+
+.boatCard .card-content {
+}
+
+.imgDrop img {
+}
+.imgDrop  {
 }
 
 
