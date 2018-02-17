@@ -1,0 +1,12 @@
+.mobileboatbutton {
+  transition: all 1s ease;
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+  opacity: 0;
+}

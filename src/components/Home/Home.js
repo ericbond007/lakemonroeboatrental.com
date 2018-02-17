@@ -5,6 +5,7 @@ import Reserve from '../Reserve';
 import HomeSlug from './HomeSlug';
 import Hours from './Hours';
 import FacebookProvider, { Page } from 'react-facebook';
+import Fade from 'react-reveal/Fade';
 
 import './Home.css';
 
@@ -16,7 +17,9 @@ const Home = (props) => (
                 <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
                   <Reserve />
                   <HomeSlug homepage={props.homepage} />
-                  <Hours hours={props.hours} />
+                  <Fade left>
+                    <Hours hours={props.hours} />
+                  </Fade>
                   <div className="homeDescrip is-size-5-touch">
                     <p>
                       Since 1992, Lake Monroe Boat Rental is your choice for family fun on Lake Monroe! Rent our pontoons for a great day on the lake, or bring the whole family on our 34' Double Decker with slide.

@@ -231,7 +231,7 @@ class SwipeableViews extends Component {
     isDragging: false,
     // Help with SSR logic and lazy loading logic.
     isFirstRender: true,
-    heightLatest: 4400,
+    heightLatest: 4800,
     // Let the render method that we are going to display the same slide than previously.
     displaySameSlide: true,
   };

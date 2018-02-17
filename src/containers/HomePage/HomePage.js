@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import SEO from '../../components/SEO';
 import LazyLoad from 'react-lazyload';
 import Media from 'react-media';
-
+import Zoom from 'react-reveal/Zoom';
 import Home from '../../components/Home/Home';
 import ForRent from '../../components/Home/ForRent';
 import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
@@ -36,7 +36,7 @@ class HomePage extends Component {
       <div className="column is-fullheight">
         <Home {...this.props} />
         <LazyLoad height={500} offset={800} once >
-          <ForRent />
+            <ForRent />
         </LazyLoad>
       </div>
       <div className="column is-2">

@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
+import Slide from 'react-reveal/Slide';
+import Scroll from 'react-scroll-to-element';
+import './MobileRateCard.css';
 
 class MobileRateCard extends Component {
   constructor(props) {
     super();
     this.toggleMessage = this.toggleMessage.bind(this);
+    this.handleSlide = this.handleSlide.bind(this);
     this.state = {
       ...props,
-      condition: false
+      condition: true,
+      show: false
     }
+  }
+
+  handleSlide() {
+    this.setState({ show: !this.state.show });
   }
 
   toggleMessage() {
@@ -18,11 +27,13 @@ class MobileRateCard extends Component {
 
   render() {
     return (
-			<div className="message is-primary has-text-centered" onClick={this.toggleMessage}>  
-				<div className="message-header has-text-centered is-size-3-mobile" style={{display: 'block'}}>                                 
+      <Slide bottom>
+			<div className="message is-primary has-text-centered" onClick={this.handleSlide} id="mobileboat">  
+				<div className="message-header has-text-centered is-size-3-mobile ripple" style={{display: 'block', zIndex: '9999'}}>                                 
 					<p style={{display: 'block'}}className="has-text-centered is-centered">{this.props.messageName}</p>                                             
 				</div>                                                           
-				<div className={this.state.condition ? "message-body": "message- body is-hidden"}>                                                                  
+        <Slide top collapse when={this.state.show}>
+				<div className={this.state.condition ? "message-body mobileboatbutton": "mobileboatbutton message-body hidden"}> 
           <div className="boatRates is-size-4-touch">
           <div className="ratesRow">
             <div className="boatLeft">One Hour:</div>
@@ -76,7 +87,9 @@ class MobileRateCard extends Component {
           </div>
         </div>
 				</div>                                                           
-			</div>
+      </Slide>
+    </div>
+    </Slide>
     );
   }
 }

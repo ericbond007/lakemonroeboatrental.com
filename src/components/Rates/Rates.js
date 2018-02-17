@@ -214,7 +214,7 @@ class Rates extends Component {
 
               />
               
-              <div className="is-hidden-desktop">
+            <div className="is-hidden-desktop">
                 <MobileRateCard messageName="20' Pontoon" boat={this.props.pontoon} />
                 <MobileRateCard messageName="24' Pontoon" boat={this.props.pontoon24} />
                 <MobileRateCard messageName="28' Pontoon" boat={this.props.pontoon28}/>
