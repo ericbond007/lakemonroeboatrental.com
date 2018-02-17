@@ -14,7 +14,7 @@ class BoatPage extends Component {
     }
   }
   componentDidMount() {
-    let navbarTop = document.getElementById('noscroll');
+    let navbarTop = document.getElementById('herobottom');
     navbarTop.scrollTop = navbarTop.scrollHeight;
     window.scrollTo(navbarTop);
 
@@ -22,11 +22,11 @@ class BoatPage extends Component {
 
   render() {
     return (
-        <div className="columns is-fullheight-desktop boatPage">
+        <div className="columns is-fullheight boatPage">
           <div className="column is-2 is-offset-3 is-hidden-touch">
             <Sidebar />
           </div>
-          <div className="column is-fullheight-desktop" id="boat" style={{marginBottom: '-13rem'}}>
+          <div className="column is-fullheight" id="boat" style={{}}>
             {(this.props.boat) && 
             <Boat boat={this.props.boat} />
             }

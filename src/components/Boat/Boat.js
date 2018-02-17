@@ -3,6 +3,7 @@ import { Section } from 'reactbulma';
 import Image from './Image';
 import Reserve from '../Reserve';
 import './Boat.css';
+import Slide from 'react-reveal/Slide';
 
 const Boat = ({boat}) => {
   if (boat[0] !== undefined) {
@@ -22,49 +23,89 @@ const Boat = ({boat}) => {
         <div className="boatRates is-size-4-touch">
           <h3 className="regalTitle is-size-1">Rates</h3>
           <div className="ratesRow">
-            <div className="boatLeft">One Hour:</div>
-            <div className="boatRight"> ${boat[0].acf.rates_onehour}</div>
+            <Slide left duration={500}>
+              <div className="boatLeft">One Hour:</div>
+            </Slide>
+            <Slide right duration={500}>
+              <div className="boatRight"> ${boat[0].acf.rates_onehour}</div>
+            </Slide>
           </div>
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">Extra Hour:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_extra_hour}</div>
+            </Slide>
           </div>
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">Four Hours:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_fourhour}</div>
+            </Slide>
           </div>
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">Eight Hours:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_eighthour}</div>
+            </Slide>
           </div>
           {boat[0].acf.rates_all_day ? 
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">All Day:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_all_day}</div>
+            </Slide>
           </div>: null}
           {boat[0].acf.rates_overnight ? 
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">Overnight:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_overnight}</div>
+            </Slide>
           </div>: null}
           {boat[0].acf.rates_oneday ? 
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">24 Hours:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_oneday}</div>
+            </Slide>
           </div>: null}
           {boat[0].acf.rates_threeday ? 
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">Three Days:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_threeday}</div>
+            </Slide>
           </div> : null}
           {boat[0].acf.rates_weekly ? 
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">Weekly:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.rates_weekly} </div>
+            </Slide>
           </div>: null}
           <div className="ratesRow">
+            <Slide left duration={500}>
             <div className="boatLeft">Deposit:</div>
+            </Slide>
+            <Slide right duration={500}>
             <div className="boatRight">${boat[0].acf.deposit}</div>
+            </Slide>
           </div>
           <Reserve style={{marginBottom: '0vh'}}/>
         </div>
