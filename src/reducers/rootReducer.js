@@ -6,6 +6,7 @@ import homepage from './homepage';
 import hours from './hours';
 import fuel from './fuel';
 import about from './about';
+import faq from './faq'
 
 const rootReducer = combineReducers({
   boats,
@@ -14,7 +15,8 @@ const rootReducer = combineReducers({
   rates,
   hours,
   about,
-  fuel
+  fuel,
+  faq
 });
 
 export default rootReducer;

@@ -7,5 +7,6 @@ export default {
   hours: [],
   homepage: [],
   fuel: [],
-  about: []
+  about: [],
+  faq: []
 }

@@ -13,6 +13,7 @@ import { loadBoats } from './actions/boatActions';
 import { loadPolicies } from './actions/policyActions';
 import { loadHomepage } from './actions/homeActions';
 import { loadHours } from './actions/hoursActions';
+import { loadFAQ } from './actions/faqActions';
 
 
 const store = configureStore();
@@ -26,6 +27,7 @@ store.dispatch(loadBoats());
 store.dispatch(loadPolicies());
 store.dispatch(loadHomepage());
 store.dispatch(loadHours());
+store.dispatch(loadFAQ());
 
 const rootElement = document.getElementById('root');
 

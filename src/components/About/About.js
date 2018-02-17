@@ -5,7 +5,7 @@ import './About.css';
 
 const About = () => {
     return (
-      <div>
+      <div style={{marginTop: '-5rem'}}>
       <Section className="about">
               <Title>About Us</Title>
               <div className="is-size-5-desktop">

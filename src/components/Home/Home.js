@@ -15,6 +15,7 @@ const Home = (props) => (
       <div className="home">
         <Section>
             <div className="animated fadeIn slideInUp">
+
               <Image imgName="lmbrGray" imgAlt="LMBR Logo" className="homeLogo" />
                 <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
                   <Reserve />

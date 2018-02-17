@@ -26,10 +26,6 @@ class Rates extends Component {
         accessor: 'capacity'
       },
       {
-        Header: 'Deposit',
-        accessor: 'deposit'
-      },
-      {
         Header: '1st Hour',
         accessor: 'onehour'
       },
@@ -68,6 +64,10 @@ class Rates extends Component {
       {
         Header: 'Weekly',
         accessor: 'weekly'
+      },
+      {
+        Header: 'Deposit',
+        accessor: 'deposit'
       }
 
     ]
@@ -222,7 +222,7 @@ class Rates extends Component {
                 <MobileRateCard messageName="Ski Boat" boat={this.props.skiboat}/>
                 <MobileRateCard messageName="Jet Ski" boat={this.props.jetski}/>
                 <MobileRateCard messageName="16' Fishing Boat" boat={this.props.fishingboat}/>
-                <MobileRateCard messageName="Canoes & skiboats" boat={this.props.kayak}/>
+                <MobileRateCard messageName="Canoes & Kayaks" boat={this.props.kayak}/>
               </div>
         </Container>
             </Section>

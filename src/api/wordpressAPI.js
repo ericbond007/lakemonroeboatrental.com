@@ -15,6 +15,14 @@ class wordpressAPI {
     });
   }
 
+  static getFAQ() {
+    return fetch('http://54.89.228.69:8080/wp-json/acf/v3/faq?_embed').then(response => {
+      return response.json();
+    }).catch(error => {
+      return error;
+    });
+  }
+
   static getHomepage() {
     return fetch('http://54.89.228.69:8080/wp-json/acf/v3/home?_embed').then(response => {
       return response.json();

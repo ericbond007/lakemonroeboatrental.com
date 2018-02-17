@@ -16,7 +16,9 @@ class PoliciesPage extends Component {
             path="/policies"
           />
           <div className="column is-3 is-offset-2 is-fullheight is-hidden-mobile">
-            <PoliciesSidebar />
+            {(this.props.faq) &&
+            <PoliciesSidebar faq={this.props.faq} />
+            }
           </div>
           <div className="column is-fullheight">
         {(this.props.policies) &&
@@ -32,7 +34,8 @@ class PoliciesPage extends Component {
 
 function mapStateToProps(state, ownProps) {
   return {
-    policies: state.policies
+    policies: state.policies,
+    faq: state.faq
   }
 }
 
