@@ -14,9 +14,7 @@ const Hero = () => {
             backgroundSize: 'cover',
             height: '93vh',
             transition: 'all .7s ease-out',
-            backgroundPositionX: '65%',
-            backgroundAttachment: 'fixed',
-            backgroundPosition: 'center'
+            backgroundPositionX: '65%'
           }}
           className="heroImg hero is-primary is-large" 
         >

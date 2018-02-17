@@ -154,17 +154,38 @@ i:hover{
 box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
 
   transition: all 0.4s ease-out;
+  z-index: 1;
 }
 
-.boatCard:hover, .boatCard:active {
+.cardWrapper {
+  -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+-moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+
+  transition: all 0.4s ease-out;
+
+}
+
+.cardWrapper:hover {
+ transform: translateY(-5px);
+ box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.6);
+ -webkit-box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
+ -moz-box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.cardWrapper:active {
  box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
  -webkit-box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
  -moz-box-shadow: 0px 15px 20px -10px rgba(0, 0, 0, 0.3);
  transform: translateY(-5px);
 }
 
-.boatCard {
-text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+
+boatCard .card {
+ box-shadow: 10px 15px 20px 10px rgba(0, 0, 0, 0.3) !important;
+
 }
 
 .boatCard .card-header-title {
@@ -175,8 +196,6 @@ text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 .boatCard .card-image {
   opacity: 1;
   transition: all 0.4s ease-out;
-  border-top: .5rem double rgba(38,38,255,0.11);
-  border-bottom: .5rem double rgba(38,38,255,0.11);
 
 }
 
@@ -186,9 +205,11 @@ text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 
 .boatCard .card-header {
 
+box-shadow: inset 0px -15px 20px -10px rgba(0, 0, 0, 0.3) !important;
 }
 
 .boatCard .card-content {
+  box-shadow: inset 0px 15px 20px -10px rgba(0, 0, 0, 0.3) !important;
 }
 
 .imgDrop img {

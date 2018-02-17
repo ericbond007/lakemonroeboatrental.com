@@ -7,10 +7,11 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   return (
-    <div className="boatCard ripple">
       <Slide bottom>
-        <Scroll type="id" element="herobottom" style={{boxShadow: '5px 8px 15px -5px rgba(66,65,69,1)', borderRadius: '10px'}}>
-      <div style={{borderRadius: '10px', boxShadow: '5px 8px 15px -5px rgba(66,65,69,1)'}}>
+    <div style={{ borderRadius: '11px', margin: '.5rem', position: 'relative'}} className="cardWrapper">
+    <div className="boatCard ripple">
+        <Scroll type="id" element="herobottom" style={{borderRadius: '10px'}}>
+      <div style={{borderRadius: '10px'}}>
     <Link to={{
       pathname: `/boats/${cardLink}`,
     }}>
@@ -36,8 +37,9 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   </Link>
 </div>
   </Scroll>
-</Slide>
 </div>
+</div>
+</Slide>
   );
   }
 
