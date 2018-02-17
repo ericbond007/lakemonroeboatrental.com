@@ -11,152 +11,10 @@ import MobileRateCard from './MobileRateCard';
 import './Rates.css';
 
 class Rates extends Component {
-  constructor(props) {
-    super();
-    this.toggleMessage = this.toggleMessage.bind(this);
-    this.state = {
-      ...props,
-      boats: {},
-      condition: false
-    }
-  }
-
-  toggleMessage() {
-    this.setState(prevState => ({
-      condition: !prevState.condition
-    }));
-  }
-
-  filterBoat(boatname) {
-    let boat = this.props.boats.filter(boat => boat.acf.boatname === boatname);
-    return {
-      boat: boat
-    };
-  }
 
   render() {
-    const data = [
-      {
-      boat: '20\' Pontoon',
-      capacity: '8',
-      onehour: '$55',
-      xtrahour: '$40',
-      fourhour: '$150',
-      eighthour: '$225',
-      allday: '$245',
-      evening: '$95',
-      overnight: '$200',
-      oneday: '$265',
-      threeday: '$675',
-      weekly: '$1150',
-      deposit: '$200'
-    },
-      {
-      boat: '24\' Pontoon',
-      capacity: '10',
-      onehour: '$60',
-      xtrahour: '$40',
-      fourhour: '$160',
-      eighthour: '$235',
-      allday: '$255',
-      evening: '$100',
-      overnight: '$215',
-      oneday: '$275',
-      threeday: '$700',
-      weekly: '$1200',
-      deposit: '$200'
-    },
-      {
-      boat: '28\' Pontoon',
-      capacity: '12',
-      onehour: '$65',
-      xtrahour: '$40',
-      fourhour: '$170',
-      eighthour: '$245',
-      allday: '$265',
-      evening: '$105',
-      overnight: '$230',
-      oneday: '$290',
-      threeday: '$750',
-      weekly: '$1250',
-      deposit: '$200'
-    },
-      {
-      boat: '34\' Double Decker',
-      capacity: '24',
-      onehour: '$105',
-      xtrahour: '$75',
-      fourhour: '$305',
-      eighthour: '$435',
-      allday: '$460',
-      evening: '$180',
-      overnight: '$340',
-      oneday: '$480',
-      threeday: '$1300',
-      weekly: '',
-      deposit: '$300'
-    },
-      {
-      boat: 'Ski Boat',
-      capacity: '6',
-      onehour: '$90',
-      xtrahour: '$90',
-      fourhour: '$295',
-      eighthour: '$415',
-      allday: '$460',
-      evening: '',
-      overnight: '',
-      oneday: '',
-      threeday: '',
-      weekly: '',
-        deposit: '$300'
-    },
-      {
-      boat: 'Jet Ski',
-      capacity: '2',
-      onehour: '$85',
-      xtrahour: '$85',
-      fourhour: '$275',
-      eighthour: '$395',
-      allday: '',
-      evening: '',
-      overnight: '',
-      oneday: '',
-      threeday: '',
-      weekly: '',
-        deposit: '$300'
-    },
-      {
-      boat: '16\' Fishing Boat',
-      capacity: '2',
-      onehour: '$45',
-      xtrahour: '$20',
-      fourhour: '$100',
-      eighthour: '$135',
-      allday: '$150',
-      evening: '',
-      overnight: '$110',
-      oneday: '$165',
-      threeday: '$360',
-      weekly: '$580',
-        deposit: '$100'
-    },
-      {
-        boat: 'Canoe, Kayak, Paddleboard',
-      capacity: '1-3',
-      onehour: '$15',
-      xtrahour: '$10',
-      fourhour: '$35',
-      eighthour: '$45',
-      allday: '$48',
-      evening: '',
-      overnight: '$35',
-      oneday: '$50',
-      threeday: '$100',
-      weekly: '$180',
-        deposit: '$50'
-    },
-    ]
+
+
     const columns = [
       {
         Header: 'Boats',
@@ -213,6 +71,7 @@ class Rates extends Component {
       }
 
     ]
+    if (this.props.boats[0] !== undefined) {
     return (
       <div className="rates">
       
@@ -221,7 +80,130 @@ class Rates extends Component {
               <h1 className="title">Boat Rental Rates</h1>
               <p className="is-size-4-desktop">Please call 812-837-9909 for more info!</p>
               <ReactTable
-                data={data}
+                data={
+                  [
+      {
+      boat: '20\' Pontoon',
+      capacity: this.props.pontoon.acf.max_capacity,
+      onehour: this.props.pontoon.acf.rates_onehour,
+      xtrahour: this.props.pontoon.acf.rates_extra_hour,
+      fourhour: this.props.pontoon.acf.rates_fourhour,
+      eighthour: this.props.pontoon.acf.rates_eighthour,
+      allday: this.props.pontoon.acf.rates_all_day,
+      evening: this.props.pontoon.acf.rates_evening,
+      overnight: this.props.pontoon.acf.rates_overnight,
+      oneday: this.props.pontoon.acf.rates_oneday,
+      threeday: this.props.pontoon.acf.rates_threeday,
+      weekly: this.props.pontoon.acf.rates_weekly,
+      deposit: this.props.pontoon.acf.deposit
+    },
+      {
+      boat: '24\' Pontoon',
+      capacity: this.props.pontoon24.acf.max_capacity,
+      onehour: this.props.pontoon24.acf.rates_onehour,
+      xtrahour: this.props.pontoon24.acf.rates_extra_hour,
+      fourhour: this.props.pontoon24.acf.rates_fourhour,
+      eighthour: this.props.pontoon24.acf.rates_eighthour,
+      allday: this.props.pontoon24.acf.rates_all_day,
+      evening: this.props.pontoon24.acf.rates_evening,
+      overnight: this.props.pontoon24.acf.rates_overnight,
+      oneday: this.props.pontoon24.acf.rates_oneday,
+      threeday: this.props.pontoon24.acf.rates_threeday,
+      weekly: this.props.pontoon24.acf.rates_weekly,
+      deposit: this.props.pontoon24.acf.deposit
+    },
+      {
+      boat: '28\' Pontoon',
+      capacity: this.props.pontoon28.acf.max_capacity,
+      onehour: this.props.pontoon28.acf.rates_onehour,
+      xtrahour: this.props.pontoon28.acf.rates_extra_hour,
+      fourhour: this.props.pontoon28.acf.rates_fourhour,
+      eighthour: this.props.pontoon28.acf.rates_eighthour,
+      allday: this.props.pontoon28.acf.rates_all_day,
+      evening: this.props.pontoon28.acf.rates_evening,
+      overnight: this.props.pontoon28.acf.rates_overnight,
+      oneday: this.props.pontoon28.acf.rates_oneday,
+      threeday: this.props.pontoon28.acf.rates_threeday,
+      weekly: this.props.pontoon28.acf.rates_weekly,
+      deposit: this.props.pontoon28.acf.deposit
+    },
+      {
+      boat: '34\' Double Decker',
+      capacity: this.props.doubleD.acf.max_capacity,
+      onehour: this.props.doubleD.acf.rates_onehour,
+      xtrahour: this.props.doubleD.acf.rates_extra_hour,
+      fourhour: this.props.doubleD.acf.rates_fourhour,
+      eighthour: this.props.doubleD.acf.rates_eighthour,
+      allday: this.props.doubleD.acf.rates_all_day,
+      evening: this.props.doubleD.acf.rates_evening,
+      overnight: this.props.doubleD.acf.rates_overnight,
+      oneday: this.props.doubleD.acf.rates_oneday,
+      threeday: this.props.doubleD.acf.rates_threeday,
+      weekly: this.props.doubleD.acf.rates_weekly,
+      deposit: this.props.doubleD.acf.deposit
+    },
+      {
+      boat: 'Ski Boat',
+      capacity: this.props.skiboat.acf.max_capacity,
+      onehour: this.props.skiboat.acf.rates_onehour,
+      xtrahour: this.props.skiboat.acf.rates_extra_hour,
+      fourhour: this.props.skiboat.acf.rates_fourhour,
+      eighthour: this.props.skiboat.acf.rates_eighthour,
+      allday: this.props.skiboat.acf.rates_all_day,
+      evening: this.props.skiboat.acf.rates_evening,
+      overnight: this.props.skiboat.acf.rates_overnight,
+      oneday: this.props.skiboat.acf.rates_oneday,
+      threeday: this.props.skiboat.acf.rates_threeday,
+      weekly: this.props.skiboat.acf.rates_weekly,
+      deposit: this.props.skiboat.acf.deposit
+    },
+      {
+      boat: 'Jet Ski',
+      capacity: this.props.jetski.acf.max_capacity,
+      onehour: this.props.jetski.acf.rates_onehour,
+      xtrahour: this.props.jetski.acf.rates_extra_hour,
+      fourhour: this.props.jetski.acf.rates_fourhour,
+      eighthour: this.props.jetski.acf.rates_eighthour,
+      allday: this.props.jetski.acf.rates_all_day,
+      evening: this.props.jetski.acf.rates_evening,
+      overnight: this.props.jetski.acf.rates_overnight,
+      oneday: this.props.jetski.acf.rates_oneday,
+      threeday: this.props.jetski.acf.rates_threeday,
+      weekly: this.props.jetski.acf.rates_weekly,
+      deposit: this.props.jetski.acf.deposit
+    },
+      {
+      boat: '16\' Fishing Boat',
+      capacity: this.props.fishingboat.acf.max_capacity,
+      onehour: this.props.fishingboat.acf.rates_onehour,
+      xtrahour: this.props.fishingboat.acf.rates_extra_hour,
+      fourhour: this.props.fishingboat.acf.rates_fourhour,
+      eighthour: this.props.fishingboat.acf.rates_eighthour,
+      allday: this.props.fishingboat.acf.rates_all_day,
+      evening: this.props.fishingboat.acf.rates_evening,
+      overnight: this.props.fishingboat.acf.rates_overnight,
+      oneday: this.props.fishingboat.acf.rates_oneday,
+      threeday: this.props.fishingboat.acf.rates_threeday,
+      weekly: this.props.fishingboat.acf.rates_weekly,
+      deposit: this.props.fishingboat.acf.deposit
+    },
+      {
+        boat: 'Canoe, Kayak, Paddleboard',
+      capacity: this.props.kayak.acf.max_capacity,
+      onehour: this.props.kayak.acf.rates_onehour,
+      xtrahour: this.props.kayak.acf.rates_extra_hour,
+      fourhour: this.props.kayak.acf.rates_fourhour,
+      eighthour: this.props.kayak.acf.rates_eighthour,
+      allday: this.props.kayak.acf.rates_all_day,
+      evening: this.props.kayak.acf.rates_evening,
+      overnight: this.props.kayak.acf.rates_overnight,
+      oneday: this.props.kayak.acf.rates_oneday,
+      threeday: this.props.kayak.acf.rates_threeday,
+      weekly: this.props.kayak.acf.rates_weekly,
+      deposit: this.props.kayak.acf.deposit
+    },
+                  ]
+                }
                 columns={columns}
                 showPagination={false}
                 className="-striped priceTable is-hidden-mobile"
@@ -231,27 +213,26 @@ class Rates extends Component {
                 resizable={false}
 
               />
+              
               <div className="is-hidden-desktop">
-                <MobileRateCard messageName="20' Pontoon" data={data[0]}/>
-                <MobileRateCard messageName="24' Pontoon" data={data[1]}/>
-                <MobileRateCard messageName="28' Pontoon" data={data[2]}/>
-                <MobileRateCard messageName="34' Double Decker" data={data[3]}/>
-                <MobileRateCard messageName="Ski Boat" data={data[4]}/>
-                <MobileRateCard messageName="Jet Ski" data={data[5]}/>
-                <MobileRateCard messageName="16' Fishing Boat" data={data[6]}/>
-                <MobileRateCard messageName="Canoes & Kayaks" data={data[7]}/>
+                <MobileRateCard messageName="20' Pontoon" boat={this.props.pontoon} />
+                <MobileRateCard messageName="24' Pontoon" boat={this.props.pontoon24} />
+                <MobileRateCard messageName="28' Pontoon" boat={this.props.pontoon28}/>
+                <MobileRateCard messageName="34' Double Decker" boat={this.props.doubleD}/>
+                <MobileRateCard messageName="Ski Boat" boat={this.props.skiboat}/>
+                <MobileRateCard messageName="Jet Ski" boat={this.props.jetski}/>
+                <MobileRateCard messageName="16' Fishing Boat" boat={this.props.fishingboat}/>
+                <MobileRateCard messageName="Canoes & skiboats" boat={this.props.kayak}/>
               </div>
         </Container>
             </Section>
       </div>
       );
+      } else {
+        return null;
+      }
       }
       }
 
-function mapStateToProps(state, ownProps) {
-  return {
-    boats: state.boats
-  }
-}
 
-export default connect(mapStateToProps)(Rates);
+export default Rates;
