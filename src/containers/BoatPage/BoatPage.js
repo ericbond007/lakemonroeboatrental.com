@@ -14,6 +14,9 @@ class BoatPage extends Component {
     }
   }
   componentDidMount() {
+    let navbarTop = document.getElementById('noscroll');
+    navbarTop.scrollTop = navbarTop.scrollHeight;
+    window.scrollTo(navbarTop);
 
   }
 

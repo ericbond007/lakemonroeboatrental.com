@@ -1,6 +1,5 @@
 import React from 'react';
 import BoatCard from '../Boats/BoatCard';
-import Flip from 'react-reveal/Flip';
 
 
 const BoatList = () => (

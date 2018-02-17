@@ -16,7 +16,7 @@ class NavBar extends Component {
                     
                     <Scroll type="class" element="navTabs">
                   <ul  id="navBarbig">
-                      <Scroll type="id" element="rates">
+                      <Scroll type="id" element="herobottom">
                     <li className="ripple">
                         <NavLink activeClassName="active" to="/rates">
                           Rates
@@ -30,21 +30,21 @@ class NavBar extends Component {
                     </NavLink>
                   </li>
                       </Scroll>
-                      <Scroll type="id" element="home">
+                      <Scroll type="id" element="herobottom">
                     <li className="ripple">
                       <NavLink  exact activeClassName="active" to="/" >
                        Home 
                     </NavLink>
                   </li>
                       </Scroll>
-                      <Scroll type="id" element="policies">
+                      <Scroll type="id" element="herobottom">
                     <li className="ripple">
                       <NavLink activeClassName="active" to="/policies">
                         Policies
                     </NavLink>
                   </li>
                       </Scroll>
-                      <Scroll type="id" element="contact">
+                      <Scroll type="id" element="herobottom">
                     <li className="ripple">
                       <NavLink activeClassName="active" to="/contact">
                         Contact

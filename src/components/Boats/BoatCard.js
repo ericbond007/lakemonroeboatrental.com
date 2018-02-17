@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Image from '../Image';
 import Scroll from 'react-scroll-to-element';
 import Slide from 'react-reveal/Slide'
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   return (
-    <Scroll type="id" element="herobottom">
       <Slide bottom>
+    <Scroll type="id" element="herobottom">
     <div className="boatCard ripple">
     <Link to={{
       pathname: `/boats/${cardLink}`,
@@ -31,8 +32,8 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
     </div>
   </Link>
 </div>
-</Slide>
   </Scroll>
+</Slide>
   );
   }
 
