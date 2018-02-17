@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Image from '../Image';
-
 const Map = () => (
   <div className="map">
         <h4 className="is-indent is-size-5-touch">

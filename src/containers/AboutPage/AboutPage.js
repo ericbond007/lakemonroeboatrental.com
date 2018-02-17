@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SEO from '../../components/SEO';
 import About from '../../components/About/About';
-import { connect } from 'react-redux';
 import ContactSidebar from '../../components/ContactSidebar/ContactSidebar';
 import Contact from '../../components/About/Contact';
 
@@ -21,9 +20,8 @@ class AboutPage extends Component {
         </div>
         <div className="column is-fullheight">
           <Contact />
-        {(this.props.about) &&
-        <About about={this.props.about} />
-        }
+        <About />
+        
       </div>
         <div className="column is-3 is-offset-2 is-fullheight is-hidden-desktop">
           <ContactSidebar />
@@ -35,10 +33,4 @@ class AboutPage extends Component {
   }
   }
 
-function mapStateToProps(state, ownProps) {
-  return {
-    about: state.about
-  }
-}
-
-export default connect(mapStateToProps)(AboutPage);
+export default AboutPage;
