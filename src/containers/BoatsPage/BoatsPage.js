@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Boats from '../../components/Boats/Boats';
-import SEO from '../../components/SEO';
 import BoatsSidebar from '../../components/BoatsSidebar/BoatsSidebar';
 
 
@@ -12,11 +11,6 @@ class BoatsPage extends Component {
   render() {
     return (
       <div className="columns is-fullheight boatsPage is-size-4-desktop is-size-5-mobile" id="boats">
-      <SEO
-        title="Boats | Lake Monroe Boat Rental"
-        description="We have a wide variety of watercraft available for rent. Choose from poontons, double deckers, and more"
-        path="/boats"
-      />
       <div className="column is-3 is-offset-2 is-hidden-mobile">
         <BoatsSidebar />
       </div>

@@ -22,7 +22,7 @@ const getMetaTags = ({
   if (updated) metaTags.push({ name: 'article:modified_time', content: updated });
   if (category) metaTags.push({ name: 'article:section', content: category });
   if (tags) metaTags.push({ name: 'article:tag', content: tags });
-  if (!description) metaTags.push ({ name: 'description', content: 'Located near Paynetown SRA, The Fishin Shedd is your choice for live bait, convenience items, and camping supplies. Featuring ethanol-free gasoline, The Shedd is open year round.' });
+  if (!description) metaTags.push ({ name: 'description', content: 'Lake Monroe Boat Rental' });
 
     return metaTags;
 };

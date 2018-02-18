@@ -78,7 +78,7 @@ class Rates extends Component {
       <Section className="content">
       <Container>
               <h1 className="title">Boat Rental Rates</h1>
-              <p className="is-size-4-desktop">Please call 812-837-9909 for more info!</p>
+              <p className="is-size-4-desktop">Please call 812-837-9909 to make your reservation today!</p>
               <ReactTable
                 data={
                   [

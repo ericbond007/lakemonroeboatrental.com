@@ -45,7 +45,7 @@ const Accessories = () => (
           </div>
           <div className="ratesRow">
             <div className="boatLeft">Navigation Lights:</div>
-            <div className="boatRight">$5 per day</div>
+            <div className="boatRight">$24 per day</div>
           </div>
           Life preservers are provided at no additional cost with every boat rental. Ski jackets are $5 each.
       </div>
