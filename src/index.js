@@ -3,6 +3,7 @@ import { hydrate, render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
+import 'core-js/es7/array';
 
 
 
