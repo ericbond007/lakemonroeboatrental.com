@@ -1,38 +1,34 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
-import Sticky from '../Sticky/Sticky';
 import ProgressiveImage from 'react-progressive-bg-image';
-
 
 
 import './Hero.css';
 
-const Hero = (props) => {
+const Hero = () => {
   return (
-    <div>
+    <div className="heroWrapper">
         <ProgressiveImage
-          src={'/img/landingImg-newBlur-1920w.jpg'}
+          src={'/img/newHero-lg_1x.jpg'}
           placeholder={'/img/landingImg-50px.jpg'}
           style={{
             backgroundSize: 'cover',
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))`
+            height: '93vh',
+            transition: 'all .7s ease-out',
+            backgroundPositionX: '65%'
           }}
-          className="hero is-primary is-large is-fullheight heroImg"
+          className="heroImg hero is-primary is-large" 
         >
-      
       <div className="hero-body">
-        <div className="container has-text-centered">
+        <div className="container is-centered">
+      
           <h1 className="title">
             Lake Monroe Boat Rental
           </h1>
         </div>
       </div>
-      <div className="hero-foot">
-        <Sticky id="navbar">
-          <NavBar />
-        </Sticky>
-      </div>
-    </ProgressiveImage>
+        </ProgressiveImage>
+        <div id="herobottom">
+        </div>
   </div>
   );
 }

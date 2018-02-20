@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../Image';
-import Scroll from 'react-scroll-to-element';
+import Scroll from '../react-scroll';
 import Slide from 'react-reveal/Slide'
 import { HashLink as Link } from 'react-router-hash-link';
 

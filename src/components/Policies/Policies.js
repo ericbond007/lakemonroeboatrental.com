@@ -3,7 +3,7 @@ import { Section, Title } from 'reactbulma';
 import PoliciesSidebar from '../PoliciesSidebar/PoliciesSidebar';
 import './Policies.css';
 
-const Policies = ({ policies }) => (
+const Policies = ({ policies, faq }) => (
       <Section className="policies">
           <Title> Policies</Title>
           <div className="is-size-5-desktop">
@@ -39,7 +39,7 @@ const Policies = ({ policies }) => (
             <Title className="titleSpace">Weather Policy</Title>
             <div className="left is-size-5-desktop">
             <p>
-              Inclement weather is defined as weather where there are unsafe conditions. This includes: warning of severe storms, lightning, high wind advisory, or tornado. If there are inclement weather conditions at Lake Monroe you will be able to reschedule your reservation or delay your departure time.
+              Inclement weather is defined as weather where there are unsafe conditions. This includes: severe storms, lightning, high wind advisory, or tornado. If there are inclement weather conditions at Lake Monroe you will be able to reschedule your reservation or delay your departure time.
             </p>
             <p>
               Reschedules are based on actual weather conditions on the lake at the time of the rental, not future weather forecasts. If weather conditions are overcast, cold, cloudy, or rainy, your rental still stands for the day.
@@ -47,6 +47,22 @@ const Policies = ({ policies }) => (
             <p>
               We cannot give refunds for time not used during a pop-up storm
             </p>
+            </div>
+          </div>
+          <div id="faq">
+            <Title className="titleSpace">FAQ</Title>
+            <div className="left is-size-5-desktop">
+              <ul>
+                {faq.map(faq =>
+                <div id={faq.id}>
+                  <li className="faQuestion">
+                    {faq.acf.question}
+                  </li>
+                  <li>
+                    {faq.acf.answer}
+                  </li>
+                </div>)}
+              </ul>
             </div>
           </div>
       </Section>

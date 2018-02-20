@@ -63,6 +63,15 @@ const Boat = ({boat}) => {
             <div className="boatRight">${boat[0].acf.rates_all_day}</div>
             </Slide>
           </div>: null}
+          {boat[0].acf.rates_evening ? 
+          <div className="ratesRow">
+            <Slide left duration={500}>
+            <div className="boatLeft">Evening:</div>
+            </Slide>
+            <Slide right duration={500}>
+            <div className="boatRight">${boat[0].acf.rates_evening}</div>
+            </Slide>
+          </div>: null}
           {boat[0].acf.rates_overnight ? 
           <div className="ratesRow">
             <Slide left duration={500}>
@@ -107,6 +116,30 @@ const Boat = ({boat}) => {
             <div className="boatRight">${boat[0].acf.deposit}</div>
             </Slide>
           </div>
+          {boat[0].acf.earlybirdhour ?
+          <div>
+            <h3 className="regalTitle is-size-1">Early Bird Special</h3>
+            <p className="is-indent">
+              {boat[0].acf.blurb}
+            </p>
+          <div className="ratesRow">
+            <Slide left duration={500}>
+            <div className="boatLeft">One Hour:</div>
+            </Slide>
+            <Slide right duration={500}>
+            <div className="boatRight">${boat[0].acf.earlybirdhour}</div>
+            </Slide>
+          </div>
+          <div className="ratesRow">
+            <Slide left duration={500}>
+            <div className="boatLeft">Four Hours:</div>
+            </Slide>
+            <Slide right duration={500}>
+            <div className="boatRight">${boat[0].acf.earlybirdfourhours}</div>
+            </Slide>
+          </div>
+        </div>
+          : null}
           <Reserve style={{marginBottom: '0vh'}}/>
         </div>
       </Section>

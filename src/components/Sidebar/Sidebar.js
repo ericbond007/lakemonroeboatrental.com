@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Scroll from 'react-scroll-to-element';
+import Scroll from '../react-scroll';
 import './Sidebar.css';
 
 const Sidebar = ({boat}) => {

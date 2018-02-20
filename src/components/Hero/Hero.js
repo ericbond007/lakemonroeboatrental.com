@@ -1,5 +1,4 @@
 import React from 'react';
-import ProgressiveImage from 'react-progressive-bg-image';
 
 
 import './Hero.css';
@@ -7,17 +6,7 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div className="heroWrapper">
-        <ProgressiveImage
-          src={'/img/newHero-lg_1x.jpg'}
-          placeholder={'/img/landingImg-50px.jpg'}
-          style={{
-            backgroundSize: 'cover',
-            height: '93vh',
-            transition: 'all .7s ease-out',
-            backgroundPositionX: '65%'
-          }}
-          className="heroImg hero is-primary is-large" 
-        >
+      <div className="hero heroImg is-primary is-large" style={{backgroundImage: '/img/landingImg-50px.jpg'}}>
       <div className="hero-body">
         <div className="container is-centered">
       
@@ -26,7 +15,7 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-        </ProgressiveImage>
+        </div>
         <div id="herobottom">
         </div>
   </div>

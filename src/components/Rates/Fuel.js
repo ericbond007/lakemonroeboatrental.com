@@ -3,7 +3,7 @@ import { Section } from 'reactbulma';
 import'./Fuel.css';
 
 const Fuel = () => (
-  <Section className="content">
+  <Section className="content lineHeight">
         <div className="title">
           Fuel Fees
         </div>

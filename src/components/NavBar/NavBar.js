@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Scroll from 'react-scroll-to-element';
+import Scroll from '../react-scroll';
 import Sticky from '../Sticky/Sticky';
 
 import { NavLink } from 'react-router-dom';

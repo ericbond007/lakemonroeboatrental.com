@@ -7,7 +7,7 @@ import Hours from './Hours';
 import FacebookProvider, { Page } from 'react-facebook';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
-import Scroll from 'react-scroll-to-element';
+import Scroll from '../react-scroll';
 
 import './Home.css';
 

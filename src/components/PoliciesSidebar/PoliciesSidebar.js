@@ -1,9 +1,9 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import './PoliciesSidebar.css';
 
-const PoliciesSidebar = ({ faq }) => {
-  if (faq !== undefined) {
+const PoliciesSidebar = () => {
   return (
     <div className="policiessidebar">
     <div className="card sidebar">
@@ -20,28 +20,16 @@ const PoliciesSidebar = ({ faq }) => {
         Please remember to have a safe & fun time on Lake Monroe. Always watch for other boaters and yield to faster moving boats. Our boats come with life jackets included, even for the kids! Make sure children are wearing their lifejackets. When tubing or skiing, always have a dedicated spotter turned around watching.
         </div>
         <div>
+          <Link to="/policies#faq">
             <p className="title is-4 is-centered" style={{marginTop: '2rem'}}>
-            FAQ
-          </p>
-          <ul>
-            {faq.map(faq =>
-            <div id={faq.id}>
-            <li className="faQuestion">
-              {faq.acf.question}
-            </li>
-            <li>
-              {faq.acf.answer}
-            </li>
-          </div>)}
-          </ul>
+              Got a question? Check out of FAQ section!
+            </p>
+          </Link>
         </div>
       </div>
     </div>
   </div>
   );
-  } else {
-    return null;
-  }
 };
 
 export default PoliciesSidebar;

@@ -12,6 +12,33 @@
 .heroImg {
   overflow: hidden;
 height: 93vh;
+filter: blur(20px);
+background-size: cover;
+animation: hd-quality 1s;
+animation-delay: 3s;
+animation-fill-mode: forwards;
+}
+
+.heroImg::after {
+  animation: low-quality 1s;
+  animation-delay: 1s
+}
+
+@keyframes
+low-quality { 0% {
+    background-image: url(/img/landingImg-50px.jpg);
+  }
+}
+
+@keyframes
+hd-quality { 0% {
+    background-image: url(/img/newHero-lg_1x.jpg);
+    filter: blur(20px);
+  }
+  100% {
+    background-image: url(/img/newHero-lg_1x.jpg);
+    filter: blur(0px);
+  }
 }
 
 .hero .title {
@@ -53,4 +80,14 @@ height: 93vh;
   }
 }
 
+@media only screen and (max-width: 372px) {
+  .hero-body .title {
+    font-size: 5rem;
+  }
+}
 
+@media only screen and (max-width: 318px) {
+  .hero-body .title {
+    font-size: 4.5rem;
+  }
+}

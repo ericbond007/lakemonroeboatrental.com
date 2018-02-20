@@ -22,9 +22,6 @@ Take Indiana 37 South to Bloomington.  Look for the 45/46 bypass, the exit will 
           Take Fairfax Road to Mofit Lane turn right. Follow Mofit Lane around to Stipp Road and Moores Creek Road.  At the 3-way stop, turn right onto  Swartz Ridge Road, go up the big hill and follow Swartz Ridge to 446. Turn Right on 446. Go down about 3.2 miles, The Fishin'Shedd on the left and Lake Monroe Boat Rental is located in Paynetown State Recreation Area which is directly across the street from The Fishin' Shedd.
         </p>
       </div>
-        <a rel="noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/Lake+Monroe+Boat+Rental+Inc/@39.0817314,-86.4368141,17z/data=!3m1!4b1!4m5!3m4!1s0x886c654522e1fb7f:0x7e1299e6fcb7313!8m2!3d39.0817314!4d-86.4346254">
-          <p className="has-text-centered">Click here to go Google Maps</p>
-        </a>
   </div>
 );
 

@@ -1,77 +1,58 @@
+import path from 'path';
+import fs from 'fs';
+
 import React from 'react';
-import { hydrate, render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import configureStore from './store/configureStore';
+import { renderToString } from 'react-dom/server';
+import Helmet from 'react-helmet';
+
 import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'react-router-redux';
+import { Route } from 'react-router-dom';
+import createServerStore from './store';
 
+import App from '../src/App';
 
+const prepHTML = (data, { html, head, body }) => {
+  data = data.replace('<html land="en">', `<html ${html}`);
+  data = data.replace('</head>', `${head}</head>`);
+  data = data.replace('<div id="root"></div>', `<div id="root">${body}</div>`);
 
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+  return data;
+};
 
-import { loadBoats } from './actions/boatActions';
-import { loadPolicies } from './actions/policyActions';
-import { loadHomepage } from './actions/homeActions';
-import { loadHours } from './actions/hoursActions';
-import { loadFuel } from './actions/fuelActions';
-import { loadAbout } from './actions/aboutActions';
+const universalLoader = (req, res) => {
+  const filePath = path.resolve(__dirname, '../build/index.html');
 
+  fs.readFile(filePath, 'utf8', (err, htmlData) => {
+    if (err) {
+      console.error('Read error', err);
 
-const store = configureStore();
-window.snapSaveState = () => ({
-  "__PRELOADED_STATE__": store.getState()
-});
+      return res.status(404).end();
+    }
 
+    const { store, history } = createServerStore(req.path);
 
-store.dispatch(loadBoats());
-store.dispatch(loadPolicies());
-store.dispatch(loadHomepage());
-store.dispatch(loadHours());
-store.dispatch(loadFuel());
-store.dispatch(loadAbout());
+    const routeMarkup = renderToString(
+      <Provider store={store}>
+          <ConnectedRouter history={history}>
+            <Route component={App} />
+          </ConnectedRouter>
+        </Provider>
+        );
 
-const rootElement = document.getElementById('root');
+        const helmet = Helmet.renderStatic();
 
+        const html = prepHTML(htmlData, {
+          html: helmet.htmlAttributes.toString(),
+            head:
+              helmet.title.toString() +
+              helmet.meta.toString() +
+              helmet.link.toString(),
+            body: routeMarkup
+        });
 
-{/*if (rootElement.hasChildNodes()) {
-  hydrate(
-    <Provider store={store}>
-      <BrowserRouter>
-          <App />
-        </BrowserRouter>
-    </Provider>,
-    rootElement
-  );
-} else {
-  render(
-    <Provider store={store}>
-      <BrowserRouter>
-          <App />
-        </BrowserRouter>
-    </Provider>,
-    rootElement
-  );
-}*/}
+        res.send(html);
+  });
+  };
 
-const context = {}
-const markup = renderToString(
-  <Provider store={store}>
-    <StaticRouter
-      location={req.url}
-      context={context}
-    >
-      <App/>
-    </StaticRouter>
-  </Provider>
-)
-if (context.url) {
-  // Somewhere a `<Redirect>` was rendered
-  redirect(301, context.url)
-} else {
-  // we're good, send the response
-  const RenderedApp = htmlData.replace('{{SSR}}', markup)
-  res.send(RenderedApp)
-}
-
-
-registerServiceWorker();
+  export default universalLoader;
