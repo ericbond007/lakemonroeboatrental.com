@@ -24,7 +24,7 @@
     margin-bottom: 4rem;
   }
   .homeSlug {
-    max-width: 50%;
+   // max-width: 80%;
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 5rem !important;
@@ -80,11 +80,24 @@
 }
 
 .homeSlug {
-  height: 10rem;
+  -webkit-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+-moz-box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+box-shadow: 5px 8px 15px -5px rgba(66,65,69,1);
+  border-radius: 10px;
+  background-color: #2626ff;
+  color: #fff;
+ // height: 10rem;
 }
 
-.homeSlug>div {
-  height: 10rem;
+.homeSlug a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.homeSlug a {}
+
+//.homeSlug>div {
+ // height: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,4 +393,113 @@ body p {
   transform: scale(0, 0);
   opacity: .2;
   transition: 0s;
+}
+
+
+
+@mixin marching-ants-v2-init($ant-size,$ant-width,$speed,$id){
+    padding: 5px + $ant-width;
+    margin: 20px;
+    background-size:
+      $ant-size $ant-width,
+      $ant-size $ant-width,
+      $ant-width $ant-size,
+      $ant-width $ant-size;
+    background-position:
+      0 0,
+      0 100%,
+      0 0,
+      100% 0;
+    background-repeat:
+      repeat-x,
+      repeat-x,
+      repeat-y,
+      repeat-y;
+    animation: marching-ants-#{$id} $speed;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  &:hover, &.marching {
+    animation-play-state: running;
+  }
+  &.reverse {
+    animation-direction: reverse;
+  }
+};
+@mixin marching-ants-v2-color($a, $b){
+    background-image:
+      linear-gradient(to right, $a 50%, $b 50%),
+      linear-gradient(to right, $a 50%, $b 50%),
+      linear-gradient(to bottom, $a 50%, $b 50%),
+      linear-gradient(to bottom, $a 50%, $b 50%);
+};
+
+@mixin marching-ants-v2-animation($ant-size, $id){
+  @keyframes marching-ants-#{$id} {
+    0% {
+      background-position:
+        0 0,
+        0 100%,
+        0 0,
+        100% 0;
+    }
+    100% {
+      background-position:
+        2*$ant-size 0,
+        -2*$ant-size 100%,
+        0 -2*$ant-size,
+        100% 2*$ant-size;
+    }
+  }
+}
+.marching-ants {
+  @include marching-ants-v2-init(20px, 3px,1.4s,3);
+
+  &.headline {
+    @include marching-ants-v2-color(#fff,#2626ff);
+    color: #2626ff;
+  }
+  &.info {
+    @include marching-ants-v2-color(#8585FF,#fff);
+    background-color: #2626ff;
+    color: #fff;
+    border-radius: 10px;
+  }
+  &.warning {
+    @include marching-ants-v2-init(40px, 4px,2s,2);
+    @include marching-ants-v2-color(#f00,#fff);
+    color: #a00;
+    background-color: #faa;
+  }
+}
+
+
+
+
+
+
+
+@include marching-ants-v2-animation(20px, 1);
+@include marching-ants-v2-animation(20px, 2);
+@include marching-ants-v2-animation(20px, 3);
+
+.ribbon-holder{
+    overflow: hidden;
+}
+.ribbon {
+	position: absolute;
+	background: yellow;
+    color: black;
+    transform: rotate(45deg);
+    text-align: center;
+    top: 15px;
+    right: -45px;
+    width:175px;
+    text-indent: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .ribbon {
+  
+  }
 }

@@ -14,9 +14,14 @@
 height: 93vh;
 filter: blur(20px);
 background-size: cover;
+background-color: #2626ff;
 animation: hd-quality 1s;
 animation-delay: 3s;
 animation-fill-mode: forwards;
+}
+
+.hero .is-primary {
+
 }
 
 .heroImg::after {

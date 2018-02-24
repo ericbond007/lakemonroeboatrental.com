@@ -22,7 +22,7 @@ class BoatPage extends Component {
 
   render() {
     return (
-        <div className="columns is-fullheight boatPage">
+        <div className="columns is-desktop is-fullheight boatPage">
           <div className="column is-2 is-offset-3 is-hidden-touch">
             <Sidebar />
           </div>
@@ -31,10 +31,10 @@ class BoatPage extends Component {
             <Boat boat={this.props.boat} />
             }
           </div>
-          <div className="column is-2 is-hidden-desktop" style={{paddingTop: '-3rem'}}>
+          <div className="column is-hidden-desktop" style={{paddingTop: '-3rem'}}>
             <Sidebar className="is-hidden-desktop"/ >
           </div>
-          <div className="column is-2 is-hidden-mobile">
+          <div className="column is-2 is-hidden-touch">
           </div>
         </div>
     );

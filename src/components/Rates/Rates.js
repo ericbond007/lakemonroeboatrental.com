@@ -206,7 +206,7 @@ class Rates extends Component {
                 }
                 columns={columns}
                 showPagination={false}
-                className="-striped priceTable is-hidden-mobile"
+                className="-striped priceTable is-hidden-touch"
                 sortable={false}
                 style={{ }}
                 defaultPageSize={8}

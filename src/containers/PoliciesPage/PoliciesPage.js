@@ -8,8 +8,8 @@ class PoliciesPage extends Component {
   }
   render() {
     return (
-        <div className="columns is-fullheight policiesPage is-size-4-desktop is-size-5-mobile" id="policies">
-          <div className="column is-3 is-offset-2 is-fullheight is-hidden-mobile">
+        <div className="columns is-fullheight policiesPage is-size-4-desktop is-size-5-mobile is-desktop" id="policies">
+          <div className="column is-3 is-offset-2 is-fullheight is-hidden-touch">
             <PoliciesSidebar />
           </div>
           <div className="column is-fullheight">

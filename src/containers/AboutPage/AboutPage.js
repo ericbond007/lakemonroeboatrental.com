@@ -8,8 +8,8 @@ class AboutPage extends Component {
   }
   render() {
     return (
-        <div className="columns is-fullheight aboutPage is-size-4-desktop is-size-5-mobile" id="contact">
-        <div className="column is-3 is-offset-2 is-fullheight is-hidden-mobile">
+        <div className="columns is-fullheight aboutPage is-size-4-desktop is-size-5-touch is-desktop" id="contact">
+        <div className="column is-3 is-offset-2 is-fullheight is-hidden-touch">
           <ContactSidebar />
         </div>
         <div className="column is-fullheight">
@@ -17,10 +17,10 @@ class AboutPage extends Component {
         <About />
         
       </div>
-        <div className="column is-3 is-offset-2 is-fullheight is-hidden-desktop">
+        <div className="column is-fullheight is-hidden-desktop">
           <ContactSidebar />
         </div>
-      <div className="column is-2">
+      <div className="column is-2 is-hidden-touch">
       </div>
     </div>
     );

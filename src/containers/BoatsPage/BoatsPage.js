@@ -10,8 +10,8 @@ class BoatsPage extends Component {
 
   render() {
     return (
-      <div className="columns is-fullheight boatsPage is-size-4-desktop is-size-5-mobile" id="boats">
-      <div className="column is-3 is-offset-2 is-hidden-mobile">
+      <div className="columns is-fullheight boatsPage is-size-4-desktop is-size-5-mobile is-desktop" id="boats">
+      <div className="column is-3 is-offset-2 is-hidden-touch">
         <BoatsSidebar />
       </div>
       <div clssname="column is-fullheight">
