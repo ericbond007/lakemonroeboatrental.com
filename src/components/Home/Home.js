@@ -17,7 +17,7 @@ const Home = (props) => (
             <div className="animated fadeIn slideInUp">
 
               <img src="img/lmbrGray-lg_1x.png" alt="LMBR Logo" className="homeLogo" />
-                <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
+                <h1 className="title is-1 is-spaced fadeIn">Lake Monroe Boat Rental</h1>
                   <Reserve />
                   <HomeSlug homepage={props.homepage} />
                   <Fade left>

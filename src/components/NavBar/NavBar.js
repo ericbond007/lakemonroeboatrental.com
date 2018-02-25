@@ -7,18 +7,29 @@ import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 
 class NavBar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      fadeClass: 'fader'
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(function() { this.setState({ fadeClass: '' }); }.bind(this), 2000);
+  }
+
   render() {
     return (
-  <div className="navWrapper" ref="navbar">
-  <Sticky id="navbar">
-  <div className="tabs is-centered is-fullwidth is-medium">
-                  <div className="navTabs" id="noscroll">
+  <div className={`navWrapper ${this.state.fadeClass}`} ref="navbar">
+  <Sticky id="navbar" className="fadeIn">
+  <div className="tabs is-centered is-fullwidth is-medium fadeIn">
+                  <div className="navTabs fadeIn" id="noscroll">
                     
                     <Scroll type="class" element="navTabs">
                   <ul  id="navBarbig">
                       <Scroll type="id" element="rates">
-                    <li className="ripple">
-                        <NavLink activeClassName="active" to="/rates">
+                    <li className="ripple fadeIn">
+                        <NavLink activeClassName="active" className="fadeIn" to="/rates">
                           Rates
                         </NavLink>
                     </li>

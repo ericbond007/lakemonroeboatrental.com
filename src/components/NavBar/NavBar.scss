@@ -1,5 +1,14 @@
 @import '../../bulmaVars.scss';
 
+ .fader {
+ opacity: 0 !important;
+}
+
+.navWrapper {
+  opacity: 1;
+ transition: all 1s ease;
+}
+
 .tabs ul {
   
 border-bottom: none !important;
