@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
-import { connect } from 'react-redux';
 import './react-table.css'
 import { Section, Container } from 'reactbulma';
 import MobileRateCard from './MobileRateCard';

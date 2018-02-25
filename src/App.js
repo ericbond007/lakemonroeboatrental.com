@@ -4,7 +4,6 @@ import SwipeableRoutes from './components/swipeable-routes';
 
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
-import { Section } from 'reactbulma'
 import NavBar from './components/NavBar/NavBar';
 
 import HomePage from './containers/HomePage/HomePage';
@@ -17,7 +16,6 @@ import Typekit from 'react-typekit';
 import BoatPage from './containers/BoatPage/BoatPage';
 import AccessoriesPage from './containers/AccessoriesPage/AccessoriesPage';
 
-import Layout from './containers/Layout/Layout';
 
 import './bulmaOverride.css';
 

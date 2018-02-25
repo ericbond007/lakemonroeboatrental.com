@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
 import './Hero.css';
 
-const Hero = () => {
+class Hero extends Component {
+  constructor() {
+    super();
+    this.state = {
+      blurClass: '' 
+    }
+  }
+  componentDidMount() {
+    setTimeout(function() { this.setState({ blurClass: 'heroImgBig' }); }.bind(this), 2500);
+  }
+  render() {
   return (
-    <div className="heroWrapper">
-      <div className="hero heroImg is-primary is-large" style={{backgroundImage: '/img/landingImg-50px.jpg'}}>
+    <div className={`heroWrapper ${this.state.blurClass} fadeIn`}>
+      <div className="hero heroImg is-primary is-large">
       <div className="hero-body">
         <div className="container is-centered">
       
@@ -20,6 +30,9 @@ const Hero = () => {
         </div>
   </div>
   );
+  
+  }
+
 }
 
 export default Hero;

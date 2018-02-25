@@ -8,7 +8,7 @@ const HomeSlug = ({homepage}) => {
       <Scroll type="id" element="herobottom">
     <div className="homeSlug info is-primary" style={{marginRight: '1rem', position: 'relative', marginBottom: '1rem'}}>
       <div className="ribbon-holder">
-         <div class="ribbon is-size-5-desktop ">Great Deal!</div>
+         <div className="ribbon is-size-5-desktop ">Great Deal!</div>
        </div>
        <Link to="/boats/jet-ski" style={{textDecoration: 'none'}}>
       <div className="slugCenter has-text-centered is-size-3">

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Accessories from '../../components/Accessories/Accessories';
-import SEO from '../../components/SEO';
 import BoatsSidebar from '../../components/BoatsSidebar/BoatsSidebar';
 
 class AccessoriesPage extends Component {
