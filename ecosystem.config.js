@@ -34,8 +34,8 @@ module.exports = {
       repo : 'git@github.com:ericbond007/lakemonroeboatrental.com.git',
       path : '/home/ubuntu/apps/lmbr.com',
       'ssh_options': 'ForwardAgent=yes',
-      'pre-deploy': 'yarn && yarn build',
-      'post-deploy' : 'npm install && pm2 startOrRestart ecosystem.config.js --env production'
+      'pre-deploy': 'yarn',
+      'post-deploy' : 'yarn build && pm2 startOrRestart ecosystem.config.js --env production'
     },
     dev : {
       user : 'node',
