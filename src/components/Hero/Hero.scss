@@ -15,7 +15,7 @@
 
 .heroImgBig .heroImg{
   background-image: url(/img/newHero-lg_1x.jpg);
-  animation: sharpen .5s both;
+  animation: sharpen .75s both;
   transition: all .5s;
 }
 
@@ -43,11 +43,6 @@ background-image: url(data:image/png;base64,/9j/4QlQaHR0cDovL25zLmFkb2JlLmNvbS94
 
 }
 
-.heroImg::after {
-opacity: .6;
-  animation: low-quality 0s;
-  animation-delay: 0s
-}
 
 @keyframes
 low-quality { 0% {

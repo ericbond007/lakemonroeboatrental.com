@@ -11,7 +11,7 @@ class Hero extends Component {
     }
   }
   componentDidMount() {
-    setTimeout(function() { this.setState({ blurClass: 'heroImgBig' }); }.bind(this), 2500);
+    setTimeout(function() { this.setState({ blurClass: 'heroImgBig' }); }.bind(this), 2000);
   }
   render() {
   return (
