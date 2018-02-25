@@ -17,6 +17,9 @@
   background-image: url(/img/newHero-lg_1x.jpg);
   animation: sharpen .75s both;
   transition: all .5s;
+  overflow: hidden;
+height: 93vh;
+background-size: cover;
 }
 
 
