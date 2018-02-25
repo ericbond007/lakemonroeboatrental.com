@@ -26,10 +26,16 @@ background-size: cover;
   .heroImgBig .heroImg {
     background-position-x: -50vh;
  }
+  .heroImg {
+    background-position-x: -50vh;
+ }
 }
 
 @media only screen and (max-width: 530px) and (orientation: portrait){
   .heroImgBig .heroImg {
+    background-position-x: -75vh;
+ }
+   .heroImg {
     background-position-x: -75vh;
  }
 }
