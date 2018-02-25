@@ -16,12 +16,23 @@
 .heroImgBig .heroImg{
   background-image: url(/img/newHero-lg_1x.jpg);
   animation: sharpen .75s both;
-  transition: all .5s;
+  transition: all .75s;
   overflow: hidden;
 height: 93vh;
 background-size: cover;
 }
 
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
+  .heroImgBig .heroImg {
+    background-position-x: -50vh;
+ }
+}
+
+@media only screen and (max-width: 530px) and (orientation: portrait){
+  .heroImgBig .heroImg {
+    background-position-x: -75vh;
+ }
+}
 
 @keyframes sharpen {
   from {
@@ -106,6 +117,12 @@ hd-quality { 0% {
 
   .heroImg {
     max-height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .hero-body .title {
+    font-size: 5rem;
   }
 }
 
