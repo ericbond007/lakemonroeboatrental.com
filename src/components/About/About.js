@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, Title } from 'reactbulma';
+import { Section } from 'reactbulma';
 
 import './About.css';
 
@@ -7,7 +7,7 @@ const About = () => {
     return (
       <div style={{marginTop: '-5rem'}}>
       <Section className="about">
-              <Title>About Us</Title>
+              <h1 className="title is-1">About Us</h1>
               <div className="is-size-5-desktop">
               <p className="withSpace">
                 Lake Monroe Boat Rental, Inc., has enjoyed a long association with the Monroe Reservoir community, commencing operations in 1980 under the ownership of Rick Shedd, the then-22 year-old son of Richard and Barbara Shedd, who opened the nearby <a rel="noopener noreferrer" target="_blank" href="https://thefishinshedd.com">Fishin’ Shedd</a> in 1968. With a small fleet of fishing boats remaining from the former Cutright Boat Rental, Rick began trailering boats for rental customers to various launch sites. Rick and his wife Jenny incorporated the business in 1990, and in 1991 under a contractual arrangement with the State of Indiana, began operating the Paynetown Campstore inside the Paynetown State Recreation Area. In 1992, the Boat Rental’s association with the State expanded to include offering rental watercraft, directly on the shoreline behind the Paynetown Campstore. It is a relationship that has continued uninterrupted ever since, under the capable direction of long-term general manager Damon Cappy.

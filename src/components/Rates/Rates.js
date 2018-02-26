@@ -74,10 +74,10 @@ class Rates extends Component {
     return (
       <div className="rates">
       
-      <Section className="content">
+      <Section className="ratesPage">
       <Container>
-              <h1 className="title">Boat Rental Rates</h1>
-              <p className="is-size-4-desktop">Please call 812-837-9909 to make your reservation today!</p>
+              <h1 className="title is-1">Boat Rental Rates</h1>
+              <p className="is-size-4-desktop is-size-3-touch">Please call 812-837-9909 to make your reservation today!</p>
               <ReactTable
                 data={
                   [

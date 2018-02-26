@@ -5,9 +5,9 @@ import Media from 'react-media';
 const Contact = () => (
   <div>
   <Section className="contact" id="contact">
-    <div className="title has-text-centered">
+    <h1 className="title has-text-centered is-1">
       Contact Us
-    </div>
+    </h1>
     <div className="has-text-left leftIndent">
       <Media query="(max-width: 767px)">
         {matches => matches ? (

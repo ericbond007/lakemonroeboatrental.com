@@ -34,7 +34,7 @@ class NavBar extends Component {
                         </NavLink>
                     </li>
                       </Scroll>
-                      <Scroll type="id" element="herobottom">
+                      <Scroll type="id" element="boats">
                     <li className="ripple">
                       <NavLink activeClassName="active" to="/boats">
                         Boats

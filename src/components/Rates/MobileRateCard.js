@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import Slide from 'react-reveal/Slide';
 import './MobileRateCard.css';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemTitle,
-    AccordionItemBody,
-} from 'react-accessible-accordion';
 
 class MobileRateCard extends Component {
   constructor(props) {
