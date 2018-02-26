@@ -55,10 +55,10 @@ const Policies = ({ policies, faq }) => (
               <ul>
                 {faq.map(faq =>
                 <div id={faq.id}>
-                  <li className="faQuestion">
+                  <li className="faQuestion" id={faq.id * 2}>
                     {faq.acf.question}
                   </li>
-                  <li>
+                  <li id={faq.id * 3}>
                     {faq.acf.answer}
                   </li>
                 </div>)}

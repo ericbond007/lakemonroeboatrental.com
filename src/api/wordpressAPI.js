@@ -16,7 +16,7 @@ class wordpressAPI {
   }
 
   static getFAQ() {
-    return fetch('http://54.89.228.69:8080/wp-json/acf/v3/faq?_embed').then(response => {
+    return fetch('http://54.89.228.69:8080/wp-json/acf/v3/faq?per_page=50').then(response => {
       return response.json();
     }).catch(error => {
       return error;
