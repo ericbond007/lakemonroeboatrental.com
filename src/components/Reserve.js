@@ -1,5 +1,6 @@
 import React from 'react';
 import Media from 'react-media';
+import Pulse from 'react-reveal/Pulse';
 
 import './Reserve.css';
 
@@ -14,9 +15,11 @@ const Reserve = () => (
               </h2>
           </a>
             <a href="tel:+1-812-837-9909">
+              <Pulse>
           <h3 className="is-size-1" style={{ paddingTop: '5vh' }}>
              812-837-9909
-          </h3>
+           </h3>
+         </Pulse>
             </a>
             <a rel="noopener noreferrer" target="_blank" href="https://www.google.com/maps/place/Lake+Monroe+Boat+Rental+Inc/@39.0817314,-86.4368141,17z/data=!3m1!4b1!4m5!3m4!1s0x886c654522e1fb7f:0x7e1299e6fcb7313!8m2!3d39.0817314!4d-86.4346254">
             <h4 className="is-size-2" style={{ paddingTop: '3vh' }}>
