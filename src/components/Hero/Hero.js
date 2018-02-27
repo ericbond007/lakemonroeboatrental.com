@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import VideoCover from 'react-video-cover';
+import VideoCover from '../react-video-cover';
 
 
 import './Hero.css';
