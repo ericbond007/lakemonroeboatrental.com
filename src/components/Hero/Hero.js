@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import VideoCover from '../react-video-cover';
+import Media from 'react-media';
 
 
 import './Hero.css';
@@ -18,12 +19,24 @@ class Hero extends Component {
   return (
     <div className={`heroWrapper ${this.state.blurClass} fadeIn`}>
       <div className="hero heroImg is-primary is-large">
+        <Media query={{maxWidth: '767px', orientation: 'portrait'}}>
+          {matches =>
+          matches ? (
+        <VideoCover videoOptions={{
+          src: '/vid/mobileCover.mp4',
+          autoPlay: true,
+          loop: false
+        }} />
+          ) : (
         <VideoCover videoOptions={{
           src: '/vid/cover.mp4',
           autoPlay: true,
           loop: false
         }} />
-      <div className="hero-body">
+      )
+      }
+    </Media>
+      <div className="hero-body is-hidden">
         <div className="container is-centered">
       
           <h1 className="title is-hidden">

@@ -16,44 +16,22 @@
 .heroImgBig .heroImg{
   filter: blur(0px);
   overflow: hidden;
-height: 90vh;
+height: calc(90vh - 1vw );
 transition: all .75s;
 background-size: cover;
 background-color: #000;
 }
 
-@media only screen and (max-width: 1000px) and (orientation: portrait) {
-  .heroImgBig .heroImg {
-    background-position-x: -50vh;
- }
-  .heroImg {
-    background-position-x: -50vh;
- }
+@media only screen and (max-width: 767px) and (orientation: portrait){
+  .heroWrapper{
+height: calc(90vh - 10vw );
+}
 }
 
-@media only screen and (max-width: 530px) and (orientation: portrait){
-  .heroImgBig .heroImg {
-    background-position-x: -75vh;
- }
-   .heroImg {
-    background-position-x: -75vh;
- }
-}
-
-@keyframes sharpen {
-  from {
-  background-image: url(/img/newHero-lg_1x.jpg);
-  filter: blur(20px);
-  }
-  to {
-  background-image: url(/img/newHero-lg_1x.jpg);
-  filter: blur(0px);
-  }
-}
 
 .heroImg {
   overflow: hidden;
-height: 90vh;
+//height: 90vh;
 filter: blur(20px);
 background-size: cover;
 
@@ -92,7 +70,7 @@ hd-quality { 0% {
 
 .heroWrapper {
   max-height: 93vh;
-  min-height: 90vh;
+  //min-height: 90vh;
 }
 
 .title {
