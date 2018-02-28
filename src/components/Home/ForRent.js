@@ -7,10 +7,10 @@ const ForRent = () => {
   return (
     <div className="forRent">
       <Section>
-        <Zoom>
+        <Zoom fraction={.15}>
           <h2 className="is-spaced">Available For Rent</h2>
         </Zoom>
-        <Roll left cascade>
+        <Roll left cascade fraction={.1}>
           <BoatList />
         </Roll>
       </Section>

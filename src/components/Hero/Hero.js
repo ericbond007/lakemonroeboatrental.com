@@ -19,7 +19,7 @@ class Hero extends Component {
   return (
     <div className={`heroWrapper ${this.state.blurClass} fadeIn`}>
       <div className="hero heroImg is-primary is-large">
-        <Media query={{maxWidth: '767px', orientation: 'portrait'}}>
+        <Media query={{maxWidth: '1220px', orientation: 'portrait'}}>
           {matches =>
           matches ? (
         <VideoCover videoOptions={{
