@@ -83,6 +83,7 @@ class VideoCover extends Component {
     return (
       <video
         muted
+        preload='auto'
         className={this.props.className}
         style={style}
         {...this.props.videoOptions}
