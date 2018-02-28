@@ -73,9 +73,10 @@ class Rates extends Component {
     if (this.props.boats[0] !== undefined) {
     return (
       <div className="rates">
+        <div className="columns is-desktop is-centered">
+          <div className="column is-auto is-narrow">
       
       <Section className="ratesPage">
-      <Container>
               <h1 className="title is-1">Boat Rental Rates</h1>
               <p className="is-size-4-desktop is-size-3-touch">Please call 812-837-9909 to make your reservation today!</p>
               <ReactTable
@@ -212,7 +213,6 @@ class Rates extends Component {
                 resizable={false}
 
               />
-              
             <div className="is-hidden-desktop">
                 <MobileRateCard messageName="20' Pontoon" boat={this.props.pontoon} />
                 <MobileRateCard messageName="24' Pontoon" boat={this.props.pontoon24} />
@@ -223,8 +223,9 @@ class Rates extends Component {
                 <MobileRateCard messageName="16' Fishing Boat" boat={this.props.fishingboat}/>
                 <MobileRateCard messageName="Canoes & Kayaks" boat={this.props.kayak}/>
               </div>
-        </Container>
             </Section>
+            </div>
+          </div>
       </div>
       );
       } else {

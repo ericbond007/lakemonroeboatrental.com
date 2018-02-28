@@ -1,9 +1,27 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .priceTable {
     margin: auto;
   }
   .priceTable .rt-td {
     white-space: normal;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .priceTable {
+    transform: scale(.9);
+    transition: all .5s ease;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .priceTable {
+    transform: scale(.8);
+    transition: all .5s ease;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .priceTable {
+    transform: scale(.7);
+    transition: all .5s ease;
   }
 }
 
@@ -18,4 +36,42 @@
 
 .lineHeight {
   line-height: 2rem !important;
+}
+
+.rt-tr .rt-th:first-child {
+  text-align: left;
+}
+
+.rt-tr .rt-th {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: right;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-right-style: none !important;
+}
+
+.ReactTable .rt-td {
+  border-right-style: none !important;
+
+}
+
+.ReactTable .rt-thead .rt-tr {
+  text-align: right;
+  border-right-style: none !important;
+}
+
+.ReactTable {
+  border: none !important;
+}
+
+.rt-tr .rt-th:last-child {
+}
+
+.rt-tr-group .rt-td:first-child {
+  text-align: left;
+}
+
+.rt-tr-group .rt-td {
+  text-align: right;
 }
