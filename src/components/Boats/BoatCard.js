@@ -7,7 +7,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   return (
-      <Slide bottom>
+      <Slide bottom fraction={.05}>
     <div style={{ borderRadius: '11px', margin: '.5rem', position: 'relative'}} className="cardWrapper">
     <div className="boatCard ripple">
         <Scroll type="id" element="herobottom" style={{borderRadius: '10px'}}>
