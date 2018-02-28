@@ -18,7 +18,6 @@ class HomePage extends Component {
       <div className="columns is-desktop is-fullheight homePage is-size-4-desktop" id="home" style={{minHeight: '100%'}} ref="homepage">
        <SEO
           title="Lake Monroe Boat Rental"
-          description="Located in Paynetown SRA"
           path="/"
         />
       <div className="column is-3 is-offset-2 is-hidden-mobile">
