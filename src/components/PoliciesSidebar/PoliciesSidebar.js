@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import Scroll from '../react-scroll';
 
 import './PoliciesSidebar.css';
 
@@ -20,11 +20,11 @@ const PoliciesSidebar = () => {
         Please remember to have a safe & fun time on Lake Monroe. Always watch for other boaters and yield to faster moving boats. Our boats come with life jackets included, even for the kids! Make sure children are wearing their lifejackets. When tubing or skiing, always have a dedicated spotter turned around watching.
         </div>
         <div>
-          <Link to="/policies#faq">
+          <Scroll type="id" element="faq">
             <p className="title is-4 is-centered" style={{marginTop: '2rem'}}>
               Got a question? Check out of FAQ section!
             </p>
-          </Link>
+          </Scroll>
         </div>
       </div>
     </div>

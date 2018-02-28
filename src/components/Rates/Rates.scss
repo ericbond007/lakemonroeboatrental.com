@@ -42,6 +42,10 @@
   text-align: left;
 }
 
+.ReactTable .rt-tbody .rt-tr-group {
+  border-bottom-style: none !important;
+}
+
 .rt-tr .rt-th {
   font-weight: 600;
   font-size: 1.1rem;

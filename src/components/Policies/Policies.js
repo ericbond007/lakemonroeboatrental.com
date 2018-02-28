@@ -58,7 +58,7 @@ const Policies = ({ policies, faq }) => (
                   <li className="faQuestion" id={faq.id * 2}>
                     {faq.acf.question}
                   </li>
-                  <li id={faq.id * 3}>
+                  <li className="faAnswer" id={faq.id * 3}>
                     {faq.acf.answer}
                   </li>
                 </div>)}

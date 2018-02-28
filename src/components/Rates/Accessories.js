@@ -2,7 +2,7 @@ import React from 'react';
 import { Section } from 'reactbulma';
 
 const Accessories = () => (
-    <Section className="content lineHeight">
+    <Section className="content">
       <div className="title">
         Water Accessories
       </div>
