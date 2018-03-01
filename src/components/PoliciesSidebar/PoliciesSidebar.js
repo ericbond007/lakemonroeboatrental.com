@@ -21,7 +21,7 @@ const PoliciesSidebar = () => {
         </div>
         <div>
           <Scroll type="id" element="faq">
-            <p className="title is-4 is-centered" style={{marginTop: '2rem'}}>
+            <p className="title is-4 is-centered hoverCursor" style={{marginTop: '2rem'}}>
               Got a question? Check out of FAQ section!
             </p>
           </Scroll>
