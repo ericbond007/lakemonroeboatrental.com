@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Rates from '../../components/Rates/Rates';
 import Fuel from '../../components/Rates/Fuel';
+import JetSki from '../../components/Rates/JetSki';
 import Accessories from '../../components/Rates/Accessories';
 import { connect } from 'react-redux';
 
@@ -10,6 +11,7 @@ class RatesPage extends Component {
     return (
       <div className="is-size-5-mobile" id="rates">
           <Rates {...this.props} />
+          <JetSki {...this.props} />
           <Accessories />
         <Fuel />
       </div>
