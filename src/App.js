@@ -5,6 +5,7 @@ import SwipeableRoutes from './components/swipeable-routes';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
+import withTracker from './components/withTracker';
 
 import HomePage from './containers/HomePage/HomePage';
 import BoatsPage from './containers/BoatsPage/BoatsPage';
@@ -42,14 +43,14 @@ const App = () => {
         hysteresis={0.7}
         threshold={10}
         >
-          <Route path="/rates" component={RatesPage} />
-          <Route path="/boats" exact component={BoatsPage} />
+          <Route path="/rates" component={withTracker(RatesPage)} />
+          <Route path="/boats" exact component={withTracker(BoatsPage)} />
 
-          <Route path="/" exact component={HomePage} />
-          <Route path="/policies" component={PoliciesPage} />
-          <Route path="/contact" component={AboutPage} />
-          <Route path="/boats/:id" component={BoatPage} />
-          <Route path="/boats/accessories" component={AccessoriesPage} />
+          <Route path="/" exact component={withTracker(HomePage)} />
+          <Route path="/policies" component={withTracker(PoliciesPage)} />
+          <Route path="/contact" component={withTracker(AboutPage)} />
+          <Route path="/boats/:id" component={withTracker(BoatPage)} />
+          <Route path="/boats/accessories" component={withTracker(AccessoriesPage)} />
         </SwipeableRoutes>
  
         <Footer />
