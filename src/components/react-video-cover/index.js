@@ -82,8 +82,11 @@ class VideoCover extends Component {
     }
     return (
       <video
+        poster='/img/landingImg-newBlur-1920w.jpg'
         muted
         preload='auto'
+        webkit-playsinline='webkit-playsinline'
+        type='video/mp4'
         className={this.props.className}
         style={style}
         {...this.props.videoOptions}
