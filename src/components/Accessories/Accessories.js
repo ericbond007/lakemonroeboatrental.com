@@ -1,10 +1,12 @@
 import React from 'react';
 import { Section } from 'reactbulma';
+import Image from '../Image';
 
 const Accessories = () => (
   <div className="accessories is-size-4-desktop">
     <Section className="content">
       <h1 className="boatHeader">Water Accessories</h1>
+      <Image imgName="waterAccess" imgAlt="Water Accessories" className="lmbrMap" />
       <div className="boatRates is-size-5-touch">
         <h3 className="regalTitle">Rates</h3>
           <div className="ratesRow">
