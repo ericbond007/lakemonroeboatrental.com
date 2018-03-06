@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import Media from 'react-media';
 import Pulse from 'react-reveal/Pulse';
 import ReactGA from 'react-ga';
-import 'autotrack';
 import './Reserve.css';
 
-ReactGA.plugin.require('autotrack');
 ReactGA.initialize('UA-101048517-2', {
   debug: true
 });
@@ -23,8 +21,8 @@ class Reserve extends Component {
   <div className="reserve is-size-1-desktop is-centered" style={{marginBottom: '10vh'}}>
       <Media query="(max-width: 767px)">
         {matches => matches ? (
-    <div style={{paddingTop: '10vh'}}>
-          <a href="tel:+1-812-837-9909" className="button is-primary is-large ripple shadows" ReactGA-on="click" ReactGA-event-category="Website Interactions" ReactGA-event-action="Click to Call" onClick={this.fireEvent}>
+        <div style={{paddingTop: '10vh'}} onClick={this.fireEvent}>
+          <a href="tel:+1-812-837-9909" className="button is-primary is-large ripple shadows" >
               <h2 className="is-size-3">
                 Call to Reserve Today!
               </h2>
