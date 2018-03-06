@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Scroll from '../react-scroll';
 
 const HomeSlug = ({homepage}) => {
-  if (homepage[0] !== undefined && homepage[0].acf.is_visible) {
+  if (homepage[0] !== undefined) {
     return (
       <Scroll type="id" element="herobottom">
     <div className="homeSlug info is-primary" style={{marginRight: '1rem', position: 'relative', marginBottom: '1rem'}}>
@@ -15,6 +15,10 @@ const HomeSlug = ({homepage}) => {
         <p style={{ margin: '2rem', color: '#fff'}}>
           {homepage[0].acf.home_page_box}
         </p>
+        {homepage[0].acf.home_page_second_line_is_visible ?
+        <p style={{ margin: '2rem', color: '#fff'}}>
+          {homepage[0].acf.home_page_second_line}
+        </p> : null}
       </div>
     </Link>
     </div>
