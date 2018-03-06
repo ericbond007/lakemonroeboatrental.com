@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Scroll from '../react-scroll';
+import ReactGA from 'react-ga';
 
 import './PoliciesSidebar.css';
 
-const PoliciesSidebar = () => {
+ReactGA.initialize('UA-101048517-2');
+
+class PoliciesSidebar extends Component {
+  fireEvent() {
+    ReactGA.event({
+      category: 'Website Interactions',
+      action: 'Clicked FAQ HashLink'
+  });
+  }
+
+  render() {
   return (
     <div className="policiessidebar">
     <div className="card sidebar">
@@ -21,7 +32,7 @@ const PoliciesSidebar = () => {
         </div>
         <div>
           <Scroll type="id" element="faq">
-            <p className="title is-4 is-centered hoverCursor" style={{marginTop: '2rem'}}>
+            <p className="title is-4 is-centered hoverCursor" style={{marginTop: '2rem'}} onClick={this.fireEvent}>
               Got a question? Check out of FAQ section!
             </p>
           </Scroll>
@@ -30,6 +41,7 @@ const PoliciesSidebar = () => {
     </div>
   </div>
   );
-};
+  }
+  }
 
 export default PoliciesSidebar;

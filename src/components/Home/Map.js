@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Image from '../Image';
-const Map = () => (
-  <div className="map">
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-101048517-2');
+
+class Map extends Component {
+  fireEvent() {
+    ReactGA.outboundLink({
+      label: 'Clicked Google Maps Directions'
+    }, function() {
+        console.log('ga servers are down, sorry'); 
+    });
+  }
+
+  render() {
+    return (
+  <div className="map" onClick={this.fireEvent}>
     <h3 className="is-indent is-size-4">
       Just South of Bloomington!
     </h3>
@@ -16,6 +30,8 @@ const Map = () => (
           Lake Monroe Boat Rental is located just six miles south east of Bloomingtion in Paynetown State Recreational Area
         </h4>
   </div>
-);
+    );
+  }
+}
 
 export default Map;
