@@ -26,13 +26,11 @@ class Hero extends Component {
           src: '/vid/mobileCover.mp4',
           autoPlay: true,
           loop: false,
-          remeasureOnWindowResize: true
         }} />
           ) : (
         <VideoCover videoOptions={{
           src: '/vid/cover.mp4',
           autoPlay: true,
-          remeasureOnWindowResize: true,
           loop: false
         }} />
       )
