@@ -1,14 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
 import BoatCard from '../Boats/BoatCard';
+import ReactGA from 'react-ga';
 
+ReactGA.initialize('UA-101048517-2');
 
-const BoatList = () => (
+class BoatList extends Component {
+  jetSki() {
+    ReactGA.event({ 
+      category: 'Website Interactions',
+      action: 'Viewed Jet Ski Details'
+    });
+  }
+
+  water() {
+    ReactGA.event({ 
+      category: 'Website Interactions',
+      action: 'Viewed Water Accessories'
+    });
+  }
+
+  kayak() {
+    ReactGA.event({ 
+      category: 'Website Interactions',
+      action: 'Viewed Canoes & Kayaks'
+    });
+  }
+
+  render() {
+    return (
   <div className="columns is-centered is-multiline" style={{marginRight: '.1rem'}}>
    <div className="column is-half">
        <BoatCard cardImg="doubleDecker" cardHeader="34' Double Decker with Slide" cardText="24 person max capacity" cardLink="doubledecker" imgAlt="Double Decker with Slide" />
                 </div>
 
-                <div className="column is-half">
+                <div className="column is-half" onClick={this.jetSki}>
                     <BoatCard cardImg="jetSki" cardHeader="Jet Ski" cardLink="jet-ski" cardText="2 person max          capacity" imgAlt="Jet Ski" />
               </div>
 
@@ -28,17 +53,20 @@ const BoatList = () => (
                 <div className="column is-half">
                   <BoatCard cardImg="pontoon20" cardHeader="28' Pontoon Boat" cardLink="28-pontoon" cardText="12     person max capacity" imgAlt="28ft Single Deck Pontoon Boat" />
                 </div>
-                <div className="column is-half">
+                <div className="column is-half" onClick={this.kayak}>
                   <BoatCard cardImg="canoe" cardHeader="Canoes, Kayaks, & Paddleboards" cardLink="non-motorized"     cardText="1-3 people"  imgAlt="Canoes, Kayaks, & Paddleboards" />
               </div>
 
                 <div className="column is-half">
                   <BoatCard cardImg="fishing-boat" cardHeader="16ft Fishing Boat" cardLink="fishing-boat"            cardText="2 person max capacity" imgAlt="16ft Fishing Boat" />
               </div>
-                <div className="column is-half">
+                <div className="column is-half" onClick={this.water}>
                   <BoatCard cardImg="canoe" cardHeader="Water Accessories" cardLink="accessories"            cardText="Tubes, Skis, and more!" imgAlt="Water Accessories" />
                 </div>
         </div>
-);
+    
+    );
+  }
+  }
 
 export default BoatList;

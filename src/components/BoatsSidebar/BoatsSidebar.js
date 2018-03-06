@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../Image';
 import './BoatsSidebar.css';
+import ReactGA from 'react-ga';
 
-const BoatsSidebar = (props) => {
-  return (
+ReactGA.initialize('UA-101048517-2');
+
+class BoatsSidebar extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  water() {
+    ReactGA.event({
+      category: 'Website Interactions',
+      action: 'Clicked Accessories from Boats Sidebar'
+    });
+  }
+  render() {
+    return (
     <div className="boatssidebar">
     <div className="card sidebar">
       <div className="card-content">
@@ -25,7 +39,8 @@ const BoatsSidebar = (props) => {
       </div>
     </div>
   </div>
-  );
-};
+    );
+  }
+}
 
 export default BoatsSidebar;

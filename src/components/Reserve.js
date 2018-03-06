@@ -18,7 +18,7 @@ class Reserve extends Component {
   ReactGA.outboundLink({
     label: 'Clicked Google Maps Directions'
   }, function() {
-    console.log('ga servers are down, sorry');
+    console.log('')
   });
   }
 
