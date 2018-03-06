@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Slide from 'react-reveal/Slide';
 import './MobileRateCard.css';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-101048517-2');
 
 class MobileRateCard extends Component {
   constructor(props) {
@@ -16,6 +19,11 @@ class MobileRateCard extends Component {
 
   handleSlide() {
     this.setState({ show: !this.state.show });
+    ReactGA.event({
+      category: 'Mobile Interactions',
+      action: 'Clicked Mobile Boat Rate Button',
+      label: 'Mobile Boat Rate Button'
+    });
   }
 
   toggleMessage() {

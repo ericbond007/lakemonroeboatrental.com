@@ -10,7 +10,8 @@ class PoliciesSidebar extends Component {
   fireEvent() {
     ReactGA.event({
       category: 'Website Interactions',
-      action: 'Clicked FAQ HashLink'
+      action: 'Clicked FAQ HashLink',
+      label: 'FAQ Hashlink'
   });
   }
 

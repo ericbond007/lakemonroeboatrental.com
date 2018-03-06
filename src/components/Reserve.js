@@ -10,7 +10,8 @@ class Reserve extends Component {
   fireEvent() {
   ReactGA.event({
     category: 'Website Interactions',
-    action: 'Clicked Call to Reserve Button'
+    action: 'Clicked Call to Reserve Button',
+    label: 'Reserve Component'
   });
   }
 
