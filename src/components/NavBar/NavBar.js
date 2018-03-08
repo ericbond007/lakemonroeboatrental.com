@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import Scroll from '../react-scroll';
 import Sticky from '../Sticky/Sticky';
+import ReactGA from 'react-ga';
 
 import { NavLink } from 'react-router-dom';
 
 import './NavBar.css';
+
+ReactGA.initialize('UA-101048517-2');
 
 class NavBar extends Component {
   constructor() {
@@ -12,6 +15,47 @@ class NavBar extends Component {
     this.state = {
       fadeClass: 'fader'
     }
+  }
+
+  fireRates() {
+    ReactGA.event({
+      category: 'Navbar Interactions',
+      action: 'Clicked Rates Tab',
+      label: 'navication links'
+    });
+  }
+
+  fireBoats() {
+    ReactGA.event({
+      category: 'Navbar Interactions',
+      action: 'Clicked Boats Tab',
+      label: 'navication links'
+    });
+  
+  }
+
+  fireHome() {
+    ReactGA.event({
+      category: 'Navbar Interactions',
+      action: 'Clicked Home Tab',
+      label: 'navication links'
+    });
+  }
+
+  firePolicies() {
+    ReactGA.event({
+      category: 'Navbar Interactions',
+      action: 'Clicked Policies Tab',
+      label: 'navication links'
+    });
+  }
+
+  fireContact() {
+    ReactGA.event({
+      category: 'Navbar Interactions',
+      action: 'Clicked Contact Tab',
+      label: 'navication links'
+    });
   }
 
   componentDidMount() {
@@ -28,35 +72,35 @@ class NavBar extends Component {
                     <Scroll type="class" element="navTabs">
                   <ul  id="navBarbig">
                       <Scroll type="id" element="rates">
-                    <li className="ripple fadeIn">
+                    <li className="ripple fadeIn" onClick={this.fireRates}>
                         <NavLink activeClassName="active" className="fadeIn" to="/rates">
                           Rates
                         </NavLink>
                     </li>
                       </Scroll>
                       <Scroll type="id" element="boats">
-                    <li className="ripple">
+                    <li className="ripple" onClick={this.fireBoats}>
                       <NavLink activeClassName="active" to="/boats">
                         Boats
                     </NavLink>
                   </li>
                       </Scroll>
                       <Scroll type="id" element="home">
-                    <li className="ripple">
+                    <li className="ripple" onClick={this.fireHome}>
                       <NavLink  exact activeClassName="active" to="/" >
                        Home 
                     </NavLink>
                   </li>
                       </Scroll>
                       <Scroll type="id" element="policies">
-                    <li className="ripple">
+                    <li className="ripple" onClick={this.firePolicies}>
                       <NavLink activeClassName="active" to="/policies">
                         Policies
                     </NavLink>
                   </li>
                       </Scroll>
                       <Scroll type="id" element="contact">
-                    <li className="ripple">
+                    <li className="ripple" onClick={this.fireContact}>
                       <NavLink activeClassName="active" to="/contact">
                         Contact
                     </NavLink>
