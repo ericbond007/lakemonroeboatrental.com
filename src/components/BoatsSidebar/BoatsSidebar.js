@@ -7,9 +7,6 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-101048517-2');
 
 class BoatsSidebar extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   water() {
     ReactGA.event({

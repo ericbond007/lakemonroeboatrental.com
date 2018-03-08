@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
 import './react-table.css'
-import { Section, Container } from 'reactbulma';
+import { Section } from 'reactbulma';
 import MobileRateCard from './MobileRateCard';
 
 
