@@ -19,6 +19,7 @@ class HomePage extends Component {
        <SEO
           title="Lake Monroe Boat Rental"
           path="/"
+          description="Located in Paynetown SRA, Lake Monroe Boat Rental is your choice for family friendly pontoon rentals. We have Double Deckers, Jet Skis, Ski Boats, and more!"
         />
       <div className="column is-3 is-offset-2 is-hidden-mobile">
         <Media query="(min-width: 1000px)">
