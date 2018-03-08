@@ -15,7 +15,8 @@ const getMetaTags = ({
     { name: 'og:title', content: title },
     { name: 'og:url', content: url },
     { name: 'og:description', content: description },
-    { name: 'og:site_name', content: 'The Fishin Shedd' },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:site_name', content: 'Lake Monroe Boat Rental' },
   ];
 
   if (published) metaTags.push({ name: 'article:published_time', content: published });
