@@ -9,6 +9,7 @@ const getMetaTags = ({
   const metaTags = [
     { itemprop: 'name', content: title },
     { name: 'title', content: title },
+    { name: 'description', content: description },
     { itemprop: 'description', content: description },
     { itemprop: 'image', content: seoImageURL },
     { name: 'description', content: description },
@@ -35,9 +36,10 @@ const SEO = ({
     htmlAttributes= {{
       lang: `en`,
       itemscope: undefined,
-      itemtype: `http://schema.org/GasStation`,
+      itemtype: `http://schema.org/LocalBusiness`,
     }}
     title={ title }
+    description={ description }
     link={[
       { rel: 'canonical', href: `https://lakemonroeboatrental.com${path}` },
     ]}
