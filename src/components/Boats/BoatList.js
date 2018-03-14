@@ -61,7 +61,7 @@ class BoatList extends Component {
                   <BoatCard cardImg="fishing-boat" cardHeader="16ft Fishing Boat" cardLink="fishing-boat"            cardText="2 person max capacity" imgAlt="16ft Fishing Boat" />
               </div>
                 <div className="column is-half" onClick={this.water}>
-                  <BoatCard cardImg="canoe" cardHeader="Water Accessories" cardLink="accessories"            cardText="Tubes, Skis, and more!" imgAlt="Water Accessories" />
+                  <BoatCard cardImg="tubeT" cardHeader="Water Accessories" cardLink="accessories"            cardText="Tubes, Skis, and more!" imgAlt="Water Accessories" />
                 </div>
         </div>
     
