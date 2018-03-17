@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Boats from '../../components/Boats/Boats';
 import BoatsSidebar from '../../components/BoatsSidebar/BoatsSidebar';
-import LazyLoad from 'react-lazyload';
 
 
 
@@ -17,9 +16,7 @@ class BoatsPage extends Component {
         <BoatsSidebar />
       </div>
       <div clssname="column is-fullheight">
-        <LazyLoad>
           <Boats />
-        </LazyLoad>
       </div>
       <div className="column is-2">
       </div>
