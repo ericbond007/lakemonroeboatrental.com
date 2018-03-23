@@ -1025,7 +1025,7 @@ SwipeableViews.defaultProps = {
   index: 0,
   threshold: 5,
   springConfig: {
-    duration: '0.35s',
+    duration: '0.25s',
     easeFunction: 'cubic-bezier(0.15, 0.3, 0.25, 1)',
     delay: '0s',
   },

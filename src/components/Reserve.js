@@ -30,10 +30,13 @@ class Reserve extends Component {
         {matches => matches ? (
         <div style={{paddingTop: '10vh'}}>
           <div onClick={this.fireEvent}>
-          <a href="tel:+1-812-837-9909" className="button is-primary is-large ripple shadows" >
+          <a href="tel:+1-812-837-9909" className="" >
               <h2 className="is-size-3">
                 Call to Reserve Today!
               </h2>
+              <div className="button is-primary is-large shadows ripple">
+                Call Now!
+              </div>
           </a>
             <a href="tel:+1-812-837-9909">
               <Pulse>

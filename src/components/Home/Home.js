@@ -6,7 +6,6 @@ import HomeSlug from './HomeSlug';
 import Hours from './Hours';
 import FacebookProvider, { Page } from 'react-facebook';
 import Fade from 'react-reveal/Fade';
-import Reveal from 'react-reveal/Reveal';
 import { Link } from 'react-router-dom';
 import Scroll from '../react-scroll';
 
@@ -15,14 +14,10 @@ import './Home.css';
 const Home = (props) => (
       <div className="home">
         <Section>
-            <div className="animated fadeIn slideInUp">
+            <div className="">
 
-              <Reveal effect="fadeIn" duration={1200} fraction={.3}>
               <img src="img/lmbrGray-lg_1x.png" alt="LMBR Logo" className="homeLogo" />
-            </Reveal>
-              <Reveal effect="fadeIn" duration={1200} fraction={.6}>
                 <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
-            </Reveal>
                   <Reserve />
                     <HomeSlug homepage={props.homepage} />
                   <Fade left fraction={.1}>
