@@ -21,7 +21,7 @@ const Contact = () => (
       )}
     </Media>
       <p>
-        We currently only accept boat reservations over the phone, so please give us a call! For other inquiries, please email us at boat.rental@hotmail.com. Thanks!
+        We currently only accept boat reservations over the phone, so please give us a call! For other inquiries, please email us at <a href="mailto:boat.rental@hotmail.com" rel="noopener noreferrer" target="_blank">boat.rental@hotmail.com</a>. Thanks!
       </p>
     </div>
     </Section>

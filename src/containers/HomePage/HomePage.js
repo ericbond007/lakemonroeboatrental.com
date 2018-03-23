@@ -7,7 +7,6 @@ import Media from 'react-media';
 import Home from '../../components/Home/Home';
 import ForRent from '../../components/Home/ForRent';
 import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
-import Hero from './components/Hero/Hero';
 
 class HomePage extends Component {
 

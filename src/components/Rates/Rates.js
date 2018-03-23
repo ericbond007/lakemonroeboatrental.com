@@ -221,7 +221,7 @@ class Rates extends Component {
                 <MobileRateCard messageName="Ski Boat" boat={this.props.skiboat}/>
                 <MobileRateCard messageName="Jet Ski" boat={this.props.jetski}/>
                 <MobileRateCard messageName="16' Fishing Boat" boat={this.props.fishingboat}/>
-                <MobileRateCard messageName="Canoes & Kayaks" boat={this.props.kayak}/>
+                <MobileRateCard messageName="Canoes, Kayaks, & Paddleboards" boat={this.props.kayak}/>
               </div>
             </Section>
             </div>
