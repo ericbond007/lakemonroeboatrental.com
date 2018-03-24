@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import SwipeableRoutes from './components/swipeable-routes';
 
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';

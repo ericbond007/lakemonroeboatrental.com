@@ -70,16 +70,20 @@ class NavBar extends Component {
                   <div className="navTabs fadeIn" id="noscroll">
                     
                   <ul  id="navBarbig">
+                      <Scroll type="id" element="herobottom">
                     <li className="ripple fadeIn" onClick={this.fireRates}>
                         <NavLink activeClassName="active" className="fadeIn" to="/rates">
                           Rates
                         </NavLink>
                     </li>
+                      </Scroll>
+                      <Scroll type="id" element="herobottom">
                     <li className="ripple" onClick={this.fireBoats}>
                       <NavLink activeClassName="active" to="/boats">
                         Boats
                     </NavLink>
                   </li>
+                      </Scroll>
                       <Scroll type="id" element="herobottom">
                     <li className="ripple" onClick={this.fireHome}>
                       <NavLink  exact activeClassName="active" to="/" >
