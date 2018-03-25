@@ -4,12 +4,18 @@ import Fuel from '../../components/Rates/Fuel';
 import JetSki from '../../components/Rates/JetSki';
 import Accessories from '../../components/Rates/Accessories';
 import { connect } from 'react-redux';
+import SEO from '../../components/SEO';
 
 class RatesPage extends Component {
 
   render() {
     return (
       <div className="is-size-5-mobile" id="rates">
+        <SEO
+          title="Rates | Lake Monroe Boat Rental"
+          path="/rates"
+          description="Rental rates for boats at Lake Monroe Boat Rental. Call 812-837-9909 to reserve today."
+        />
           <Rates {...this.props} />
           <JetSki {...this.props} />
           <Accessories />

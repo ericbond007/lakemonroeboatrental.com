@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import About from '../../components/About/About';
 import ContactSidebar from '../../components/ContactSidebar/ContactSidebar';
 import Contact from '../../components/About/Contact';
+import SEO from '../../components/SEO';
 
 class AboutPage extends Component {
   componentDidMount() {
@@ -9,6 +10,11 @@ class AboutPage extends Component {
   render() {
     return (
         <div className="columns is-fullheight aboutPage is-size-4-desktop is-size-5-touch is-desktop" id="contact">
+          <SEO
+            title="Contact | Lake Monroe Boat Rental"
+            path="/contact"
+            description="Contact Lake Monroe Boat Rental to reserve your boat today. Call 812-837-9909 to reserve."
+          />
         <div className="column is-3 is-offset-2 is-fullheight is-hidden-touch">
           <ContactSidebar />
         </div>

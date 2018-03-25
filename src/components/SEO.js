@@ -30,7 +30,7 @@ const getMetaTags = ({
 };
 
 const SEO = ({
-  title, description, path,  published, updated, category, tags
+  title, description, path
 }) => (
   <Helmet
     htmlAttributes= {{
@@ -46,11 +46,7 @@ const SEO = ({
     meta={getMetaTags({
       title,
       description,
-      url: `https://lakemonroeboatrental.com${path}`,
-      published,
-      updated,
-      category,
-      tags
+      url: `https://lakemonroeboatrental.com${path}`
     })}
   />
 );
