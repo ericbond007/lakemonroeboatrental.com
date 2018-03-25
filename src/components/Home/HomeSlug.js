@@ -14,7 +14,7 @@ const HomeSlug = ({homepage}) => {
        */}
        <Link to="/boats/jet-ski" style={{textDecoration: 'none'}}>
       <div className="slugCenter has-text-centered is-size-3">
-        <p style={{ margin: '2rem', color: '#fff'}}>
+        <p style={{ margin: '2rem'}}>
           {homepage[0].acf.home_page_box}
         </p>
         {homepage[0].acf.home_page_second_line_is_visible ?

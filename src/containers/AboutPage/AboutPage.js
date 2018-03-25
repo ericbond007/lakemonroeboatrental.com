@@ -3,12 +3,15 @@ import About from '../../components/About/About';
 import ContactSidebar from '../../components/ContactSidebar/ContactSidebar';
 import Contact from '../../components/About/Contact';
 import SEO from '../../components/SEO';
+import NavBar from '../../components/NavBar/NavBar';
 
 class AboutPage extends Component {
   componentDidMount() {
   }
   render() {
     return (
+      <div>
+        <NavBar />
         <div className="columns is-fullheight aboutPage is-size-4-desktop is-size-5-touch is-desktop" id="contact">
           <SEO
             title="Contact | Lake Monroe Boat Rental"
@@ -29,6 +32,7 @@ class AboutPage extends Component {
       <div className="column is-2 is-hidden-touch">
       </div>
     </div>
+  </div>
     );
   }
   }

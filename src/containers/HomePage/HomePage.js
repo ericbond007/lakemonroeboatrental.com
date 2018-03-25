@@ -8,6 +8,9 @@ import Home from '../../components/Home/Home';
 import ForRent from '../../components/Home/ForRent';
 import HomeSidebar from '../../components/HomeSidebar/HomeSidebar';
 
+import Hero from '../../components/Hero/Hero';
+import NavBarFade from '../../components/NavBar/NavBarFade';
+
 class HomePage extends Component {
 
   componentDidMount() {
@@ -15,6 +18,9 @@ class HomePage extends Component {
 
   render() {
     return (
+      <div>
+        <Hero />
+        <NavBarFade />
       <div className="columns is-desktop is-fullheight homePage is-size-4-desktop" id="home" style={{minHeight: '100%'}} ref="homepage">
        <SEO
           title="Lake Monroe Boat Rental"
@@ -41,6 +47,7 @@ class HomePage extends Component {
       <div className="column is-2">
       </div>
     </div>
+  </div>
     );
   }
   }

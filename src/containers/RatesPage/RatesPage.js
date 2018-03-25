@@ -5,11 +5,14 @@ import JetSki from '../../components/Rates/JetSki';
 import Accessories from '../../components/Rates/Accessories';
 import { connect } from 'react-redux';
 import SEO from '../../components/SEO';
+import NavBar from '../../components/NavBar/NavBar';
 
 class RatesPage extends Component {
 
   render() {
     return (
+      <div>
+        <NavBar />
       <div className="is-size-5-mobile" id="rates">
         <SEO
           title="Rates | Lake Monroe Boat Rental"
@@ -21,6 +24,7 @@ class RatesPage extends Component {
           <Accessories />
         <Fuel />
       </div>
+    </div>
     );
   }
   }

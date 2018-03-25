@@ -3,12 +3,15 @@ import Policies from '../../components/Policies/Policies';
 import PoliciesSidebar from '../../components/PoliciesSidebar/PoliciesSidebar';
 import { connect } from 'react-redux';
 import SEO from '../../components/SEO';
+import NavBar from '../../components/NavBar/NavBar';
 
 class PoliciesPage extends Component {
   componentDidMount() {
   }
   render() {
     return (
+      <div>
+        <NavBar />
         <div className="columns is-fullheight policiesPage is-size-4-desktop is-size-5-mobile is-desktop" id="policies">
           <SEO
             title="Policies | Lake Monroe Boat Rental"
@@ -25,6 +28,7 @@ class PoliciesPage extends Component {
         </div>
         <div className="column is-2">
         </div>
+      </div>
       </div>
     );
   }

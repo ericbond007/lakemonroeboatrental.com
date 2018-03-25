@@ -59,13 +59,14 @@ class NavBar extends Component {
   }
 
   componentDidMount() {
+    setTimeout(function() { this.setState({ fadeClass: '' }); }.bind(this), 500);
     window.scrollTo(0, 0);
   }
 
   render() {
     return (
-  <div className="navWrapper">
-  <Sticky id="navbar" className="">
+  <div className={`navWrapper ${this.state.fadeClass}`} ref="navbar">
+  <Sticky id="navbar" className="fadeIn">
   <div className="tabs is-centered is-fullwidth is-medium fadeIn">
                   <div className="navTabs fadeIn" id="noscroll">
                     

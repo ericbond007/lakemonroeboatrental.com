@@ -5,15 +5,14 @@ import Slide from 'react-reveal/Slide'
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
+const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt, isAccess }) => {
   return (
-      <Slide bottom fraction={.01}>
     <div style={{ borderRadius: '11px', margin: '.5rem', position: 'relative'}} className="cardWrapper">
     <div className="boatCard ripple">
         <Scroll type="id" element="herobottom" style={{borderRadius: '10px'}}>
       <div style={{borderRadius: '10px'}}>
     <Link to={{
-      pathname: `/boats/${cardLink}`,
+      pathname: `/${cardLink}`,
     }}>
     <div className="">
     <div className="card">
@@ -39,7 +38,6 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt }) => {
   </Scroll>
 </div>
 </div>
-</Slide>
   );
   }
 

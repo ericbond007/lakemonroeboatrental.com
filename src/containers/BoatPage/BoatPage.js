@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import SEO from '../../components/SEO';
+import NavBar from '../../components/NavBar/NavBar';
 
 
 class BoatPage extends Component {
@@ -15,14 +16,14 @@ class BoatPage extends Component {
     }
   }
   componentDidMount() {
-    let navbarTop = document.getElementById('herobottom');
-    navbarTop.scrollTop = navbarTop.scrollHeight;
-    window.scrollTo(navbarTop);
+    window.scrollTo(0,0);
 
   }
 
   render() {
     return (
+      <div>
+        <NavBar />
         <div className="columns is-desktop is-fullheight boatPage">
           <SEO
             title="Boats | Lake Monroe Boat Rental"
@@ -42,6 +43,7 @@ class BoatPage extends Component {
           <div className="column is-2 is-hidden-touch">
           </div>
         </div>
+      </div>
     );
   }
 }

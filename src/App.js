@@ -26,8 +26,10 @@ import './App.css';
 const App = () => {
   return (
       <div>
+        {/*
         <Hero />
         <NavBar />
+        */}
         <Typekit kitId="bmb7wkn" />
           <Route path="/rates" component={withTracker(RatesPage)} />
           <Route path="/boats" exact component={withTracker(BoatsPage)} />
@@ -36,7 +38,7 @@ const App = () => {
           <Route path="/policies" component={withTracker(PoliciesPage)} />
           <Route path="/contact" component={withTracker(AboutPage)} />
           <Route path="/boats/:id" component={withTracker(BoatPage)} />
-          <Route path="/boats/accessories" component={withTracker(AccessoriesPage)} />
+          <Route path="/accessories" component={withTracker(AccessoriesPage)} />
         <Footer />
       </div>
   )
