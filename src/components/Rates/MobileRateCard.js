@@ -8,7 +8,6 @@ ReactGA.initialize('UA-101048517-2');
 class MobileRateCard extends Component {
   constructor(props) {
     super();
-    this.toggleMessage = this.toggleMessage.bind(this);
     this.handleSlide = this.handleSlide.bind(this);
     this.state = {
       ...props,
@@ -26,20 +25,14 @@ class MobileRateCard extends Component {
     });
   }
 
-  toggleMessage() {
-    this.setState(prevState => ({
-      condition: !prevState.condition
-    }));
-  }
-
   render() {
     return (
-			<div className="message is-primary has-text-centered" onClick={this.handleSlide} id="mobileboat">  
-          <div className="message-header has-text-centered is-size-3-mobile ripple" style={{display: 'block', zIndex: '9999'}}>                                 
+			<div className="message is-primary has-text-centered" onClick={this.handleSlide}>  
+          <div className="message-header has-text-centered is-size-3-mobile ripple mobileRatesHeader" style={{display: 'block', zIndex: '1'}}>                                 
 					<p style={{display: 'block'}}className="has-text-centered is-centered">{this.props.messageName}</p>                                             
 				</div>                                                           
-        <Slide top collapse when={this.state.show} exit={false}>
-				<div className={this.state.condition ? "message-body mobileboatbutton": "mobileboatbutton message-body hidden"}> 
+        <Slide top collapse when={this.state.show} exit={true} duration={250}  unmountOnExit={false} mountOnEnter={true}>
+				<div className="message-body mobileboatbutton"> 
           <div className="boatRates is-size-4-touch">
           <div className="ratesRow">
             
@@ -137,7 +130,7 @@ class MobileRateCard extends Component {
           </div>
         </div>
 				</div>                                                           
-      </Slide> 
+      </Slide>
     </div>
     );
   }
