@@ -1,12 +1,21 @@
 .mobileboatbutton {
-  transition: all .5s ease;
+  transition: all 5s ease;
   opacity: 1;
   display: block;
   visibility: visible;
 }
 
 .hidden {
+  transition: all 5s ease;
   display: none !important;
   visibility: hidden;
   opacity: 0;
+}
+
+.boatRates {
+  padding-bottom: 2rem;
+}
+
+.message.is-primary .message-body {
+  padding-bottom: 3rem;
 }

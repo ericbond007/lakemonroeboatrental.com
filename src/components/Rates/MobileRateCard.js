@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Slide from 'react-reveal/Slide';
 import './MobileRateCard.css';
 import ReactGA from 'react-ga';
 
@@ -8,15 +7,13 @@ ReactGA.initialize('UA-101048517-2');
 class MobileRateCard extends Component {
   constructor(props) {
     super();
-    this.handleSlide = this.handleSlide.bind(this);
+  this.handleSlide = this.handleSlide.bind(this);
     this.state = {
       ...props,
-      condition: true,
       show: false
     }
   }
-
-  handleSlide() {
+handleSlide() {
     this.setState({ show: !this.state.show });
     ReactGA.event({
       category: 'Mobile Interactions',
@@ -27,12 +24,11 @@ class MobileRateCard extends Component {
 
   render() {
     return (
-			<div className="message is-primary has-text-centered" onClick={this.handleSlide}>  
+       <div className="message is-primary has-text-centered" onClick={this.handleSlide}>
           <div className="message-header has-text-centered is-size-3-mobile ripple mobileRatesHeader" style={{display: 'block', zIndex: '1'}}>                                 
 					<p style={{display: 'block'}}className="has-text-centered is-centered">{this.props.messageName}</p>                                             
 				</div>                                                           
-        <Slide top collapse when={this.state.show} exit={true} duration={250}  unmountOnExit={false} mountOnEnter={true}>
-				<div className="message-body mobileboatbutton"> 
+				<div className={this.state.show ? "message-body mobileboatbutton": "mobileboatbutton message-body hidden"}> 
           <div className="boatRates is-size-4-touch">
           <div className="ratesRow">
             
@@ -130,7 +126,6 @@ class MobileRateCard extends Component {
           </div>
         </div>
 				</div>                                                           
-      </Slide>
     </div>
     );
   }
