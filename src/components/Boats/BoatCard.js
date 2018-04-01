@@ -1,7 +1,5 @@
 import React from 'react';
 import Image from '../Image';
-import Scroll from '../react-scroll';
-import Slide from 'react-reveal/Slide'
 import { HashLink as Link } from 'react-router-hash-link';
 
 
@@ -9,7 +7,6 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt, isAccess })
   return (
     <div style={{ borderRadius: '11px', margin: '.5rem', position: 'relative'}} className="cardWrapper">
     <div className="boatCard ripple">
-        <Scroll type="id" element="herobottom" style={{borderRadius: '10px'}}>
       <div style={{borderRadius: '10px'}}>
     <Link to={{
       pathname: `/${cardLink}`,
@@ -35,7 +32,6 @@ const BoatCard = ({ cardImg, cardHeader, cardText, cardLink, imgAlt, isAccess })
 </div>
   </Link>
 </div>
-  </Scroll>
 </div>
 </div>
   );

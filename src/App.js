@@ -1,9 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import Hero from './components/Hero/Hero';
 import Footer from './components/Footer/Footer';
-import NavBar from './components/NavBar/NavBar';
 import withTracker from './components/withTracker';
 
 import HomePage from './containers/HomePage/HomePage';

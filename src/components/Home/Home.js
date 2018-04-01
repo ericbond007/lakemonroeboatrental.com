@@ -20,7 +20,7 @@ const Home = (props) => (
                 <h1 className="title is-1 is-spaced">Lake Monroe Boat Rental</h1>
                   <Reserve />
                     <HomeSlug homepage={props.homepage} />
-                  <Fade left fraction={.1}>
+                  <Fade left fraction={.01}>
                     <Hours hours={props.hours} />
                   </Fade>
                   <div className="homeDescrip is-size-5-touch">
