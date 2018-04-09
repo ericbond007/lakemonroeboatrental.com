@@ -42,16 +42,16 @@ class BoatList extends Component {
                 </div>
 
                 <div className="column is-half">
-                  <BoatCard cardImg="pontoon20" cardHeader="20' Pontoon Boat" cardLink="boats/20-pontoon" cardText="8      person max capacity" imgAlt="20ft Single Deck Pontoon Boat " />
+                  <BoatCard cardImg="newToon" cardHeader="20' Pontoon Boat" cardLink="boats/20-pontoon" cardText="8      person max capacity" imgAlt="20ft Single Deck Pontoon Boat " />
                 </div>
 
 
                 <div className="column is-half">
-                  <BoatCard cardImg="pontoon20" cardHeader="24' Pontoon Boat" cardLink="boats/24-pontoon" cardText="10     person max capacity" imgAlt="24ft Single Deck Pontoon Boat" />
+                  <BoatCard cardImg="newToon" cardHeader="24' Pontoon Boat" cardLink="boats/24-pontoon" cardText="10     person max capacity" imgAlt="24ft Single Deck Pontoon Boat" />
                 </div>
 
                 <div className="column is-half">
-                  <BoatCard cardImg="pontoon20" cardHeader="28' Pontoon Boat" cardLink="boats/28-pontoon" cardText="12     person max capacity" imgAlt="28ft Single Deck Pontoon Boat" />
+                  <BoatCard cardImg="newToon" cardHeader="28' Pontoon Boat" cardLink="boats/28-pontoon" cardText="12     person max capacity" imgAlt="28ft Single Deck Pontoon Boat" />
                 </div>
                 <div className="column is-half" onClick={this.kayak}>
                   <BoatCard cardImg="canoe" cardHeader="Canoes, Kayaks, & Paddleboards" cardLink="boats/non-motorized"     cardText="1-3 people"  imgAlt="Canoes, Kayaks, & Paddleboards" />
