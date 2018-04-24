@@ -37,7 +37,7 @@ module.exports = {
       'pre-deploy': 'yarn',
       'post-deploy' : 'yarn build && pm2 startOrRestart ecosystem.config.js --env production'
     },
-    dev : {
+    local : {
       user : 'eric',
       host : 'localhost',
       ref  : 'origin/master',
@@ -45,9 +45,6 @@ module.exports = {
       path : '/home/eric/apps/lmbr.com',
       'pre-deploy': 'yarn',
       'post-deploy' : 'yarn build && pm2 startOrRestart ecosystem.config.js --env production'
-      env  : {
-        NODE_ENV: 'production'
-      }
     }
   }
 };
