@@ -43,9 +43,10 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:ericbond007/lakemonroeboatrental.com.git',
       path : '/home/eric/apps/lmbr.com',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
+      'pre-deploy': 'yarn',
+      'post-deploy' : 'yarn build && pm2 startOrRestart ecosystem.config.js --env production'
       env  : {
-        NODE_ENV: 'dev'
+        NODE_ENV: 'production'
       }
     }
   }
