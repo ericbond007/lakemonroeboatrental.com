@@ -37,6 +37,17 @@ module.exports = {
       'pre-deploy': 'yarn',
       'post-deploy' : 'yarn build && pm2 startOrRestart ecosystem.config.js --env production'
     },
+    node : {
+      user : 'ubuntu',
+      key  : '/home/eric/ebondawskey.pem',
+      host : 'ec2-54-84-228-76.compute-1.amazonaws.com',
+      ref  : 'origin/master',
+      repo : 'git@github.com:ericbond007/lakemonroeboatrental.com.git',
+      path : '/home/ubuntu/apps/lmbr.com',
+      'ssh_options': 'ForwardAgent=yes',
+      'pre-deploy': 'yarn',
+      'post-deploy' : 'yarn build && pm2 startOrRestart ecosystem.config.js --env production'
+    },
     local : {
       user : 'eric',
       host : 'localhost',
