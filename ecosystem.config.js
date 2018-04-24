@@ -26,7 +26,7 @@ module.exports = {
    * http://pm2.keymetrics.io/docs/usage/deployment/
    */
   deploy : {
-    production : {
+    productionec : {
       user : 'ubuntu',
       key  : '/home/eric/ebondawskey.pem',
       host : 'ec2-54-89-228-69.compute-1.amazonaws.com',
@@ -37,7 +37,7 @@ module.exports = {
       'pre-deploy': 'yarn',
       'post-deploy' : 'yarn build && pm2 startOrRestart ecosystem.config.js --env production'
     },
-    node : {
+    production : {
       user : 'ubuntu',
       key  : '/home/eric/ebondawskey.pem',
       host : 'ec2-54-84-228-76.compute-1.amazonaws.com',
