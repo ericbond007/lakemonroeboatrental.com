@@ -12,7 +12,6 @@ const HomeSlug = ({homepage}) => {
          <div className="ribbon is-size-5-desktop ">Great Deal!</div>
        </div>
        */}
-       <Link to="/boats/jet-ski" style={{textDecoration: 'none'}}>
       <div className="slugCenter has-text-centered is-size-3">
         <p style={{ margin: '2rem'}}>
           {homepage[0].acf.home_page_box}
@@ -22,7 +21,6 @@ const HomeSlug = ({homepage}) => {
           {homepage[0].acf.home_page_second_line}
         </p> : null}
       </div>
-    </Link>
     </div>
   </Scroll>
     );

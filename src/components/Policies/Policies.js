@@ -28,8 +28,8 @@ const Policies = ({ policies, faq }) => (
             <ul className="left is-size-5-desktop">
               <li>There are no refunds due to late check-ins, early return, change of plans, illness, weather, or car problems</li>
               <li>Pontoon & Jet Ski cancellations: must be made 72 HOURS prior to reservation time</li>
-              <li>Double Decker and Ski Boat: must be made TWO WEEKS prior to scheduled reservation</li>
-              <li>Multiple boat rentals: must be made ONE MONTH prior to the scheduled reservation</li>
+              <li>Double Decker and Ski Boat cancellations: must be made TWO WEEKS prior to scheduled reservation</li>
+              <li>Multiple boat reservation cancellations: must be made ONE MONTH prior to the scheduled reservation</li>
             </ul>
           </div>
           <div className="is-hidden-desktop">

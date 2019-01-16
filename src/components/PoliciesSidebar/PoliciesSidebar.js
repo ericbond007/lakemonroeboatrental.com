@@ -34,7 +34,7 @@ class PoliciesSidebar extends Component {
         <div>
           <Scroll type="id" element="faq">
             <p className="title is-4 is-centered hoverCursor" style={{marginTop: '2rem'}} onClick={this.fireEvent}>
-              Got a question? Check out of FAQ section!
+              Got a question? Check out our FAQ section!
             </p>
           </Scroll>
         </div>
