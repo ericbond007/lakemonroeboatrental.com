@@ -8,7 +8,7 @@ import 'core-js/es7/array';
 
 
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import unregisterServiceWorker from './registerServiceWorker';
 
 import { loadBoats } from './actions/boatActions';
 import { loadPolicies } from './actions/policyActions';
@@ -56,4 +56,5 @@ if (rootElement.hasChildNodes()) {
 
 
 
-registerServiceWorker();
+unregisterServiceWorker();
+
