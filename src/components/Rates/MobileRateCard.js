@@ -62,7 +62,7 @@ handleSlide() {
             <div className="boatRight">${this.props.boat.acf.rates_eighthour}</div>
           
           </div>
-          {this.props.boat.acf.rates_allday ?
+          {this.props.boat.acf.rates_all_day ?
           <div className="ratesRow">
             
             <div className="boatLeft">All Day:</div>
