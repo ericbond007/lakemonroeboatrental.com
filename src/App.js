@@ -19,15 +19,9 @@ import './bulmaOverride.css';
 
 import './App.css';
 
-
-
 const App = () => {
   return (
       <div>
-        {/*
-        <Hero />
-        <NavBar />
-        */}
         <Typekit kitId="bmb7wkn" />
           <Route path="/rates" component={withTracker(RatesPage)} />
           <Route path="/boats" exact component={withTracker(BoatsPage)} />
