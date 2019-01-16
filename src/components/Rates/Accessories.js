@@ -12,19 +12,19 @@ const Accessories = () => (
       <div className="fuelRates">
           <div className="fuelRow">
             <div className="fuelLeft">Ski Tube:</div>
-            <div className="fuelRight">$25 per day / $7hr</div>
+            <div className="fuelRight">$25 per day / $9hr</div>
           </div>
           <div className="fuelRow">
             <div className="fuelLeft">Wakeboard:</div>
-            <div className="fuelRight">$25 per day / $7hr</div>
+            <div className="fuelRight">$25 per day / $9hr</div>
           </div>
           <div className="fuelRow">
             <div className="fuelLeft">Pair of Skis:</div>
-            <div className="fuelRight">$25 per day / $7hr</div>
+            <div className="fuelRight">$25 per day / $9hr</div>
           </div>
           <div className="fuelRow">
             <div className="fuelLeft">Knee Board:</div>
-            <div className="fuelRight">$25 per day / $7hr</div>
+            <div className="fuelRight">$25 per day / $9hr</div>
           </div>
           <div className="fuelRow">
             <div className="fuelLeft">Tube Rope:</div>
