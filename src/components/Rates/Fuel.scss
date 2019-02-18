@@ -11,6 +11,11 @@
 float: right;
   }
 
-  .fuelRow:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0.03);
-  }
+.fuelRow:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+@media only screen and (max-width: 76px) {
+  
+}
+

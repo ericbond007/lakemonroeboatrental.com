@@ -231,6 +231,13 @@ class Rates extends Component {
                 <MobileRateCard messageName="Jet Ski" boat={this.props.jetski}/>
                 <MobileRateCard messageName="16' Fishing Boat" boat={this.props.fishingboat}/>
                 <MobileRateCard messageName="Canoes, Kayaks, & Paddleboards" boat={this.props.kayak}/>
+      <p>
+      *All Day* 7:30AM - 6PM
+      </p>
+      <p>
+      **3 Days & Weekly**
+      Mon-Fri only, excluding holidays
+      </p>
               </div>
             </Section>
             </div>

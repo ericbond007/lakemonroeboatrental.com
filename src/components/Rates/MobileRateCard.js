@@ -62,7 +62,7 @@ handleSlide() {
             <div className="boatRight">${this.props.boat.acf.rates_eighthour}</div>
           
           </div>
-          {this.props.boat.acf.rates_all_day ?
+          {(this.props.boat.acf.rates_all_day !== 'N/A') ?
           <div className="ratesRow">
             
             <div className="boatLeft">All Day:</div>
@@ -70,8 +70,16 @@ handleSlide() {
           
             <div className="boatRight">${this.props.boat.acf.rates_all_day}</div>
           
-          </div>: null}
-          {this.props.boat.acf.rates_evening ?
+          </div>: 
+          <div className="ratesRow">
+            
+            <div className="boatLeft">All Day:</div>
+          
+          
+            <div className="boatRight">{this.props.boat.acf.rates_all_day}</div>
+            </div>
+          }
+          {(this.props.boat.acf.rates_evening !== 'N/A') ?
           <div className="ratesRow">
             
             <div className="boatLeft">Evening:</div>
@@ -79,8 +87,16 @@ handleSlide() {
           
             <div className="boatRight">${this.props.boat.acf.rates_evening}</div>
           
-          </div>: null}
-          {this.props.boat.acf.rates_overnight ?
+          </div>: 
+          <div className="ratesRow">
+            
+            <div className="boatLeft">Evening:</div>
+          
+          
+            <div className="boatRight">{this.props.boat.acf.rates_evening}</div>
+          
+          </div>}
+          {(this.props.boat.acf.rates_overnight !== 'N/A') ?
           <div className="ratesRow">
             
             <div className="boatLeft">Overnight:</div>
@@ -88,8 +104,17 @@ handleSlide() {
           
             <div className="boatRight">${this.props.boat.acf.rates_overnight}</div>
           
-          </div>: null}
-          {this.props.boat.acf.rates_oneday ?
+          </div>:
+          <div className="ratesRow">
+            
+            <div className="boatLeft">Overnight:</div>
+          
+          
+            <div className="boatRight">{this.props.boat.acf.rates_overnight}</div>
+
+          </div>          
+          }
+          {(this.props.boat.acf.rates_oneday !== 'N/A') ?
           <div className="ratesRow">
             
             <div className="boatLeft">24 Hours:</div>
@@ -97,8 +122,17 @@ handleSlide() {
           
             <div className="boatRight">${this.props.boat.acf.rates_oneday}</div>
           
-          </div>: null}
-          {this.props.boat.acf.rates_threeday ?
+          </div>:
+          <div className="ratesRow">
+            
+            <div className="boatLeft">24 Hours:</div>
+          
+          
+            <div className="boatRight">{this.props.boat.acf.rates_oneday}</div>
+          
+          </div>
+          }
+          {(this.props.boat.acf.rates_threeday !== 'N/A') ?
           <div className="ratesRow">
             
             <div className="boatLeft">Three Days:</div>
@@ -106,8 +140,17 @@ handleSlide() {
           
             <div className="boatRight">${this.props.boat.acf.rates_threeday}</div>
           
-          </div> : null}
-          {this.props.boat.acf.rates_weekly ?
+          </div> :
+          <div className="ratesRow">
+            
+            <div className="boatLeft">Three Days:</div>
+          
+          
+            <div className="boatRight">{this.props.boat.acf.rates_threeday}</div>
+          
+          </div> 
+          }
+          {(this.props.boat.acf.rates_weekly !== 'N/A') ?
           <div className="ratesRow">
             
             <div className="boatLeft">Weekly:</div>
@@ -115,7 +158,16 @@ handleSlide() {
           
             <div className="boatRight">${this.props.boat.acf.rates_weekly} </div>
           
-          </div>: null}
+          </div>: 
+          <div className="ratesRow">
+            
+            <div className="boatLeft">Weekly:</div>
+          
+          
+            <div className="boatRight">{this.props.boat.acf.rates_weekly} </div>
+          
+          </div> 
+          }
           <div className="ratesRow">
             
             <div className="boatLeft">Deposit:</div>
