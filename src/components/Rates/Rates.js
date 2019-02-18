@@ -41,7 +41,7 @@ class Rates extends Component {
         accessor: 'eighthour'
       },
       {
-        Header: 'All Day',
+        Header: 'All Day*',
         accessor: 'allday'
       },
       {
@@ -57,11 +57,11 @@ class Rates extends Component {
         accessor: 'oneday'
       },
       {
-        Header: '3 Days',
+        Header: '3 Days**',
         accessor: 'threeday'
       },
       {
-        Header: 'Weekly',
+        Header: 'Weekly**',
         accessor: 'weekly'
       },
       {
@@ -213,6 +213,15 @@ class Rates extends Component {
                 resizable={false}
 
               />
+      <div className="is-hidden-touch">
+      <span>
+      *All Day* 7:30AM - 6PM
+      </span>
+      <span style={{ paddingLeft: '3rem'  }}>
+      **3 Days & Weekly**
+      Mon-Fri only, excluding holidays
+      </span>
+      </div>
             <div className="is-hidden-desktop">
                 <MobileRateCard messageName="20' Pontoon" boat={this.props.pontoon} />
                 <MobileRateCard messageName="24' Pontoon" boat={this.props.pontoon24} />
