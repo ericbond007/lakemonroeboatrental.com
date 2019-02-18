@@ -132,7 +132,7 @@ handleSlide() {
           
           </div>
           }
-          {(this.props.boat.acf.rates_threeday !== 'N/A') ?
+          {(this.props.boat.acf.rates_threeday !== 'N/A' && this.props.boat.acf.rates_threeday !== 'call') ?
           <div className="ratesRow">
             
             <div className="boatLeft">Three Days:</div>
@@ -150,7 +150,7 @@ handleSlide() {
           
           </div> 
           }
-          {(this.props.boat.acf.rates_weekly !== 'N/A') ?
+          {(this.props.boat.acf.rates_weekly !== 'N/A' && this.props.boat.acf.rates_weekly !== 'call') ?
           <div className="ratesRow">
             
             <div className="boatLeft">Weekly:</div>
