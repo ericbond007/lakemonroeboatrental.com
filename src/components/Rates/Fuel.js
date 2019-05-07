@@ -1,6 +1,5 @@
 import React from 'react';
 import { Section } from 'reactbulma';
-import'./Fuel.css';
 
 const Fuel = () => (
   <Section className="content">
