@@ -13,10 +13,6 @@ const HomeSlug = ({homepage}) => {
        </div>
        */}
       <div className="slugCenter has-text-centered is-size-3">
-      <p>
-      Andy Mohr Hyundai covered us in their community spotlight, &nbsp;
-        <a rel="noopener noreferrer" target="_blank" href="https://www.google.com/url?q=https://www.andymohrhyundai.com/community-spotlight-lake-monroe-boat-rental-bloomington-in&sa=D&source=hangouts&ust=1567171801378000&usg=AFQjCNHjOsVi62t3f8VuDVbOBMdvxRrc-A">check it out!  </a>
-      </p>
         <p style={{ margin: '2rem'}}>
           {homepage[0].acf.home_page_box}
         </p>
