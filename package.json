@@ -9,7 +9,7 @@
     "bulma": "^0.6.2",
     "core-js": "^2.5.3",
     "dom-helpers": "^3.3.1",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "history": "^4.7.2",
     "ignore-styles": "^5.0.1",
     "morgan": "^1.9.0",
