@@ -1,3 +1,3 @@
 # lakemonroeboatrental.com
 
-This website is a work in progress. Development is being done with React + Redux
+This website may or may not be actively developed, but this repository archived and no longer in use. The initial development was done using React and Redux.
